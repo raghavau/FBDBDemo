@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Firebase Web Demo App</title>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type='text/css' href="css/semantic.css">
+        <link rel="stylesheet" type='text/css' href="css/loading.css">
+        <link rel="stylesheet" type='text/css' href="font-awesome/css/font-awesome.min.css">
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu'>
+    </head>
+    <body>
+        <div class="ui container">
+            <br>
+            <div class="table">
+                <div class="ui red message">
+                    <span id="msg"></span>
+                </div>
+                <table id="tbldata" class="table table-bordered"></table>
+            </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
+<script type="text/javascript">
+    var config = {
+      apiKey: "AIzaSyA-qB_P4ILz6FHSEVLydbd4_R8jXGBWthM",
+      authDomain: "api-project-234444986540.firebaseapp.com",
+      databaseURL: "https://api-project-234444986540.firebaseio.com/"
+    };
+
+    firebase.initializeApp(config);
+
+    var rootRef = firebase.database().ref("20170125");
+    $(function(){
+        $(".message").hide();
+
+        $("#tbldata").empty();
+        rootRef.once("value", function(snapshot) {
+            //debugger;
+            if(snapshot.exists()){
+                $(".message").hide();
+
+                snapshot.forEach(function(data){
+                    //debugger;
+                    rootRef.child(data.key).on('child_added', function(){
+
+                        $(".message").show();
+                        $("#msg").html("Database added.");
+                    });
+                    rootRef.child(data.key).on('child_removed', function(){
+
+                        $(".message").show();
+                        $("#msg").html("Database removed.");
+                    });
+                    $("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>" + data.key + "</p></td></tr>");
+                    var i = data.val().length, k = 0;
+
+                    if(i > 0){
+                        for(var j = 0; j < i; j++){
+                            if(j == 0)
+                                $("#tbldata").append("<tr><table class='table table-hover table-bordered'><tr><th>Slno</th><th>Location</th><th>Time</th></tr></tr>");
+                            if(j == i)
+                                $("#tbldata").append("</table></tr>");
+                            k = k + 1;
+                            $("#tbldata").append("<tr><td>" + k + "</td><td>" + data.val()[j].latlng + "</td><td>" + data.val()[j].time + "</td></tr>");
+                        }
+                    }
+                 });
+            }
+            else{
+                $(".message").show();
+                $("#msg").html("No database found. Please check.");
+            }
+        });
+        /*rootRef.child("355666056403785").on('child_removed', function(){
+            $("#tbldata").empty();
+            rootRef.once("value", function(snapshot) {
+                //debugger;
+                if(snapshot.exists()){
+                    $(".message").hide();
+
+                    snapshot.forEach(function(data){
+                        //debugger;
+                        $("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>"+ data.key +"</p></td></tr>");
+                        var i = data.val().length, k = 0;
+
+                        if(i > 0){
+                            for(var j = 0; j < i; j++){
+                                if(j == 0)
+                                    $("#tbldata").append("<tr><table class='table table-hover table-bordered'><tr><th>Slno</th><th>Location</th><th>Time</th></tr></tr>");
+                                if(j == i)
+                                    $("#tbldata").append("</table></tr>");
+                                k = k + 1;
+                                $("#tbldata").append("<tr><td>" + k + "</td><td>" + data.val()[j].latlng + "</td><td>" + data.val()[j].time + "</td></tr>");
+                            }
+                        }
+                     });
+                }
+                else{
+                    $(".message").show();
+                    $("#msg").html("No database found. Please check.");
+                }
+            });
+        });*/
+        /*var fetchPosts = function(postsRef) {
+            postsRef.on('child_added', function(data) {
+                debugger;
+            });
+            postsRef.on('child_changed', function(data) {
+                debugger;
+            });
+            postsRef.on('child_removed', function(data) {
+                debugger;
+            });
+        };*/
+        //fetchPosts(rootRef);
+    });
+</script>
