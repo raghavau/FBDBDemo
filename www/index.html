@@ -170,6 +170,7 @@
 
         rootRef.on('value', function(snapshot){
             var endMarker = new google.maps.Marker();
+            var tourplan2 = new google.maps.Polyline();
             if(snapshot.exists()){
                 $(".message").hide();
                 $("#tbldata").empty();
@@ -197,9 +198,10 @@
                                 continue;
                             }
                         }
-                        var color = colors[0];
+                        var color = colors[3];
 
-                        var tourplan2 = new google.maps.Polyline({
+                        tourplan2.setMap(null);
+                        tourplan2 = new google.maps.Polyline({
                             path: coords,
                             strokeColor: color,
                             //strokeOpacity: 0.6,
@@ -224,7 +226,7 @@
                             map: map
                         });
 
-                        /*endMarker.setMap(null);
+                        endMarker.setMap(null);
                         endMarker = new google.maps.Marker({
                             position: coords[coords.length - 1],
 
@@ -241,9 +243,10 @@
 
                             draggable: false,
                             map: map
-                        });*/
+                        });
 
                         tourplan2.setMap(map);
+                        map.setCenter(endMarker.getPosition());
                     }
                  });
             }
