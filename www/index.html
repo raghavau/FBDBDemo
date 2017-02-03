@@ -27,10 +27,11 @@
                     </div>
                 </div>-->
                 <div class="col-lg-12 text-left">
-                    <div id="googleMap" style="width:100%; height:550px; position: absolute;"></div>
+
                 </div>
             </div>
         </div>
+        <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px;"></div>
     </body>
 </html>
 <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
@@ -46,7 +47,7 @@
     firebase.initializeApp(config);
 
     var rootRef = firebase.database().ref();
-    var coords = [], colors = ["#38c6f3", "#4a5ba9", "#e1d2b5", "#166048", "#291f09"];
+    var coords = [], colors = ["#38c6f3", "#4a5ba9", "#34e4b8", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
     $(function(){
         $(".message").hide();
         $("#tbldata").empty();
@@ -168,17 +169,23 @@
                 }
         });*/
 
+        var startMarker = new google.maps.Marker({map: null});
+        var endMarker = new google.maps.Marker({map: null});
+        var tourplan = new google.maps.Polyline({map: null});
         rootRef.on('value', function(snapshot){
-            var endMarker = new google.maps.Marker();
-            var tourplan2 = new google.maps.Polyline();
             if(snapshot.exists()){
+                var colorNo = 0;
                 $(".message").hide();
                 $("#tbldata").empty();
+                //debugger;
 
                 snapshot.forEach(function(data){
-                    //debugger;
+                    startMarker.setMap(null);
+                    endMarker.setMap(null);
+                    tourplan.setMap(null);
+
                     //$("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>" + data.key + "</p></td></tr>");
-                    var i = data.val().length, k = 0;
+                    var i = Object.values(data.val()).length, k = 0;
                     coords = [];
                     if(i > 0){
 
@@ -198,55 +205,56 @@
                                 continue;
                             }
                         }
-                        var color = colors[3];
+                        var color = colors[colorNo];
+                        if(colorNo == 9){
+                            colorNo = 0;
+                        }
+                        else{
+                            colorNo = parseInt(colorNo) + 1;
+                        }
 
-                        tourplan2.setMap(null);
-                        tourplan2 = new google.maps.Polyline({
-                            path: coords,
-                            strokeColor: color,
-                            //strokeOpacity: 0.6,
-                            strokeWeight: 2
-                        });
-
-                        var startMarker = new google.maps.Marker({
+                        startMarker = new google.maps.Marker({
                             position: coords[0],
-
                             icon: {
                                 path: google.maps.SymbolPath.CIRCLE,
                                 scale: 5,
                                 strokeWeight: 2,
-                                strokeColor: "#bc2c30",
-                                strokeOpacity: 0.8,
-
+                                strokeColor: color,//"#bc2c30",
+                                //strokeOpacity: 0.8,
                                 fillColor: "#ed4b4f",
                                 fillOpacity: 0.8
                             },
-
                             draggable: false,
                             map: map
                         });
 
-                        endMarker.setMap(null);
-                        endMarker = new google.maps.Marker({
-                            position: coords[coords.length - 1],
+                        map.setCenter(startMarker.getPosition());
 
-                            icon: {
-                                path: google.maps.SymbolPath.CIRCLE,
-                                scale: 5,
-                                strokeWeight: 2,
-                                strokeColor: "#35835e",
-                                strokeOpacity: 0.8,
+                        if(coords.length > 1){
+                            endMarker = new google.maps.Marker({
+                                position: coords[coords.length - 1],
+                                icon: {
+                                    path: google.maps.SymbolPath.CIRCLE,
+                                    scale: 5,
+                                    strokeWeight: 2,
+                                    strokeColor: color,//"#35835e",
+                                    //strokeOpacity: 0.8,
+                                    fillColor: "#63a79b",
+                                    fillOpacity: 0.8
+                                },
+                                draggable: false,
+                                map: map
+                            });
+                            map.setCenter(endMarker.getPosition());
+                        }
 
-                                fillColor: "#63a79b",
-                                fillOpacity: 0.8
-                            },
-
-                            draggable: false,
-                            map: map
+                        tourplan = new google.maps.Polyline({
+                            path: coords,
+                            strokeColor: color,
+                            //strokeOpacity: 0.6,
+                            strokeWeight: 3
                         });
-
-                        tourplan2.setMap(map);
-                        map.setCenter(endMarker.getPosition());
+                        tourplan.setMap(map);
                     }
                  });
             }
