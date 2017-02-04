@@ -15,22 +15,6 @@
         </style>
     </head>
     <body>
-        <div class="ui container">
-            <br>
-            <div class="row">
-                <!--<div class="col-lg-1">
-                    <div class="table">
-                        <div class="ui red message">
-                            <span id="msg"></span>
-                        </div>
-                        <table id="tbldata" class="table table-bordered" style="font-size: 10px;"></table>
-                    </div>
-                </div>-->
-                <div class="col-lg-12 text-left">
-
-                </div>
-            </div>
-        </div>
         <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px;"></div>
     </body>
 </html>
@@ -48,6 +32,7 @@
 
     var rootRef = firebase.database().ref();
     var coords = [], colors = ["#38c6f3", "#4a5ba9", "#34e4b8", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
+    var gstartmarkers = [], gendmarkers = [], gtourplans = [];
     $(function(){
         $(".message").hide();
         $("#tbldata").empty();
@@ -86,7 +71,183 @@
             map: map
         });
 
-        /*rootRef.once("value", function(snapshot) {
+        rootRef.on('value', function(snapshot){
+            if(snapshot.exists()){
+                var colorNo = 0;
+                //debugger;
+                removeMarkers();
+
+                snapshot.forEach(function(data) {
+                    var i = Object.values(data.val()).length, k = 0;
+                    coords = [];
+                    if(i > 0){
+                        for(var j = 0; j < i; j++){
+                            try {
+                                k = k + 1;
+                                coords.push(new google.maps.LatLng(data.val()[j].latlng.split(',')[0], data.val()[j].latlng.split(',')[1]));
+                            }
+                            catch(e){
+                                coords = [];
+                                continue;
+                            }
+                        }
+                        var color = colors[colorNo];
+                        if(colorNo == 9){
+                            colorNo = 0;
+                        }
+                        else{
+                            colorNo = parseInt(colorNo) + 1;
+                        }
+
+                        var startMarker = new google.maps.Marker({
+                            position: coords[0],
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                scale: 5,
+                                strokeWeight: 2,
+                                strokeColor: color,//"#bc2c30",
+                                //strokeOpacity: 0.8,
+                                fillColor: "#ed4b4f",
+                                fillOpacity: 0.8
+                            },
+                            draggable: false,
+                            map: map
+                        });
+                        map.setCenter(startMarker.getPosition());
+                        gstartmarkers.push(startMarker);
+
+                        if(coords.length > 1){
+                            var endMarker = new google.maps.Marker({
+                                position: coords[coords.length - 1],
+                                icon: {
+                                    path: google.maps.SymbolPath.CIRCLE,
+                                    scale: 5,
+                                    strokeWeight: 2,
+                                    strokeColor: color,//"#35835e",
+                                    //strokeOpacity: 0.8,
+                                    fillColor: "#63a79b",
+                                    fillOpacity: 0.8
+                                },
+                                draggable: false,
+                                map: map
+                            });
+                            map.setCenter(endMarker.getPosition());
+                            gendmarkers.push(endMarker);
+                        }
+
+                        var tourplan = new google.maps.Polyline({
+                            path: coords,
+                            strokeColor: color,
+                            //strokeOpacity: 0.6,
+                            strokeWeight: 3
+                        });
+                        tourplan.setMap(map);
+                        gtourplans.push(tourplan);
+                    }
+                 });
+            }
+            else{
+                LoadMap();
+            }
+        });
+    });
+
+    function LoadMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(14.2599286, 80.1137635),
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            panControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            rotateControl: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker1 = new google.maps.Marker({
+            position: new google.maps.LatLng(14.2599286,80.1137635),
+
+            /*icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 5,
+                strokeWeight: 2,
+                strokeColor: "#007ff4",
+                strokeOpacity: 0.8,
+
+                fillColor: "#57c8ff",
+                fillOpacity: 0.8
+            },*/
+            icon: "img/icon.png",
+
+            draggable: false,
+            map: map
+        });
+    }
+
+    function removeMarkers() {
+        for(i = 0; i < gstartmarkers.length; i++) {
+            if (gstartmarkers.length > 0 && gstartmarkers[i].getMap() != null) {
+                gstartmarkers[i].setMap(null);
+            }
+        }
+        for(i = 0; i < gendmarkers.length; i++) {
+            if (gendmarkers.length > 0 && gendmarkers[i].getMap() != null) {
+                gendmarkers[i].setMap(null);
+            }
+        }
+        for(i = 0; i < gtourplans.length; i++) {
+            if (gtourplans.length > 0 && gtourplans[i].getMap() != null) {
+                gtourplans[i].setMap(null);
+            }
+        }
+    }
+</script>
+<!--rootRef.child("355666056403785").on('child_removed', function(){
+            $("#tbldata").empty();
+            rootRef.once("value", function(snapshot) {
+                if(snapshot.exists()){
+                    $(".message").hide();
+
+                    snapshot.forEach(function(data){
+                        $("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>"+ data.key +"</p></td></tr>");
+                        var i = data.val().length, k = 0;
+
+                        if(i > 0){
+                            for(var j = 0; j < i; j++){
+                                if(j == 0)
+                                    $("#tbldata").append("<tr><table class='table table-hover table-bordered'><tr><th>Slno</th><th>Location</th><th>Time</th></tr></tr>");
+                                if(j == i)
+                                    $("#tbldata").append("</table></tr>");
+                                k = k + 1;
+                                $("#tbldata").append("<tr><td>" + k + "</td><td>" + data.val()[j].latlng + "</td><td>" + data.val()[j].time + "</td></tr>");
+                            }
+                        }
+                     });
+                }
+                else{
+                    $(".message").show();
+                    $("#msg").html("No database found. Please check.");
+                }
+            });
+        });*/
+        /*var fetchPosts = function(postsRef) {
+            postsRef.on('child_added', function(data) {
+                debugger;
+            });
+            postsRef.on('child_changed', function(data) {
+                debugger;
+            });
+            postsRef.on('child_removed', function(data) {
+                debugger;
+            });
+        };*/
+        //fetchPosts(rootRef);-->
+
+<!--rootRef.once("value", function(snapshot) {
             var endMarker = new google.maps.Marker();
             if(snapshot.exists()){
                 $(".message").hide();
@@ -167,179 +328,4 @@
                     $("#msg").html("No database found. Please check.");
                     LoadMap();
                 }
-        });*/
-
-        var startMarker = new google.maps.Marker({map: null});
-        var endMarker = new google.maps.Marker({map: null});
-        var tourplan = new google.maps.Polyline({map: null});
-        rootRef.on('value', function(snapshot){
-            if(snapshot.exists()){
-                var colorNo = 0;
-                $(".message").hide();
-                $("#tbldata").empty();
-                //debugger;
-
-                snapshot.forEach(function(data){
-                    startMarker.setMap(null);
-                    endMarker.setMap(null);
-                    tourplan.setMap(null);
-
-                    //$("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>" + data.key + "</p></td></tr>");
-                    var i = Object.values(data.val()).length, k = 0;
-                    coords = [];
-                    if(i > 0){
-
-                        for(var j = 0; j < i; j++){
-                            /*if(j == 0)
-                                $("#tbldata").append("<tr><table class='table table-hover table-bordered'><tr><th>Slno</th><th>Location</th><th>Time</th></tr></tr>");
-                            if(j == i)
-                                $("#tbldata").append("</table></tr>");*/
-
-                            try {
-                                k = k + 1;
-                                //$("#tbldata").append("<tr><td>" + k + "</td><td>" + data.val()[j].latlng + "</td><td>" + data.val()[j].time + "</td></tr>");
-                                coords.push(new google.maps.LatLng(data.val()[j].latlng.split(',')[0], data.val()[j].latlng.split(',')[1]));
-                            }
-                            catch(e){
-                                coords = [];
-                                continue;
-                            }
-                        }
-                        var color = colors[colorNo];
-                        if(colorNo == 9){
-                            colorNo = 0;
-                        }
-                        else{
-                            colorNo = parseInt(colorNo) + 1;
-                        }
-
-                        startMarker = new google.maps.Marker({
-                            position: coords[0],
-                            icon: {
-                                path: google.maps.SymbolPath.CIRCLE,
-                                scale: 5,
-                                strokeWeight: 2,
-                                strokeColor: color,//"#bc2c30",
-                                //strokeOpacity: 0.8,
-                                fillColor: "#ed4b4f",
-                                fillOpacity: 0.8
-                            },
-                            draggable: false,
-                            map: map
-                        });
-
-                        map.setCenter(startMarker.getPosition());
-
-                        if(coords.length > 1){
-                            endMarker = new google.maps.Marker({
-                                position: coords[coords.length - 1],
-                                icon: {
-                                    path: google.maps.SymbolPath.CIRCLE,
-                                    scale: 5,
-                                    strokeWeight: 2,
-                                    strokeColor: color,//"#35835e",
-                                    //strokeOpacity: 0.8,
-                                    fillColor: "#63a79b",
-                                    fillOpacity: 0.8
-                                },
-                                draggable: false,
-                                map: map
-                            });
-                            map.setCenter(endMarker.getPosition());
-                        }
-
-                        tourplan = new google.maps.Polyline({
-                            path: coords,
-                            strokeColor: color,
-                            //strokeOpacity: 0.6,
-                            strokeWeight: 3
-                        });
-                        tourplan.setMap(map);
-                    }
-                 });
-            }
-            else{
-                $("#tbldata").empty();
-                $(".message").show();
-                $("#msg").html("No database found. Please check.");
-                LoadMap();
-            }
-        });
-    });
-
-    function LoadMap(){
-        var mapProp = {
-            center: new google.maps.LatLng(14.2599286, 80.1137635),
-            zoom: 17,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            panControl: false,
-            zoomControl: false,
-            scaleControl: false,
-            mapTypeControl: false,
-            streetViewControl: false,
-            overviewMapControl: false,
-            rotateControl: false
-        };
-
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-        var marker1 = new google.maps.Marker({
-            position: new google.maps.LatLng(14.2599286,80.1137635),
-
-            /*icon: {
-                path: google.maps.SymbolPath.CIRCLE,
-                scale: 5,
-                strokeWeight: 2,
-                strokeColor: "#007ff4",
-                strokeOpacity: 0.8,
-
-                fillColor: "#57c8ff",
-                fillOpacity: 0.8
-            },*/
-            icon: "img/icon.png",
-
-            draggable: false,
-            map: map
-        });
-    }
-</script>
-<!--rootRef.child("355666056403785").on('child_removed', function(){
-            $("#tbldata").empty();
-            rootRef.once("value", function(snapshot) {
-                if(snapshot.exists()){
-                    $(".message").hide();
-
-                    snapshot.forEach(function(data){
-                        $("#tbldata").append("<tr><td colspan='3'><p class='text-danger'>"+ data.key +"</p></td></tr>");
-                        var i = data.val().length, k = 0;
-
-                        if(i > 0){
-                            for(var j = 0; j < i; j++){
-                                if(j == 0)
-                                    $("#tbldata").append("<tr><table class='table table-hover table-bordered'><tr><th>Slno</th><th>Location</th><th>Time</th></tr></tr>");
-                                if(j == i)
-                                    $("#tbldata").append("</table></tr>");
-                                k = k + 1;
-                                $("#tbldata").append("<tr><td>" + k + "</td><td>" + data.val()[j].latlng + "</td><td>" + data.val()[j].time + "</td></tr>");
-                            }
-                        }
-                     });
-                }
-                else{
-                    $(".message").show();
-                    $("#msg").html("No database found. Please check.");
-                }
-            });
-        });*/
-        /*var fetchPosts = function(postsRef) {
-            postsRef.on('child_added', function(data) {
-                debugger;
-            });
-            postsRef.on('child_changed', function(data) {
-                debugger;
-            });
-            postsRef.on('child_removed', function(data) {
-                debugger;
-            });
-        };*/
-        //fetchPosts(rootRef);-->
+        });-->
