@@ -15,10 +15,11 @@
         </style>
     </head>
     <body>
-        <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px;"></div>
+          <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px;"></div>
     </body>
 </html>
 <script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
+<script type="text/javascript" src="js/semantic.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=LoadMap&libraries=geometry" async defer></script>
 <script type="text/javascript">
@@ -34,6 +35,10 @@
     var coords = [], colors = ["#38c6f3", "#4a5ba9", "#ff4864", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
     var gstartmarkers = [], gendmarkers = [], gtourplans = [];
     var map, infowindow;
+
+    $(document).ready(function(){
+
+    });
 
     function LoadMap() {
         var mapProp = {
@@ -145,7 +150,7 @@
                             path: coords,
                             strokeColor: color,
                             //strokeOpacity: 0.6,
-                            strokeWeight: 3
+                            strokeWeight: 5
                         });
                         tourplan.setMap(map);
                         gtourplans.push(tourplan);
@@ -158,12 +163,6 @@
                  });
             }
         });
-    }
-
-    function callback(response, status) {
-        debugger;
-        // See Parsing the Results for
-        // the basics of a callback function.
     }
 
     function removeMarkers() {
@@ -185,7 +184,7 @@
     }
 
     function OpenInfo(key, start, end) {
-        var msg = "<u><b>Device Id:</b> " + key + "</u><br>";
+        var msg = "<u><b>Device Id:</b> " + key + "</u><br><br>";
 
         var origin1 = start;
         var destinationA = end;
@@ -201,10 +200,10 @@
             avoidTolls: false,
         }, function(response, status){
             if (status == 'OK') {
-                msg = msg + "<table width='100%'><tr><td valign='top' style='width: 20%'>Start Position: </td><td valign='top' style='width: 80%'>" + response.originAddresses[0] + "</td></tr>";
-                msg = msg + "<tr><td valign='top' style='width: 20%'>End Position: </td><td valign='top' style='width: 80%'>" + response.destinationAddresses[0] + ", </td></tr>";
-                msg = msg + "<tr><td valign='top' style='width: 20%'>Distance: </td><td valign='top' style='width: 80%'>" + response.rows[0].elements[0].distance.text + ", </td></tr>";
-                msg = msg + "<tr><td valign='top' style='width: 20%'>Duration: </td><td valign='top' style='width: 80%'>" + response.rows[0].elements[0].duration.text + ", </td></tr>";
+                msg = msg + "<table width='100%'><tr><td align='left' valign='top' style='width: 20%'>Start Position</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.originAddresses[0] + "</td></tr>";
+                msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>End Position</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.destinationAddresses[0] + "</td></tr>";
+                msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Distance</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.rows[0].elements[0].distance.text + "</td></tr>";
+                msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Duration</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.rows[0].elements[0].duration.text + "</td></tr>";
                 msg = msg + "</table>";
 
                 infowindow = new google.maps.InfoWindow({
