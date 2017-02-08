@@ -1,49 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Firebase Web Demo App</title>
-        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <title>Sidebar Demo</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type='text/css' href="css/semantic.css">
-        <link rel="stylesheet" type='text/css' href="css/loading.css">
-        <link rel="stylesheet" type='text/css' href="font-awesome/css/font-awesome.min.css">
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'>
         <style type="text/css">
             body {
-                font-family: Roboto;
+                font-family: "Lato", sans-serif;
+                transition: background-color .5s;
+                background-color: #5da58a;/*#ff8080;*/
+                overflow: hidden;
             }
-            .container {
-                display: inline-block;
-                cursor: pointer;
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 50px;
+                left: 0;
+                background-color: #343434;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 0px;
             }
-            .bar1,.bar2,.bar3 {
-                width: 35px;
-                height: 5px;
-                background-color: black;
-                margin: 6px 0px;
-                transition: 0.4s;
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #B0B0B0;
+                display: block;
+                transition: 0.3s;
+                border: 1px solid #343434;
             }
-            .change .bar1 {
-                -webkit-transform: rotate(-45deg) translate(-9px, 7px);
-                transform: rotate(-45deg) translate(-9px, 7px);
+
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #e7e7e7;
+                /*border-top: 1px solid #464646;*/
+                border-bottom: 1px solid #464646;
             }
-            .change .bar2 {
-                opacity: 0;
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
             }
-            .change .bar3 {
-                -webkit-transform: rotate(45deg) translate(-9px, -7px);
-                transform: rotate(45deg) translate(-9px, -7px);
+
+            #main {
+                transition: margin-left .5s;
+                padding-top: 0px;
+                padding-left: 15px;
+                overflow: hidden;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
             }
         </style>
     </head>
-    <body>
-        <div class="container" onclick="ChangeIcon(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div id="googleMap" style="width:100%; height:92%; position: absolute; top: 50px; left: 0px;"></div>
-        </div>
-    </body>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#">Live Tracking</a>
+        <a href="#">Speed Analysis</a>
+        <a href="#">Distance</a>
+        <a href="#">Routes</a>
+    </div>
+
+    <div id="main" style="text">
+        <span id="btnOpen" style="font-size:30px;cursor:pointer; width: 50px; color:white" onclick="openNav()">&#9776;</span>
+        <span id="btnClose" class="closebtn" style="font-size:30px;cursor:pointer; width: 200px; color:white; display: none;" onclick="closeNav()">&times;</span>
+        <span class="text-center" style="color:white; font-size: 25px; padding-left: 5px;">Vehicle Tracking</span>
+        <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 50px; left: 0px; overflow: hidden;"></div>
+    </div>
+</body>
 </html>
 <script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
 <script type="text/javascript" src="js/semantic.js"></script>
@@ -63,14 +95,21 @@
     var gstartmarkers = [], gendmarkers = [], gtourplans = [];
     var map, infowindow;
 
-    $(document).ready(function(){
-
-    });
-
-    function ChangeIcon(x) {
-        x.classList.toggle("change");
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+        //document.getElementById("main").style.marginLeft = "250px";
+        //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("btnOpen").style.display = "none";
+        document.getElementById("btnClose").style.display = "inline";
     }
 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        //document.body.style.backgroundColor = "white";
+        document.getElementById("btnClose").style.display = "none";
+        document.getElementById("btnOpen").style.display = "inline";
+    }
     function LoadMap() {
         var mapProp = {
             center: new google.maps.LatLng(14.2599286, 80.1137635),
@@ -256,6 +295,7 @@
         });
     }
 </script>
+
 <!--rootRef.child("355666056403785").on('child_removed', function(){
             $("#tbldata").empty();
             rootRef.once("value", function(snapshot) {
