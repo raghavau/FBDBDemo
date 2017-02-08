@@ -9,13 +9,40 @@
         <link rel="stylesheet" type='text/css' href="font-awesome/css/font-awesome.min.css">
         <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'>
         <style type="text/css">
-            body{
+            body {
                 font-family: Roboto;
+            }
+            .container {
+                display: inline-block;
+                cursor: pointer;
+            }
+            .bar1,.bar2,.bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0px;
+                transition: 0.4s;
+            }
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+                transform: rotate(-45deg) translate(-9px, 7px);
+            }
+            .change .bar2 {
+                opacity: 0;
+            }
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-9px, -7px);
+                transform: rotate(45deg) translate(-9px, -7px);
             }
         </style>
     </head>
     <body>
-          <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px;"></div>
+        <div class="container" onclick="ChangeIcon(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div id="googleMap" style="width:100%; height:92%; position: absolute; top: 50px; left: 0px;"></div>
+        </div>
     </body>
 </html>
 <script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
@@ -40,10 +67,14 @@
 
     });
 
+    function ChangeIcon(x) {
+        x.classList.toggle("change");
+    }
+
     function LoadMap() {
         var mapProp = {
             center: new google.maps.LatLng(14.2599286, 80.1137635),
-            zoom: 18,
+            zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             panControl: false,
             zoomControl: false,
