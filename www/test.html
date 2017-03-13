@@ -10,7 +10,6 @@
                 background-color: #5da58a;/*#ff8080;*/
                 overflow: hidden;
             }
-
             .sidenav {
                 height: 100%;
                 width: 0;
@@ -32,12 +31,20 @@
                 display: block;
                 transition: 0.3s;
                 border: 1px solid #343434;
+                -webkit-transition-property: background;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-timing-function: ease;
+                /* Standard syntax */
+                transition-property: background;
+                transition-duration: 1s;
+                transition-timing-function: ease;
             }
 
             .sidenav a:hover, .offcanvas a:focus{
-                color: #cfcfcf;
+                color: #e7e7e7;
                 /*border-top: 1px solid #464646;*/
-                border-bottom: 1px solid #464646;
+                border-bottom: 1px solid #8a8a8a;
+                background-color: #8a8a8a;
             }
 
             .sidenav .closebtn {
@@ -63,10 +70,10 @@
     </head>
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="#">Live Tracking</a>
-        <a href="#">Speed Analysis</a>
-        <a href="#">Distance</a>
-        <a href="#">Routes</a>
+        <a href="views/livetracking.html">Live Tracking</a>
+        <a href="views/traveldistance.html">Distance</a>
+        <a href="views/routes.html">Routes</a>
+        <a href="views/speedanalysis.html">Speed Analysis</a>
     </div>
 
     <div id="main" style="text">
@@ -141,13 +148,15 @@
                     removeMarkers();
 
                     snapshot.forEach(function(data) {
-                        var i = Object.values(data.val()).length, k = 0;
+                        //var i = Object.values(data.val()).length, k = 0;
+                        var i = Object.values.length, k = 0;
                         coords = [];
                         if(i > 0){
                             for(var j = 0; j < i; j++){
                                 try {
                                     k = k + 1;
-                                    coords.push(new google.maps.LatLng(data.val()[j].latlng.split(',')[0], data.val()[j].latlng.split(',')[1]));
+                                    //coords.push(new google.maps.LatLng(data.val()[j].latlng.split(',')[0], data.val()[j].latlng.split(',')[1]));
+                                    coords.push(new google.maps.LatLng(data.val().latlng.split(',')[0], data.val().latlng.split(',')[1]));
                                 }
                                 catch(e){
                                     coords = [];
@@ -162,7 +171,7 @@
                                 colorNo = parseInt(colorNo) + 1;
                             }
 
-                            var startMarker = new google.maps.Marker({
+                            /*var startMarker = new google.maps.Marker({
                                 position: coords[0],
                                 icon: {
                                     path: google.maps.SymbolPath.CIRCLE,
@@ -176,20 +185,23 @@
                                 draggable: false,
                                 map: map
                             });
-                            //map.setCenter(startMarker.getPosition());
+                            map.setCenter(startMarker.getPosition());
                             gstartmarkers.push(startMarker);
 
                             google.maps.event.addListener(startMarker, 'click', function(){
                                 infowindow.close();
                                 OpenInfo(data.key, startMarker.getPosition(), startMarker.getPosition());
-                            });
+                            });*/
+
 
                             var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
 
-                            if(coords.length > 1) {
-                                var heading = google.maps.geometry.spherical.computeHeading(coords[coords.length - 2], coords[coords.length - 1]);
+                            if(coords.length > 0) {
+                                //var heading = google.maps.geometry.spherical.computeHeading(coords[coords.length - 2], coords[coords.length - 1]);
+                                var heading = google.maps.geometry.spherical.computeHeading(coords[0], coords[0]);
                                 var endMarker = new google.maps.Marker({
-                                    position: coords[coords.length - 1],
+                                    //position: coords[coords.length - 1],
+                                    position: coords[0],
                                     icon: {
                                         path: car,
                                         scaledSize: new google.maps.Size(20, 20), // size
@@ -207,26 +219,43 @@
                                 });
                                 //map.setCenter(endMarker.getPosition());
                                 gendmarkers.push(endMarker);
+                                debugger;
 
                                 google.maps.event.addListener(endMarker, 'click', function() {
                                     infowindow.close();
-                                    OpenInfo(data.key, startMarker.getPosition(), endMarker.getPosition());
+                                    //OpenInfo(data.key, startMarker.getPosition(), endMarker.getPosition());
+                                    var msg = "<u><b>Device Id:</b></u> " + data.key + "<br><br>";
+                                    infowindow = new google.maps.InfoWindow({
+                                        content: msg,
+                                        position: endMarker.getPosition(),
+                                        icon: {
+                                            path: google.maps.SymbolPath.CIRCLE,
+                                            scale: 5,
+                                            strokeWeight: 2,
+                                            strokeColor: "#FF00FF",
+                                            strokeOpacity: 0.8,
+
+                                            fillColor: "#FF00FF",
+                                            fillOpacity: 0.4
+                                        }
+                                    });
+                                    infowindow.open(map);
                                 });
                             }
 
-                            var tourplan = new google.maps.Polyline({
+                            /*var tourplan = new google.maps.Polyline({
                                 path: coords,
                                 strokeColor: color,
                                 //strokeOpacity: 0.6,
                                 strokeWeight: 5
                             });
-                            tourplan.setMap(map);
+                            //tourplan.setMap(map);
                             gtourplans.push(tourplan);
 
                             google.maps.event.addListener(tourplan, 'click', function(event){
                                 infowindow.close();
                                 OpenInfo(data.key, startMarker.getPosition(), event.latLng);
-                            });
+                            });*/
                         }
                      });
                 }
