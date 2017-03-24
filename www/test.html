@@ -206,7 +206,7 @@
 
                                 google.maps.event.addListener(endMarker, 'click', function() {
                                     infowindow.close();
-                                    OpenInfo(data.key, startPoint, endPoint);
+                                    OpenInfo(data.key, startPoint, endMarker.getPosition());
                                 });
                             }
                         }
