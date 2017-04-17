@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sidebar Demo</title>
+        <title>Vehicle Live Tracking</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
         <style type="text/css">
             body {
@@ -96,9 +96,11 @@
         firebase.initializeApp(config);
 
         var rootRef = firebase.database().ref();
-        var coords = [], colors = ["#38c6f3", "#4a5ba9", "#ff4864", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
+        var coords = [], colors = ["#38c6f3", "#ff4864", "#428bca", "#166048", "#ff0000", "#512411", "#e3af0c"];
         var gstartmarkers = [], gendmarkers = [], gtourplans = [];
+        var startMarker, endMarker;
         var map, infowindow, startPoint, prevPoint, endPoint;
+        var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "200px";
@@ -135,7 +137,7 @@
                 position: new google.maps.LatLng(14.2599286, 80.1137635),
                 icon: "img/icon.png",
                 draggable: false,
-                map: map
+                //map: map
             });
 
             map.addListener('click', function(){
@@ -143,14 +145,17 @@
             });
 
             var ctaLayer = new google.maps.KmlLayer({
-                url: 'https://drive.google.com/open?id=0B5-gmD1RU6z0ajFkaklyMFlmWWM/sample.kml',
+                url: 'http://61.0.225.169/vehtrack/res/kml/sample.kml',
                 map: map
             });
+
+
 
             rootRef.on('value', function(snapshot){
                 if(snapshot.exists()){
                     var colorNo = 0;
-                    removeMarkers();
+                    var arrayObject = [];
+                    arrayObject = snapshot.val();
 
                     snapshot.forEach(function(data) {
                         //debugger;
@@ -172,7 +177,7 @@
                                 }
                             }*/
                             var color = colors[colorNo];
-                            if(colorNo == 9){
+                            if(colorNo == 6){
                                 colorNo = 0;
                             }
                             else{
@@ -183,49 +188,44 @@
                             prevPoint = new google.maps.LatLng(data.val().prevPoint.latlng.split(',')[0], data.val().prevPoint.latlng.split(',')[1]);
                             endPoint = new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0], data.val().endPoint.latlng.split(',')[1]);
 
-                            var startMarker = new google.maps.Marker({
-                                position: startPoint,
-                                icon: {
-                                    path: google.maps.SymbolPath.CIRCLE,
-                                    scale: 5,
-                                    strokeWeight: 3,
-                                    strokeColor: color,//"#bc2c30",
-                                    //strokeOpacity: 0.8,
-                                    fillColor: color,
-                                    fillOpacity: 1
-                                },
-                                draggable: false
-                                //map: map
-                            });
                             //map.setCenter(startMarker.getPosition());
                             gstartmarkers.push(startMarker);
-
-                            var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
 
                             if((endPoint != null || endPoint != undefined) && (startPoint != endPoint)) {
                                 //var heading = google.maps.geometry.spherical.computeHeading(coords[coords.length - 2], coords[coords.length - 1]);
                                 var heading = google.maps.geometry.spherical.computeHeading(prevPoint, endPoint);
-
+                                var markerImage = {
+                                    path: car,
+                                    //url: 'img/ic_sedan_topview.png',
+                                    scaledSize: new google.maps.Size(30, 60), // size
+                                    origin: new google.maps.Point(0, 0), // origin
+                                    anchor: new google.maps.Point(10, 25), // anchor
+                                    rotation: heading,
+                                    fillColor: color,
+                                    fillOpacity: 1,
+                                    scale: .4,
+                                    //strokeColor: "#606060",
+                                    strokeOpacity: .7
+                                };
                                 var endMarker = new google.maps.Marker({
-                                    //position: coords[coords.length - 1],
-                                    position: endPoint,
-                                    icon: {
-                                        path: car,
-                                        //url: 'img/ic_sedan_topview.png',
-                                        scaledSize: new google.maps.Size(30, 60), // size
-                                        origin: new google.maps.Point(0, 0), // origin
-                                        anchor: new google.maps.Point(10, 25), // anchor
-                                        rotation: heading,
-                                        fillColor: color,
-                                        fillOpacity: 1,
-                                        scale: .8,
-                                        strokeColor: "#606060",
-                                        strokeOpacity: .7
-                                    },
                                     draggable: false,
                                     map: map
                                 });
-                                //map.setCenter(endMarker.getPosition());
+                                //debugger;
+                                endMarker.setPosition(endPoint);
+                                endMarker.setIcon(markerImage);
+
+                                if(map.getZoom() <= 17 && markerImage.scale != 0.4) {
+                                    markerImage.scale = .4;
+                                    endMarker.setOptions({icon:markerImage});
+                                } else if(map.getZoom() == 18 && markerImage.scale != 0.8) {
+                                    markerImage.scale = .8;
+                                    endMarker.setOptions({icon:markerImage});
+                                } else if(map.getZoom() > 18 && markerImage.scale != 1) {
+                                    markerImage.scale = 1;
+                                    endMarker.setOptions({icon:markerImage});
+                                }
+
                                 gendmarkers.push(endMarker);
 
                                 google.maps.event.addListener(endMarker, 'click', function() {
@@ -233,10 +233,29 @@
                                     //OpenInfo(data.key, startMarker.getPosition(), endMarker.getPosition());
                                 });
                             }
+
+                            google.maps.event.addListener(map, 'zoom_changed', function() {
+                                var zoom = map.getZoom();
+                                var picon = endMarker.getIcon();
+
+                                if(zoom <= 17 && picon.scale != 0.4) {
+                                    picon.scale=0.4;
+                                    endMarker.setOptions({icon:picon});
+                                } else if(zoom == 18 && picon.scale != 0.8) {
+                                    picon.scale=0.8;
+                                    endMarker.setOptions({icon:picon});
+                                } else if(zoom > 18 && picon.scale != 1) {
+                                    picon.scale = 1;
+                                    endMarker.setOptions({icon:picon});
+                                }
+                            });
                         }
+
                      });
                 }
             });
+
+
         }
 
         function removeMarkers() {

@@ -37,7 +37,8 @@
     var coords = [],
         colors = ["#38c6f3", "#4a5ba9", "#ff4864", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
     var gstartmarkers = [], gendmarkers = [], gtourplans = [], path = [];
-    var map, infowindow, startPoint, prevPoint, endPoint, endMarker, route, tripPath, flag, i = 0;
+    var map, infowindow, startPoint, prevPoint, endPoint, endMarker, prevLatLng, rotation, route, tripPath, flag, i = 0;
+    var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
     function initMap() {
         $("#btnStop").hide();
         var mapProp = {
@@ -100,13 +101,15 @@
 
         endMarker = new google.maps.Marker({
             //position: new google.maps.LatLng(tourPlan[tourPlan.length - 1].split(',')[0],                                            tourPlan[tourPlan.length - 1].split(',')[1]),
-            icon: {
-                //path: car,
-                url: 'img/map-marker-icon-red.png',
+            /*icon: {
+                path: car,
+                //url: 'img/map-marker-icon-red.png',
                 scaledSize: new google.maps.Size(25, 30), // size
                 origin: new google.maps.Point(0, 0), // origin
                 anchor: new google.maps.Point(10, 25), // anchor
-            },
+                fillColor: "teal",
+                fillOpacity: 1,
+            },*/
             draggable: false,
             map: map
         });
@@ -121,14 +124,37 @@
                     i = 0;
                     path = [];
                     tripPath.setPath(path);
+                    endMarker.setPosition(null);
+                    endMarker.setIcon(null);
                 }
                 else {
                     //debugger;
                     var myLatLng = new google.maps.LatLng(tourPlan[i].split(',')[0], tourPlan[i].split(',')[1]);
+                    if (i > 0)
+                    {
+                        prevLatLng = new google.maps.LatLng(tourPlan[i - 1].split(',')[0], tourPlan[i - 1].split(',')[1]);
+                        rotation = google.maps.geometry.spherical.computeHeading(prevLatLng, myLatLng);
+                    }
+
+                    var markerImage = {
+                        path: car,
+                        //url: 'img/map-marker-icon-red.png',
+                        scaledSize: new google.maps.Size(25, 30), // size
+                        origin: new google.maps.Point(0, 0), // origin
+                        anchor: new google.maps.Point(10, 25), // anchor
+                        fillColor: "teal",
+                        fillOpacity: 1,
+                        rotation: rotation,
+                        scale: .5
+                    };
+
                     path.push(new google.maps.LatLng(tourPlan[i].split(',')[0], tourPlan[i].split(',')[1]));
-                    i = parseInt(i) + 1;
+
                     tripPath.setPath(path);
                     endMarker.setPosition(myLatLng);
+                    endMarker.setIcon(markerImage);
+
+                    i = parseInt(i) + 1;
                 }
             }
         };
