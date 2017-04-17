@@ -9,21 +9,10 @@ var cities = [
     }
 ];
 
-angular.module('View', [])
-.controller('LiveTrackingController', function ($scope) {
-    $scope.title = 'Live Tracking';
-})
-.controller('TravelDistanceController', function ($scope) {
-    $scope.title = 'Tour Distance';
-})
-.controller('RouteController', function ($scope) {
-    $scope.title = 'Routes';
-})
-.controller('SpeedController', function ($scope) {
-    $scope.title = 'Speed Analysis';
-})
-.controller('MapController', function($scope) {
-    debugger;
+//Angular App Module and Controller
+angular.module('mapsApp', [])
+.controller('MapCtrl', function ($scope) {
+
     var mapOptions = {
         zoom: 14,
         center: new google.maps.LatLng(14.2601015, 80.114087),
@@ -54,7 +43,7 @@ angular.module('View', [])
 
     }
 
-    for (var i = 0; i < cities.length; i++){
+    for (i = 0; i < cities.length; i++){
         createMarker(cities[i]);
     }
 
@@ -62,4 +51,5 @@ angular.module('View', [])
         e.preventDefault();
         google.maps.event.trigger(selectedMarker, 'click');
     }
+
 });

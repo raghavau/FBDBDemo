@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('View', []);
+//angular.module('GoogleMap', []);
 
 angular.module('Index', ['View', 'ngRoute'])
 .controller('IndexController', function($rootScope){
@@ -24,6 +25,10 @@ angular.module('Index', ['View', 'ngRoute'])
     .when('/speed', {
         controller: 'SpeedController',
         templateUrl: 'views/speedanalysis.html'
+    })
+    .when('/map', {
+        controller: 'MapController',
+        templateUrl: 'views/ngmap.html'
     })
     .when('/', {
         redirectTo: '/livetracking'

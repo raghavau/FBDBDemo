@@ -2,8 +2,151 @@
 <html>
     <head>
         <title>Travel Distance</title>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type='text/css' href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type='text/css' href="css/semantic.css">
+        <style type="text/css">
+            .map {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                overflow: hidden;
+            }
+            .over_map {
+                position: absolute;
+                padding: 10px;
+                z-index: 9999;
+            }
+        </style>
     </head>
     <body>
-        <h4></h4>
+        <div id="googleMap" class="map"></div>
+        <div class="over_map">
+            <i id="btnPlay" class="ui icon play circle big green"></i>
+            <i id="btnStop" class="ui icon stop circle big red"></i>
+        </div>
     </body>
 </html>
+<script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/semantic.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry" async defer></script>
+<script type="text/javascript">
+    var coords = [],
+        colors = ["#38c6f3", "#4a5ba9", "#ff4864", "#166048", "#291f09", "#800000", "#0000ff", "#ff0000", "#512411", "#e3af0c"];
+    var gstartmarkers = [], gendmarkers = [], gtourplans = [], path = [];
+    var map, infowindow, startPoint, prevPoint, endPoint, endMarker, route, tripPath, flag, i = 0;
+    function initMap() {
+        $("#btnStop").hide();
+        var mapProp = {
+            center: new google.maps.LatLng(14.2599286, 80.1137635),
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            panControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            rotateControl: false
+        };
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var tourPlan = [
+            /*{lat:14.259252, lng:80.114189},
+            {lat:14.259355, lng:80.113772},
+            {lat:14.259487, lng:80.113226},
+            {lat:14.259612, lng:80.112657},
+            {lat:14.260274, lng:80.112869},
+            {lat:14.261002, lng:80.113067},
+            {lat:14.261627, lng:80.113256},
+            {lat:14.262274, lng:80.113484},
+            {lat:14.262001, lng:80.113947},
+            {lat:14.261700, lng:80.114508},
+            {lat:14.261509, lng:80.114925},
+            {lat:14.261141, lng:80.114834},
+            {lat:14.260230, lng:80.114523},
+            {lat:14.259818, lng:80.114387},
+            {lat:14.259494, lng:80.114296},
+            {lat:14.259656, lng:80.113818},
+            {lat:14.259855, lng:80.113840}*/
+            "14.259252, 80.114189",
+            "14.259355, 80.113772",
+            "14.259487, 80.113226",
+            "14.259612, 80.112657",
+            "14.260274, 80.112869",
+            "14.261002, 80.113067",
+            "14.261627, 80.113256",
+            "14.262274, 80.113484",
+            "14.262001, 80.113947",
+            "14.261700, 80.114508",
+            "14.261509, 80.114925",
+            "14.261141, 80.114834",
+            "14.260230, 80.114523",
+            "14.259818, 80.114387",
+            "14.259494, 80.114296",
+            "14.259656, 80.113818",
+            "14.259855, 80.113840"
+        ];
+
+        tripPath = new google.maps.Polyline({
+            geodesic: true,
+            strokeColor: 'red',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        endMarker = new google.maps.Marker({
+            //position: new google.maps.LatLng(tourPlan[tourPlan.length - 1].split(',')[0],                                            tourPlan[tourPlan.length - 1].split(',')[1]),
+            icon: {
+                //path: car,
+                url: 'img/map-marker-icon-red.png',
+                scaledSize: new google.maps.Size(25, 30), // size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(10, 25), // anchor
+            },
+            draggable: false,
+            map: map
+        });
+
+        //debugger;
+        tripPath.setMap(map);
+
+        route = function(){
+            //debugger;
+            if(flag == 1){
+                if(i == tourPlan.length){
+                    i = 0;
+                    path = [];
+                    tripPath.setPath(path);
+                }
+                else {
+                    //debugger;
+                    var myLatLng = new google.maps.LatLng(tourPlan[i].split(',')[0], tourPlan[i].split(',')[1]);
+                    path.push(new google.maps.LatLng(tourPlan[i].split(',')[0], tourPlan[i].split(',')[1]));
+                    i = parseInt(i) + 1;
+                    tripPath.setPath(path);
+                    endMarker.setPosition(myLatLng);
+                }
+            }
+        };
+
+        $("#btnPlay").click(function(){
+            flag = 1;
+            $("#btnPlay").hide();
+            $("#btnStop").show();
+            setInterval(route, 1000);
+        });
+        $("#btnStop").click(function(){
+            flag = 0;
+            $("#btnPlay").show();
+            $("#btnStop").hide();
+            clearInterval(route);
+        });
+    }
+    $(document).ready(function(){
+        $("#btnStop").hide();
+    });
+</script>
