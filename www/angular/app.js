@@ -14,21 +14,9 @@ angular.module('Index', ['View', 'ngRoute'])
         controller: 'LiveTrackingController',
         templateUrl: 'views/livetracking.html'
     })
-    .when('/distance', {
-        controller: 'TravelDistanceController',
-        templateUrl: 'views/traveldistance.html'
-    })
-    .when('/routes', {
-        controller: 'RouteController',
-        templateUrl: 'views/routes.html'
-    })
-    .when('/speed', {
-        controller: 'SpeedController',
-        templateUrl: 'views/speedanalysis.html'
-    })
-    .when('/map', {
-        controller: 'MapController',
-        templateUrl: 'views/ngmap.html'
+    .when('/data', {
+        controller: 'DataController',
+        templateUrl: 'views/data.html'
     })
     .when('/', {
         redirectTo: '/livetracking'
