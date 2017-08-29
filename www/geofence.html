@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Live Tracking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/semantic.css">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <link rel="stylesheet" type="text/css" href="css/gmap.css">
+        <style type="text/css">
+            body {
+                font-family: "Lato", sans-serif;
+                overflow: hidden;
+            }
+            .headerbar{
+                /*background-color: #4f9c8b;*/
+                background: linear-gradient(to bottom, #4682B4 50%, #87CEFA 100%);
+                color: white;
+                font-size: 25px;
+                font-family: Calibri;
+                left: 0px;
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                z-index: 7;
+                height:50px;
+                padding-top:5px;
+                font-weight: bolder; 
+                padding-left: 5px; 
+                text-shadow: 1px 1px 1px #000;
+            }
+            .controls {
+                background-color: white;
+                position: absolute;
+                z-index: 7;
+                padding: 10px;
+                top: 50px;
+                right: 0px;
+                height: 100%;
+            }
+            #color-palette {
+                clear: both;
+            }
+            .color-button {
+                width: 20px;
+                height: 20px;
+                font-size: 0;
+                margin: 2px;
+                float: left;
+                cursor: pointer;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="loading" class="loading">Loading&#8230;</div>
+    <div id="main">
+        <span class="text-left headerbar"><img src="images/Kite4.png" height="26px" width="32px" />KyTe - Draw Geofence</span>
+        <div class="controls">
+            <div id="color-palette"></div><br>
+            <form class="ui form">
+                <div class="field required">
+                    <label>File Name</label>
+                    <input type="text" id="filename" placeholder="File Name">
+                </div>
+                <div class="field">
+                    <input type="button" class="ui fluid teal button" id="save" value="Save" /><br>
+                    <input type="button" class="ui fluid negative button" id="clear" value="Clear" />
+                </div>
+                <div class="field required">
+                    <label>Select Fence</label>
+                    <div class="ui search selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Search or Select Fence</div>
+                        <div class="menu" id="combofiles"></div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>TripId</label>
+                    <input type="text" id="tripid" placeholder="Enter TripId">
+                </div>
+                <div class="field">
+                    <input type="button" class="ui fluid blue button" id="loadfence" value="Load Fence" /><br>
+                    <input type="button" class="ui fluid orange button" id="clearfence" value="Clear Fence" />
+                </div>
+            </form>
+        </div>
+        <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 0px; left: 0px; overflow: hidden;"></div>
+    </div>    
+</body>
+</html>
+<script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
+<script type="text/javascript" src="js/semantic.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry,drawing" async defer></script>
+<script type="text/javascript" src="js/geoxml3.js"></script>
+<script type="text/javascript">
+    var coords = [], colors = ['#1E90FF', '#32CD32', '#e5703d', '#ff0000', '#7f7f7f'], all_overlays = [];
+    var colorButtons = [], polygons = [];
+    var map, infowindow, hoverwindow, startPoint, prevPoint, endPoint, drawingManager, selectedShape, i, propid = 0, 
+        propfillColor, drawstatus = false, totalcoords, tripPlanGreen, tripPlanRed;
+    
+    function initMap() {
+        $("#loading").hide();
+        $('.ui.dropdown').dropdown();
+        
+        tripPlanGreen = new google.maps.Polyline();
+        tripPlanRed = new google.maps.Polyline();
+        
+        LoadFiles();
+        var mapProp = {
+            center: new google.maps.LatLng(14.2599286, 80.1137635),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            panControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            rotateControl: false
+        };
+
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                
+        drawingManager = new google.maps.drawing.DrawingManager({
+            //drawingMode: google.maps.drawing.OverlayType.POLYGON,
+            drawingControl: true,
+            drawingControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER,
+                //drawingModes: ['marker', 'circle', 'polygon', 'polyline', 'rectangle']
+                drawingModes: ['polygon']
+            },
+            //markerOptions: {icon: 'images/map-marker-icon-red.png', scaledSize: new google.maps.Size(10, 20), scale: .4},
+            polygonOptions: {
+                //fillColor: '#428bca',
+                fillOpacity: .3,
+                strokeWeight: 0,
+                clickable: true,
+                editable: true,
+                zIndex: 1
+            }
+        });
+        drawingManager.setMap(map);
+        
+        google.maps.event.addListener(drawingManager, 'overlaycomplete', function(event) {
+            //debugger;
+            
+            all_overlays.push(event);
+            drawingManager.setDrawingMode(null);
+            var newShape = event.overlay;
+            newShape.type = event.type;
+            google.maps.event.addListener(newShape, 'click', function() {
+                setSelection(newShape);
+            });
+            setSelection(newShape);
+            addMapData(event.overlay.getPath(), propfillColor);            
+            
+            google.maps.event.addListener(event.overlay.getPath(), 'set_at', function(features) {
+                addMapData(event.overlay.getPath(), propfillColor);
+                
+                map.data.forEach(function(feature) {
+                    if (feature.getProperty('id') == (propid - 1)) {
+                        map.data.remove(feature);
+                    }
+                });
+            });
+
+            google.maps.event.addListener(event.overlay.getPath(), 'insert_at', function() {
+                addMapData(event.overlay.getPath(), propfillColor);
+                
+                map.data.forEach(function(feature) {
+                    if (feature.getProperty('id') == (propid - 1)) {
+                        map.data.remove(feature);
+                    }
+                });
+            });
+            drawstatus = true;
+        });
+        
+        google.maps.event.addListener(drawingManager, 'drawingmode_changed', clearSelection);
+        google.maps.event.addListener(map, 'click', clearSelection);
+        //google.maps.event.addDomListener(document.getElementById('delete'), 'click', deleteSelectedShape);
+        google.maps.event.addDomListener(document.getElementById('clear'), 'click', deleteAllShape);
+        google.maps.event.addDomListener(document.getElementById('save'), 'click', saveSelectedShape);
+        //google.maps.event.addDomListener(document.getElementById('save'), 'click', saveAllShape);
+        buildColorPalette();
+    }
+    
+    function addMapData(obj, fillColor) {
+        propid++;
+        map.data.add(new google.maps.Data.Feature({
+            geometry: new google.maps.Data.Polygon([obj.getArray()]),
+            properties: {
+                id: propid,
+                fillColor: propfillColor,
+                fillOpacity: 0.35,
+                strokeColor: propfillColor,
+                strokeOpacity: 0.8,
+                strokeWeight: 0
+            }
+        }));
+        map.data.setStyle({
+            strokeWeight: 0
+        });
+    }
+    
+    function clearSelection() {
+        if (selectedShape) {
+            selectedShape.setEditable(false);
+            selectedShape = null;
+        }
+    }
+    
+    function setSelection(shape) {
+        clearSelection();
+        selectedShape = shape;
+        shape.setEditable(true);
+        selectColor(shape.get('fillColor') || shape.get('strokeColor'));
+    }
+    
+    function selectColor(color) {
+        selectedColor = color;
+        for (var i = 0; i < colors.length; ++i) {
+            var currColor = colors[i];
+            colorButtons[currColor].style.border = currColor == color ? '2px solid #789' : '2px solid #fff';
+        }
+        //debugger;
+        propfillColor = color;
+        var polygonOptions = drawingManager.get('polygonOptions');
+        polygonOptions.fillColor = color;
+        polygonOptions.strokeWidth = 0;
+        drawingManager.set('polygonOptions', polygonOptions);
+    }
+    
+    function deleteSelectedShape() {
+        if (selectedShape) {
+            selectedShape.setMap(null);
+        }
+    }
+
+    function deleteAllShape() {
+        for (var i = 0; i < all_overlays.length; i++) {
+            all_overlays[i].overlay.setMap(null);
+        }
+        all_overlays = [];
+        map.data.forEach(function(feature) {
+            map.data.remove(feature);
+        });
+        propid = 0;
+    }
+    
+    function saveSelectedShape(){
+        //debugger;
+        var jsonData = null;
+        if($("#filename").val().trim() == ""){
+            alert("Please Enter File Name");
+            $("#filename").focus();
+            return false;
+        }
+        else if(!drawstatus) {
+            alert("Please Draw Shape.");
+            return false;
+        }
+        else {
+            $("#loading").show();
+            map.data.toGeoJson(function(obj) {
+                jsonData = JSON.stringify(obj);
+                //debugger;
+                var fileData = {};
+                fileData.FileName = $("#filename").val();
+                fileData.JSONData = jsonData;
+
+                $.ajax({
+                    type: "POST",
+                    url: 'http://172.168.8.151/KyteApiDemo/api/ShapeFile/AddShape',
+                    dataType: "json",
+                    data: fileData,
+                    async: true,
+                    success: function (result) {
+                        //debugger;
+                        selectedShape = null;
+                        $("#filename").val("");
+                        $("#description").val("");
+                        if(result.data == "Success") {
+                            alert('Shape File Saved Successfully.');
+                            deleteAllShape();
+                            map.data.forEach(function(feature) {
+                                map.data.remove(feature);
+                            });
+                            propid = 0;
+                            window.location.href = 'geofence.html';
+                        }
+                        else {
+                            alert('Failed to Save Shape File.');
+                        }
+                    },
+                    error: function (result) {
+                        $("#filename").val("");
+                        $("#description").val("");
+                        alert('Failed to Save Shape File.');
+                    }
+                });
+            });
+            $("#loading").hide();
+        }
+    }
+    
+    function saveAllShape(){
+        var jsonData = null;
+        for(var i = 0; i <= all_overlays.length - 1; i++) {
+            var polygonBounds = all_overlays[i].overlay.getPath();
+            var coordinates = [];
+
+            for(var i = 0 ; i < polygonBounds.length ; i++)
+                coordinates.push(polygonBounds.getAt(i).lat(), polygonBounds.getAt(i).lng());
+            if($("#filename").val().trim() == ""){
+                alert("Enter File Name");
+                $("#filename").focus();
+                return false;
+            }
+            else if(!drawstatus) {
+                alert("Please Draw Shape.");
+                return false;
+            }
+            else {
+                map.data.add(new google.maps.Data.Feature({
+                    geometry: new google.maps.Data.Polygon([polygonBounds.getArray()])
+                }));
+                $("#loading").show();
+                map.data.toGeoJson(function(obj) {
+                    jsonData = JSON.stringify(obj);
+                    //debugger;
+                    var fileData = {};
+                    fileData.FileName = $("#filename").val();
+                    fileData.JSONData = jsonData;
+                    
+                    $.ajax({
+                        type: "POST",
+                        url: 'http://172.168.8.151/KyteApiDemo/api/ShapeFile/AddShape',
+                        dataType: "json",
+                        data: fileData,
+                        async: true,
+                        success: function (result) {
+                            //debugger;
+                            selectedShape = null;
+                            $("#filename").val("");
+                            $("#description").val("");
+                            if(result.data == "Success") {
+                                alert('Shape File Saved Successfully.');
+                                deleteAllShape();
+                                map.data.forEach(function(feature) {
+                                    map.data.remove(feature);
+                                });
+                                propid = 0;
+                                window.location.href = 'geofence.html';
+                            }
+                            else {
+                                alert('Failed to Save Shape File.');
+                            }
+                        },
+                        error: function (result) {
+                            $("#filename").val("");
+                            $("#description").val("");
+                            alert('Failed to Save Shape File.');
+                        }
+                    });
+                });
+                $("#loading").hide();
+            }
+        }
+    }
+    
+    function setSelectedShapeColor(color) {
+        propfillColor = color;
+        if (selectedShape) {
+            /*map.data.forEach(function(feature) {
+                if (feature.getProperty('fillColor') == selectedShape.get('fillColor') &&
+                    feature.getProperty('fillColor') != propfillColor) {
+                    debugger;
+                    var prevId = feature.getProperty('id');
+                    addMapData(selectedShape.getPath(), propfillColor);
+                    map.data.forEach(function(feature) {
+                        if (feature.getProperty('id') == (prevId)) {
+                            map.data.remove(feature);
+                        }
+                    });
+                }
+            });*/
+        
+            if (selectedShape.type == google.maps.drawing.OverlayType.POLYLINE) {
+                selectedShape.set('strokeColor', color);
+            } else {
+                selectedShape.set('fillColor', color);
+            }
+        }
+    }
+
+    function makeColorButton(color) {
+        var button = document.createElement('span');
+        button.className = 'color-button';
+        button.style.backgroundColor = color;
+        google.maps.event.addDomListener(button, 'click', function() {
+            selectColor(color);
+            setSelectedShapeColor(color);
+        });
+
+        return button;
+    }
+
+    function buildColorPalette() {
+        var colorPalette = document.getElementById('color-palette');
+        for (var i = 0; i < colors.length; ++i) {
+            var currColor = colors[i];
+            var colorButton = makeColorButton(currColor);
+            colorPalette.appendChild(colorButton);
+            colorButtons[currColor] = colorButton;
+        }
+        propfillColor = colors[0];
+        selectColor(colors[0]);
+    }
+    
+    function LoadFiles() {
+        $.ajax({
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            url: 'http://172.168.8.151/KyteApiDemo/api/ShapeFile/GetFiles',
+            dataType: "json",
+            data: '{}',
+            success: function (result) {
+                $.each(result.data, function (key, value) {
+                    $("#combofiles").append("<div id='comboitem' class='item' data-value='" + value + "'>" + value + "</div>");
+                });
+            },
+            error: function (result) {
+                console.log(result);
+                window.location.href = 'VisitDetails.html?reqid=' + $("#hidRequestId").val() + '&mail=' + $("#hidEmail").val();
+            }
+        });
+        
+        $("#loadfence").click(function(){
+            //debugger;
+            
+            var selectedValue = $("#combofiles .selected").html();
+            if(selectedValue == undefined) {
+                alert('Please select File to Load');
+                return false;
+            }
+            else {
+                $.getJSON("http://172.168.8.151/KyteApiDemo/api/ShapeFile/ReadShape/" + selectedValue, function(json) {
+                    removePolygons();
+                    polygons = [];
+                    $.each(json.features, function(key, value) {
+                        var coordinates = [], color, opacity, strokeColor, strokeOpacity, strokeWidth;
+                        color = value.properties.fillColor;
+                        opacity = value.properties.fillOpacity;
+                        strokeColor = value.properties.strokeColor;
+                        strokeOpacity = value.properties.strokeOpacity;
+                        strokeWidth = value.properties.strokeWeight;
+
+                        //debugger;
+                        $.each(value.geometry.coordinates[0], function(obj, objvalue){
+                            coordinates.push(new google.maps.LatLng(objvalue[1], objvalue[0]));
+                        });
+                        
+                        var polygon = new google.maps.Polygon({
+                            path: coordinates,
+                            fillColor: color,
+                            fillOpacity: opacity,
+                            strokeColor: strokeColor,
+                            strokeOpacity: strokeOpacity,
+                            strokeWeight: strokeWidth,
+                            map: map,
+                            zIndex: 1
+                        });
+                        polygons.push(polygon);
+                        
+                        var bounds = new google.maps.LatLngBounds();
+                        for (i = 0; i < coordinates.length; i++) {
+                            bounds.extend(coordinates[i]);
+                        }
+                        map.fitBounds(bounds);
+                        map.panTo(new google.maps.LatLng(bounds.getCenter().lat(), bounds.getCenter().lng()));
+                    });
+                });
+                getCoordinates("6262017170852","14.261215, 80.089255");
+                checkCoordinates();
+            }
+        });
+        
+        $("#clearfence").click(function() {
+            /*removePolygons();
+            polygons = [];
+            $("#combofiles").remove();
+            $("#tripid").val("");
+            LoadFiles();
+            tripPlanGreen.setMap(null);
+            tripPlanRed.setMap(null);*/
+            window.location.href = 'geofence.html';
+        });
+    }
+    
+    function checkCoordinates() {
+        var markCoords = [], tripCoords = [], tripCoordsRed = [], tripCoordsGreen = [], distance = 0;
+        //debugger;
+        if($("#tripid").val() != "") {
+            tripPlanGreen.setMap(null);
+            tripPlanRed.setMap(null);
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: 'http://61.0.225.169/AviationApi/api/TripDetails/ReadLocationLog/' + $("#tripid").val(),
+                dataType: "json",
+                data: '{}',
+                async: true,
+                success: function (result) {
+                    //debugger;
+                    $.each(result.Coordinates, function (key, data) {
+                        //tripCoords.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+
+                        for(var i = 0; i < polygons.length; i++) {
+                            //debugger;
+                            var contain = google.maps.geometry.poly.containsLocation(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]), polygons[i]);
+
+                            if(contain) 
+                                tripCoordsGreen.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+                            else 
+                                tripCoordsRed.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+                        }
+
+                        /*if(tripCoords.length > 1){
+                            if(tripCoords[tripCoords.length - 2] != tripCoords[tripCoords.length - 1]) {
+                                var mts = google.maps.geometry.spherical.computeDistanceBetween
+                                (tripCoords[tripCoords.length - 2], tripCoords[tripCoords.length - 1]);
+                                distance = parseFloat(distance) + parseFloat(mts);
+                            }
+                        }*/
+                    });
+
+                    tripPlanGreen = new google.maps.Polyline({
+                        strokeColor: 'green',
+                        strokeWeight: 3
+                    });
+                    tripPlanGreen.setPath(tripCoordsGreen);
+                    tripPlanGreen.setMap(map);
+
+                    tripPlanRed = new google.maps.Polyline({
+                        strokeColor: 'red',
+                        strokeWeight: 1
+                    });
+                    tripPlanRed.setPath(tripCoordsRed);
+                    tripPlanRed.setMap(map);
+                },
+                error: function (result) {
+                    alert('No Data Found.');
+                }
+            });
+        }        
+    }
+    
+    function getCoordinates(fenceId, coords) {
+        var fenceCoordinates = [];
+        if(fenceId != "") {
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: 'http://61.0.225.169/KyteApiDemo/api/GeoFence/GetFence/' + fenceId,
+                dataType: "json",
+                data: '{}',
+                async: false,
+                success: function (result) {
+                    //debugger;
+                    $.each(result.Coordinates, function (key, data) {
+                        fenceCoordinates.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+                    });
+                    var polygon = new google.maps.Polygon({
+                        path: fenceCoordinates/*,
+                        map: map,
+                        strokeColor: "red",
+                        strokeWeight: 1*/
+                    });
+                    var contain = google.maps.geometry.poly.containsLocation(new google.maps.LatLng(coords.split(',')[0], coords.split(',')[1]), polygon);
+                    alert(contain);
+                },
+                error: function (result) {
+                    alert('No Data Found.');
+                }
+            });
+        }
+        return false;
+    }
+        
+    function removePolygons() {
+        for(i = 0; i < polygons.length; i++) {
+            if (polygons.length > 0 && polygons[i].getMap() != null) {
+                polygons[i].setMap(null);
+            }
+        }
+    }
+
+</script>

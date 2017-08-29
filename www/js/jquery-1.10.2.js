@@ -8654,13 +8654,12 @@
         jQuery.ajaxTransport(function (s) {
             // Cross domain only allowed if supported through XMLHttpRequest
             if (!s.crossDomain || jQuery.support.cors) {
-
                 var callback;
 
                 return {
                     send: function (headers, complete) {
-
                         // Get a new xhr
+                        
                         var handle, i,
 						xhr = s.xhr();
 

@@ -1,0 +1,2458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bollard.KML</name>
+	<Style id="line1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Line Features</name>
+		<description>Line Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.21004896606e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1266560166,14.2456678793,0 80.12666188980001,14.2456771994,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.21004896606e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1266560166,14.2456678793,0 80.12666188980001,14.2456771994,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.21289118522e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1266127857,14.2457028676,0 80.1266097676,14.2456980838,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.21289118522e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1266127857,14.2457028676,0 80.1266097676,14.2456980838,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.39547283409e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12666188980001,14.2456771994,0 80.1266147075,14.2457059132,0 80.1266127857,14.2457028676,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.39547283409e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12666188980001,14.2456771994,0 80.1266147075,14.2457059132,0 80.1266127857,14.2457028676,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.20835255088e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12646315950001,14.2457934476,0 80.1264690253,14.2458027541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.20835255088e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12646315950001,14.2457934476,0 80.1264690253,14.2458027541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01672337465e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1264218412,14.2458314679,0 80.1264169021,14.2458236394,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01672337465e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1264218412,14.2458314679,0 80.1264169021,14.2458236394,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.00007016532e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1264218412,14.2458314679,0 80.1264492527,14.2458147874,0 80.1264690253,14.2458027541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.25510482912e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262695449,14.2459195084,0 80.1262735525,14.2459258661,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.25510482912e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262695449,14.2459195084,0 80.1262735525,14.2459258661,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.76100652435e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12627537749999,14.2459287632,0 80.1262735525,14.2459258661,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.61026772122e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262250084,14.2459524278,0 80.1262232552,14.2459496476,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.61026772122e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262250084,14.2459524278,0 80.1262232552,14.2459496476,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.55781578865e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262281942,14.245957477,0 80.1262250084,14.2459524278,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.55781578865e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1262281942,14.245957477,0 80.1262250084,14.2459524278,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.99998552236e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12627537749999,14.2459287632,0 80.1262281942,14.245957477,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.99998552236e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12627537749999,14.2459287632,0 80.1262281942,14.245957477,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.24849386500e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1260322569,14.2460786208,0 80.1260301932,14.2460753495,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.24849386500e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1260322569,14.2460786208,0 80.1260301932,14.2460753495,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.79352297988e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12607648300001,14.2460452103,0 80.1260823165,14.2460544642,0 80.1260351322,14.246083178,0 80.1260322569,14.2460786208,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.79352297988e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12607648300001,14.2460452103,0 80.1260823165,14.2460544642,0 80.1260351322,14.246083178,0 80.1260322569,14.2460786208,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.53489054773e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12588426080001,14.2461703636,0 80.1258850052,14.2461715462,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.53489054773e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12588426080001,14.2461703636,0 80.1258850052,14.2461715462,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.55148291536e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12588915649999,14.2461781323,0 80.1258850052,14.2461715462,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.60420853706e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12583875049999,14.2462017379,0 80.1258379711,14.2462005028,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.60420853706e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12583875049999,14.2462017379,0 80.1258379711,14.2462005028,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.71962543075e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12588915649999,14.2461781323,0 80.12584417780001,14.2462055043,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.71962543075e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12588915649999,14.2461781323,0 80.12584417780001,14.2462055043,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.63413694296e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1258419731,14.246206846,0 80.12583875049999,14.2462017379,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.63413694296e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1258419731,14.246206846,0 80.12583875049999,14.2462017379,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.80360090846e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1258419731,14.246206846,0 80.12584417780001,14.2462055043,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.47545271699e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12569890899999,14.2462911255,0 80.1257049677,14.2462979681,0 80.12569358099999,14.2463053553,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.47545271699e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12569890899999,14.2462911255,0 80.1257049677,14.2462979681,0 80.12569358099999,14.2463053553,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.29143439668e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12569358099999,14.2463053553,0 80.1256604615,14.2463268435,0 80.12565440269999,14.2463200018,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.29143439668e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12569358099999,14.2463053553,0 80.1256604615,14.2463268435,0 80.12565440269999,14.2463200018,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.58996280562e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255782976,14.2463466467,0 80.1255790477,14.2463516472,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.58996280562e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255782976,14.2463466467,0 80.1255790477,14.2463516472,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.57580865913e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255790477,14.2463516472,0 80.1255796622,14.2463557405,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.93372969656e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255237158,14.2463574875,0 80.1255233208,14.2463548632,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.93372969656e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255237158,14.2463574875,0 80.1255233208,14.2463548632,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.72329512929e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255796622,14.2463557405,0 80.125524691,14.246363958,0 80.1255237158,14.2463574875,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.72329512929e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255796622,14.2463557405,0 80.125524691,14.246363958,0 80.1255237158,14.2463574875,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.71113204229e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1253492533,14.2463809241,0 80.12534975120001,14.2463842439,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.71113204229e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1253492533,14.2463809241,0 80.12534975120001,14.2463842439,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.46991869276e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1253506206,14.2463900314,0 80.12534975120001,14.2463842439,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.01676688337e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1253506206,14.2463900314,0 80.1252956485,14.2463982488,0 80.1252942783,14.2463891541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.01676688337e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1253506206,14.2463900314,0 80.1252956485,14.2463982488,0 80.1252942783,14.2463891541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.27591422162e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1251202089,14.2464152021,0 80.1251213205,14.2464226052,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.27591422162e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1251202089,14.2464152021,0 80.1251213205,14.2464226052,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.83538163883e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.125066154,14.2464295381,0 80.125065233,14.246423424,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.83538163883e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.125066154,14.2464295381,0 80.125065233,14.246423424,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.33227158877e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1250666032,14.2464325187,0 80.125066154,14.2464295381,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.33227158877e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1250666032,14.2464325187,0 80.125066154,14.2464295381,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.18969371086e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1251213205,14.2464226052,0 80.1251215753,14.2464243022,0 80.1250666032,14.2464325187,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.18969371086e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1251213205,14.2464226052,0 80.1251215753,14.2464243022,0 80.1250666032,14.2464325187,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01676532206e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1248375524,14.2464667575,0 80.1248361823,14.2464576628,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01676532206e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1248375524,14.2464667575,0 80.1248361823,14.2464576628,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.01294371582e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1248911635,14.2464494799,0 80.1248925245,14.2464585411,0 80.1248375524,14.2464667575,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.01294371582e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1248911635,14.2464494799,0 80.1248925245,14.2464585411,0 80.1248375524,14.2464667575,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00860139364e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1246621191,14.2464837575,0 80.1246634737,14.2464927798,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00860139364e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1246621191,14.2464837575,0 80.1246634737,14.2464927798,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.80859292654e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12460764479999,14.246495309,0 80.1246071314,14.2464919024,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.80859292654e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12460764479999,14.246495309,0 80.1246071314,14.2464919024,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.63582371775e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1246634737,14.2464927798,0 80.1246085025,14.2465009971,0 80.12460764479999,14.246495309,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.63582371775e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1246634737,14.2464927798,0 80.1246085025,14.2465009971,0 80.12460764479999,14.246495309,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00320199905e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12437945070001,14.2465352355,0 80.12437809950001,14.246526262,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00320199905e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12437945070001,14.2465352355,0 80.12437809950001,14.246526262,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.00436032627e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1244330745,14.2465180349,0 80.1244344238,14.2465270183,0 80.12437945070001,14.2465352355,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.00436032627e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1244330745,14.2465180349,0 80.1244344238,14.2465270183,0 80.12437945070001,14.2465352355,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.42948349347e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1242040363,14.2465523554,0 80.1242050339,14.2465590014,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.42948349347e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1242040363,14.2465523554,0 80.1242050339,14.2465590014,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.52104620418e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12420537280001,14.2465612565,0 80.1242050339,14.2465590014,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.99897595473e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12420537280001,14.2465612565,0 80.1241504006,14.2465694737,0 80.124149054,14.2465605382,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.99897595473e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12420537280001,14.2465612565,0 80.1241504006,14.2465694737,0 80.124149054,14.2465605382,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.10129199260e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239749853,14.2465865934,0 80.1239752672,14.2465884732,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.10129199260e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239749853,14.2465865934,0 80.1239752672,14.2465884732,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.94618087528e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239213496,14.2466037117,0 80.12392000929999,14.246594815,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.94618087528e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239213496,14.2466037117,0 80.12392000929999,14.246594815,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.78492533490e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239752672,14.2465884732,0 80.1239763218,14.2465954946,0 80.1239213496,14.2466037117,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.78492533490e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239752672,14.2465884732,0 80.1239763218,14.2465954946,0 80.1239213496,14.2466037117,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.91403777156e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1237459397,14.2466208647,0 80.1237472708,14.2466297333,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.91403777156e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1237459397,14.2466208647,0 80.1237472708,14.2466297333,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.99027834935e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1237472708,14.2466297333,0 80.12369229949999,14.2466379503,0 80.1236909646,14.2466290917,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.99027834935e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1237472708,14.2466297333,0 80.12369229949999,14.2466379503,0 80.1236909646,14.2466290917,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.96944270794e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1235164293,14.2466552109,0 80.12351749929999,14.2466623399,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.96944270794e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1235164293,14.2466552109,0 80.12351749929999,14.2466623399,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.13565749893e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12351749929999,14.2466623399,0 80.1235177857,14.2466642504,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.39966877039e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1234624511,14.2466700567,0 80.1234614543,14.2466634378,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.39966877039e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1234624511,14.2466700567,0 80.1234614543,14.2466634378,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.26941768916e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1235177857,14.2466642504,0 80.1234628144,14.2466724674,0 80.1234624511,14.2466700567,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.26941768916e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1235177857,14.2466642504,0 80.1234628144,14.2466724674,0 80.1234624511,14.2466700567,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.50001909017e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232873817,14.2466894871,0 80.12328812,14.2466944072,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.50001909017e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232873817,14.2466894871,0 80.12328812,14.2466944072,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.12822941369e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232330971,14.2467023012,0 80.1232324067,14.246697714,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.12822941369e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232330971,14.2467023012,0 80.1232324067,14.246697714,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.06261405545e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232337794,14.2467068295,0 80.1232330971,14.2467023012,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.06261405545e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232337794,14.2467068295,0 80.1232330971,14.2467023012,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.47021046751e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12328812,14.2466944072,0 80.1232887517,14.2466986135,0 80.1232337794,14.2467068295,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.47021046751e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12328812,14.2466944072,0 80.1232887517,14.2466986135,0 80.1232337794,14.2467068295,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01676532219e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1230047345,14.2467411055,0 80.12300336449999,14.2467320108,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01676532219e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1230047345,14.2467411055,0 80.12300336449999,14.2467320108,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.02022723790e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1230583359,14.2467237631,0 80.12305970680001,14.2467328895,0 80.1230047345,14.2467411055,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.02022723790e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1230583359,14.2467237631,0 80.12305970680001,14.2467328895,0 80.1230047345,14.2467411055,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.97024606470e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12282930630001,14.2467581421,0 80.1228299742,14.2467625881,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.97024606470e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12282930630001,14.2467581421,0 80.1228299742,14.2467625881,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.07334257701e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1228299742,14.2467625881,0 80.1228306555,14.2467671264,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.69464327956e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1227750985,14.2467714626,0 80.12277433129999,14.2467663688,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.69464327956e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1227750985,14.2467714626,0 80.12277433129999,14.2467663688,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.43376915718e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1227750985,14.2467714626,0 80.12277568419999,14.2467753432,0 80.1228306555,14.2467671264,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.43376915718e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1227750985,14.2467714626,0 80.12277568419999,14.2467753432,0 80.1228306555,14.2467671264,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.40726968266e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12260026769999,14.246792462,0 80.1226011289,14.2467981934,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.40726968266e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12260026769999,14.246792462,0 80.1226011289,14.2467981934,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.54326008887e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1226016042,14.2468013631,0 80.1226011289,14.2467981934,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.95854077296e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12254608870001,14.2468059742,0 80.1225452863,14.2468006443,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.95854077296e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12254608870001,14.2468059742,0 80.1225452863,14.2468006443,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.40302310077e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1226016042,14.2468013631,0 80.1225466328,14.2468095799,0 80.12254608870001,14.2468059742,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.40302310077e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1226016042,14.2468013631,0 80.1225466328,14.2468095799,0 80.12254608870001,14.2468059742,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.79236115807e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223712172,14.2468266984,0 80.122372129,14.2468327745,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.79236115807e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223712172,14.2468266984,0 80.122372129,14.2468327745,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.15816861861e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.122372129,14.2468327745,0 80.1223725537,14.2468355995,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.67015417014e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223168702,14.246839097,0 80.1223162412,14.2468349196,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.67015417014e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223168702,14.246839097,0 80.1223162412,14.2468349196,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.52760423332e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223725537,14.2468355995,0 80.1223175814,14.2468438163,0 80.1223168702,14.246839097,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.52760423332e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223725537,14.2468355995,0 80.1223175814,14.2468438163,0 80.1223168702,14.246839097,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.91319751602e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1221421703,14.2468609681,0 80.12214350230001,14.2468698358,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 9.91319751602e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1221421703,14.2468609681,0 80.12214350230001,14.2468698358,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.06147617736e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12208787749999,14.2468737222,0 80.1220871961,14.2468691947,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.06147617736e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12208787749999,14.2468737222,0 80.1220871961,14.2468691947,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.48411573072e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12214350230001,14.2468698358,0 80.1220885299,14.2468780524,0 80.12208787749999,14.2468737222,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.48411573072e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12214350230001,14.2468698358,0 80.1220885299,14.2468780524,0 80.12208787749999,14.2468737222,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.92076219729e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1219126596,14.2468953127,0 80.12191345479999,14.2469006091,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 5.92076219729e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1219126596,14.2468953127,0 80.12191345479999,14.2469006091,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 4.18448658104e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12191401680001,14.2469043523,0 80.12191345479999,14.2469006091,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.75349783429e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1218585944,14.2469095792,0 80.1218576844,14.2469035384,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.75349783429e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1218585944,14.2469095792,0 80.1218576844,14.2469035384,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.33414857926e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12191401680001,14.2469043523,0 80.1218590454,14.2469125689,0 80.1218585944,14.2469095792,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.33414857926e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12191401680001,14.2469043523,0 80.1218590454,14.2469125689,0 80.1218585944,14.2469095792,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.02014230869e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12168361160001,14.2469295874,0 80.1216849824,14.2469387129,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.02014230869e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12168361160001,14.2469295874,0 80.1216849824,14.2469387129,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.78120857602e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1216849824,14.2469387129,0 80.1216595009,14.246942522,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.78120857602e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1216849824,14.2469387129,0 80.1216595009,14.246942522,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01909925417e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12163001,14.2469469294,0 80.1216286364,14.2469378139,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.01909925417e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12163001,14.2469469294,0 80.1216286364,14.2469378139,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.21879298668e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12163001,14.2469469294,0 80.1216595009,14.246942522,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.02014230869e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1214545663,14.2469638618,0 80.1214559371,14.2469729873,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.02014230869e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1214545663,14.2469638618,0 80.1214559371,14.2469729873,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.06475267577e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12140041169999,14.2469775339,0 80.12139959469999,14.2469721091,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.06475267577e-001]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12140041169999,14.2469775339,0 80.12139959469999,14.2469721091,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.41029161717e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1214559371,14.2469729873,0 80.1214009647,14.2469812038,0 80.12140041169999,14.2469775339,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 6.41029161717e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1214559371,14.2469729873,0 80.1214009647,14.2469812038,0 80.12140041169999,14.2469775339,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00425997495e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1212255363,14.2469982392,0 80.12122688540001,14.2470072227,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00425997495e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1212255363,14.2469982392,0 80.12122688540001,14.2470072227,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.49675359244e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12122688540001,14.2470072227,0 80.12120401,14.2470106418,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 2.49675359244e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12122688540001,14.2470072227,0 80.12120401,14.2470106418,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00321690632e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1211719131,14.2470154391,0 80.1211705611,14.2470064656,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 1.00321690632e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1211719131,14.2470154391,0 80.1211705611,14.2470064656,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 3.50324796825e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1211719131,14.2470154391,0 80.12120401,14.2470106418,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686098382e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12689584810001,14.2507219236,0 80.1268956131,14.2507128855,0 80.126842766,14.2507207168,0 80.12684299999999,14.2507297549,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686388807e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12666570170001,14.25075797,0 80.1266654667,14.2507489318,0 80.1266126196,14.2507567631,0 80.1266128545,14.2507658012,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686388993e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12643201980001,14.2507935601,0 80.12643178490001,14.250784522,0 80.1263789377,14.2507923532,0 80.1263791726,14.2508013914,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.64097955999e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1270384022,14.2508201084,0 80.12704661870001,14.2508159245,0 80.127016144,14.2507730894,0 80.1270096614,14.2507778293,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76696269541e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.126207427,14.2508277667,0 80.1262071921,14.2508187286,0 80.126154344,14.2508265597,0 80.1261545789,14.2508355978,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686098408e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1259737451,14.2508633564,0 80.1259735101,14.2508543183,0 80.1259206629,14.2508621494,0 80.1259208969,14.2508711875,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76676393059e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1257474234,14.2508978247,0 80.1257471885,14.2508887875,0 80.1256943412,14.2508966185,0 80.1256945762,14.2509056566,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76695979114e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1255137413,14.2509334149,0 80.1255135073,14.2509243768,0 80.1254606591,14.2509322077,0 80.125460894,14.2509412459,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678297063e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1252774869,14.2509687585,0 80.1252771992,14.250959722,0 80.125224399,14.250967847,0 80.12522468580001,14.2509768835,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76680384102e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1271741843,14.2510175851,0 80.1271824009,14.2510134012,0 80.1271519261,14.250970567,0 80.1271437095,14.2509747509,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678175011e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12506423639999,14.2510015726,0 80.12506394960001,14.2509925361,0 80.12501114849999,14.2510006609,0 80.1250114362,14.2510096965,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678297056e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12482202850001,14.251038543,0 80.1248217408,14.2510295065,0 80.12476894060001,14.2510376313,0 80.1247692274,14.2510466678,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688168937e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.124608778,14.2510713566,0 80.12460849119999,14.2510623201,0 80.12455568999999,14.2510704449,0 80.1245559777,14.2510794814,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688516598e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12437976859999,14.2511058833,0 80.1243794809,14.2510968468,0 80.12432667970001,14.2511049715,0 80.1243269674,14.251114008,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76687821416e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12414465560001,14.2511420247,0 80.1241443688,14.2511329882,0 80.1240915676,14.2511411129,0 80.12409185440001,14.2511501494,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678522297e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1239156461,14.2511765519,0 80.1239153584,14.2511675153,0 80.1238625572,14.25117564,0 80.1238628449,14.2511846756,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76679313797e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1273024332,14.251200463,0 80.1273106498,14.2511962782,0 80.1272801759,14.2511534441,0 80.1272719593,14.251157628,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678296751e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1236879026,14.2512115707,0 80.12368761490001,14.2512025342,0 80.1236348147,14.2512106588,0 80.1236351014,14.2512196953,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688516598e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12345889300001,14.2512460965,0 80.1234586053,14.25123706,0 80.1234058041,14.2512451846,0 80.12340609180001,14.2512542211,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76687821595e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1232344559,14.2512806118,0 80.1232341692,14.2512715753,0 80.1231813679,14.2512796998,0 80.12318165470001,14.2512887363,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688516314e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1230054462,14.2513151372,0 80.12300515850001,14.2513061007,0 80.12295235729999,14.2513142251,0 80.1229526449,14.2513232616,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688516435e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1227789926,14.2513499592,0 80.122778705,14.2513409227,0 80.1227259037,14.2513490471,0 80.12272619140001,14.2513580836,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76674652117e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1274300157,14.2513823882,0 80.12743823229999,14.2513782043,0 80.1274077584,14.2513353702,0 80.1273995418,14.2513395541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686921193e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1225499828,14.251384485,0 80.12254969510001,14.2513754485,0 80.12249689390001,14.251383572,0 80.1224971815,14.2513926085,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688168727e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1223181284,14.2514201285,0 80.1223178417,14.251411092,0 80.1222650404,14.2514192163,0 80.1222653281,14.2514282528,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688516441e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1220891185,14.251454653,0 80.1220888308,14.2514456165,0 80.1220360296,14.2514537407,0 80.1220363172,14.2514627772,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686388872e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12186033499999,14.2514897937,0 80.1218601002,14.2514807556,0 80.1218072528,14.2514885858,0 80.1218074876,14.2514976239,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76677932386e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1216266519,14.2515253791,0 80.1216264171,14.251516341,0 80.1215735697,14.251524172,0 80.1215738044,14.2515332092,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685045436e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12755826590001,14.251565266,0 80.1275664825,14.2515610812,0 80.1275360076,14.2515182471,0 80.12752779100001,14.251522431,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76697980392e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1213547772,14.2515962394,0 80.1213528752,14.2515873905,0 80.12130234280001,14.2516043938,0 80.12130424590001,14.2516132418,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904216e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1211354822,14.251669283,0 80.12113358009999,14.2516604349,0 80.1210830478,14.2516774373,0 80.1210849508,14.2516862854,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76687508126e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1276965039,14.2517623853,0 80.12770472050001,14.2517582014,0 80.12767424650001,14.2517153664,0 80.1276660298,14.2517195512,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76690628890e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.120918125,14.251742395,0 80.12091622200001,14.251733546,0 80.1208656905,14.2517505492,0 80.1208675936,14.2517593973,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76677552682e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1206988297,14.2518154381,0 80.12069692670001,14.2518065901,0 80.1206463952,14.2518235923,0 80.1206482982,14.2518324404,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76680849472e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1204800698,14.2518890183,0 80.1204781668,14.2518801702,0 80.1204276353,14.2518971733,0 80.1204295383,14.2519060214,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685045622e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1278247545,14.251945263,0 80.12783297110001,14.2519410781,0 80.1278024961,14.251898244,0 80.12779427949999,14.251902428,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463226e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12026077429999,14.2519620619,0 80.1202588713,14.2519532138,0 80.1202083398,14.251970216,0 80.1202102418,14.2519790641,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463113e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12002870009999,14.2520400985,0 80.1200267971,14.2520312504,0 80.1199762655,14.2520482525,0 80.1199781676,14.2520571006,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76674652117e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12795925659999,14.2521370542,0 80.1279674732,14.2521328703,0 80.127936999,14.2520900362,0 80.12792878240001,14.2520942201,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1198094042,14.2521131408,0 80.1198075013,14.2521042927,0 80.11975696970001,14.2521212948,0 80.1197588717,14.2521301438,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11960531760001,14.252181809,0 80.11960341459999,14.2521729609,0 80.119552883,14.2521899629,0 80.11955478509999,14.2521988119,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688539320e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11938602150001,14.2522548518,0 80.1193841186,14.2522460028,0 80.1193335869,14.2522630057,0 80.11933548890001,14.2522718537,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685045617e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1280875076,14.2523199318,0 80.12809572419999,14.2523157469,0 80.1280652491,14.2522729129,0 80.1280570325,14.2522770968,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688200945e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1191610052,14.252330524,0 80.11915910320001,14.2523216759,0 80.11910857060001,14.2523386788,0 80.1191104735,14.2523475269,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904235e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1189417089,14.2524035664,0 80.1189398069,14.2523947183,0 80.1188892742,14.2524117202,0 80.1188911772,14.2524205683,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.84024133682e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.128215474,14.2525045585,0 80.1282242943,14.2525000667,0 80.1281938201,14.2524572327,0 80.1281856034,14.2524614166,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904053e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11872374799999,14.2524768775,0 80.118721846,14.2524680294,0 80.1186713133,14.2524850312,0 80.1186732163,14.2524938793,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76694683127e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1185044514,14.2525499185,0 80.11850254940001,14.2525410705,0 80.1184520167,14.2525580722,0 80.1184539196,14.2525669212,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76680849735e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1182896561,14.2526221696,0 80.11828775319999,14.2526133215,0 80.11823722139999,14.2526303241,0 80.1182391243,14.2526391722,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.13364910211e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1283425199,14.252688049,0 80.1283525458,14.2526829432,0 80.12832207050001,14.2526401092,0 80.1283126493,14.2526449071,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463295e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11807035930001,14.2526952111,0 80.1180684564,14.252686363,0 80.1180179245,14.2527033647,0 80.1180198265,14.2527122128,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76697980392e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1178536323,14.2527681082,0 80.1178517303,14.2527592592,0 80.1178011975,14.2527762618,0 80.1178031004,14.2527851099,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76679313797e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1284830171,14.2528897879,0 80.12849123380001,14.2528856031,0 80.1284607594,14.2528427691,0 80.12845254280001,14.252846953,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904128e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1176343352,14.2528411485,0 80.1176324332,14.2528323004,0 80.1175819004,14.252849302,0 80.11758380329999,14.25285815,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463113e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11741243909999,14.2529157755,0 80.1174105363,14.2529069274,0 80.1173600043,14.2529239289,0 80.11736190630001,14.252932777,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1171931417,14.2529888153,0 80.11719123890001,14.2529799672,0 80.1171407069,14.2529969687,0 80.1171426089,14.2530058176,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.13373757536e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1286094598,14.2530735853,0 80.1286194856,14.2530684795,0 80.1285890103,14.2530256455,0 80.1285795881,14.2530304434,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688539232e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11697322329999,14.2530627801,0 80.1169713204,14.2530539311,0 80.1169207885,14.2530709335,0 80.1169226904,14.2530797816,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675462963e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1167539257,14.2531358195,0 80.1167520228,14.2531269714,0 80.1167014908,14.2531439728,0 80.1167033927,14.2531528209,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.84036989527e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1287360611,14.2532564339,0 80.1287448814,14.2532519421,0 80.1287144069,14.2532091072,0 80.12870619029999,14.253213292,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76687331688e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11652833230001,14.2532116823,0 80.1165264295,14.2532028342,0 80.11647589739999,14.2532198356,0 80.1164778003,14.2532286846,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76690628783e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1163090344,14.2532847222,0 80.1163071316,14.2532758732,0 80.11625659950001,14.2532928754,0 80.1162585023,14.2533017235,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1160989119,14.2533554063,0 80.1160970091,14.2533465582,0 80.116046477,14.2533635595,0 80.1160483789,14.2533724085,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.13380881616e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1288631078,14.2534399242,0 80.1288731336,14.2534348183,0 80.1288426592,14.2533919835,0 80.128833237,14.2533967823,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688539320e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1158796138,14.2534284457,0 80.115877711,14.2534195967,0 80.1158271788,14.2534365988,0 80.1158290807,14.2534454469,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76690290150e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1156571663,14.2535032543,0 80.1156552635,14.2534944062,0 80.11560473039999,14.2535114083,0 80.1156066332,14.2535202564,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.84036989527e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12899181029999,14.2536258054,0 80.12900063070001,14.2536213136,0 80.1289701561,14.2535784787,0 80.1289619395,14.2535826636,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904235e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1154378669,14.2535762934,0 80.11543596510001,14.2535674453,0 80.1153854319,14.2535844464,0 80.1153873347,14.2535932945,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686993786e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1152190501,14.2536498872,0 80.1152171473,14.2536410391,0 80.11516661410001,14.2536580402,0 80.1151685169,14.2536668883,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76694683390e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1149997504,14.2537229249,0 80.1149978486,14.2537140768,0 80.1149473154,14.2537310778,0 80.1149492182,14.2537399268,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.13373757379e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1291188575,14.2538092956,0 80.1291288833,14.2538041897,0 80.1290984078,14.2537613558,0 80.12908898560001,14.2537661537,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76696772853e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1147443338,14.2538087677,0 80.114742431,14.2537999196,0 80.1146918978,14.2538169205,0 80.11469380059999,14.2538257695,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76697980122e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11452503389999,14.2538818058,0 80.114523132,14.2538729568,0 80.11447259880001,14.2538899586,0 80.1144745015,14.2538988067,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.84024133764e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12925786549999,14.2540100603,0 80.12926668590001,14.2540055685,0 80.1292362112,14.2539627346,0 80.1292279946,14.2539669185,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76688539252e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11434317059999,14.2539430307,0 80.1143412678,14.2539341817,0 80.11429073550001,14.2539511835,0 80.1142926373,14.2539600316,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463044e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1141238714,14.2540160676,0 80.1141219686,14.2540072194,0 80.11407143629999,14.2540242203,0 80.1140733381,14.2540330684,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76684904216e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1139080155,14.2540886686,0 80.1139061136,14.2540798204,0 80.1138555803,14.2540968212,0 80.11385748310001,14.2541056693,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 8.13364910533e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1293849131,14.2541935504,0 80.12939493899999,14.2541884445,0 80.12936446330001,14.2541456106,0 80.1293550421,14.2541504086,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76680849647e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.113688716,14.254161705,0 80.11368681330001,14.2541528569,0 80.11363628079999,14.2541698585,0 80.1136381836,14.2541787066,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76677552845e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1134694368,14.2542354519,0 80.1134675341,14.2542266038,0 80.1134170016,14.2542436045,0 80.11341890430001,14.2542524526,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.84033457170e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.12951265869999,14.2543780491,0 80.12952147900001,14.2543735564,0 80.12949100429999,14.2543307225,0 80.1294827876,14.2543349074,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1132501371,14.2543084879,0 80.1132482343,14.2542996398,0 80.1131977018,14.2543166404,0 80.1131996036,14.2543254894,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76677552845e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1130296993,14.2543826216,0 80.11302779659999,14.2543737734,0 80.11297726399999,14.254390774,0 80.1129791667,14.2543996221,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76678760097e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1128103993,14.2544556572,0 80.1128084966,14.254446809,0 80.112757964,14.2544638105,0 80.1127598658,14.2544726586,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76686993766e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1125908123,14.254529506,0 80.11258890960001,14.2545206579,0 80.11253837610001,14.2545376584,0 80.1125402788,14.2545465065,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76694683039e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11237151109999,14.2546025412,0 80.11236960940001,14.2545936931,0 80.1123190758,14.2546106935,0 80.11232097849999,14.2546195425,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76694683390e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1121537895,14.2546757647,0 80.1121518878,14.2546669166,0 80.11210135419999,14.2546839169,0 80.1121032569,14.254692766,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76690628506e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11193448900001,14.2547488003,0 80.1119325863,14.2547399513,0 80.1118820537,14.2547569525,0 80.11188395630001,14.2547658007,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463295e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1117153136,14.2548225098,0 80.111713411,14.2548136617,0 80.1116628783,14.2548306619,0 80.11166478,14.2548395101,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.11149601290001,14.2548955441,0 80.1114941102,14.254886696,0 80.1114435775,14.2549036962,0 80.1114454792,14.2549125452,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76675463295e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1112740447,14.2549698783,0 80.111272142,14.2549610302,0 80.1112216093,14.2549780304,0 80.11122351100001,14.2549868785,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.108352349,14.254462107,0 80.10835575820001,14.2544559722,0 80.1083063799,14.2544360042,0 80.1083029694,14.254442139,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1077045281,14.2543530628,0 80.107702539,14.25434636,0 80.10765300600001,14.2543659601,0 80.10765499430001,14.2543726638,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1081393115,14.2543764585,0 80.1081427207,14.2543703237,0 80.1080933425,14.2543503557,0 80.108089932,14.2543564905,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10794207710001,14.2542973151,0 80.1079454862,14.2542911803,0 80.10789610809999,14.2542712122,0 80.10789269759999,14.254277347,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1074863784,14.2544393213,0 80.1074843893,14.2544326185,0 80.1074348563,14.2544522186,0 80.1074368446,14.2544589223,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10727341080001,14.2545234079,0 80.1072714216,14.2545167051,0 80.10722188859999,14.2545363051,0 80.10722387689999,14.2545430088,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10706118109999,14.2546077709,0 80.10705919190001,14.2546010681,0 80.1070096589,14.254620668,0 80.1070116471,14.2546273718,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1068478568,14.2546937649,0 80.1068458676,14.2546870621,0 80.1067963345,14.254706662,0 80.1067983228,14.2547133657,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10663217690001,14.2547792003,0 80.10663018779999,14.2547724975,0 80.1065806546,14.2547920973,0 80.10658264289999,14.2547988011,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1064145568,14.2548653932,0 80.10641256770001,14.2548586904,0 80.10636303450001,14.2548782902,0 80.10636502280001,14.2548849939,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1062002295,14.2549518975,0 80.10619824040001,14.2549451947,0 80.10614870720001,14.2549647944,0 80.1061506954,14.2549714982,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1059861616,14.2550357742,0 80.1059841725,14.2550290714,0 80.1059346393,14.255048671,0 80.1059366275,14.2550553748,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1057755261,14.2551199027,0 80.10577353700001,14.2551131999,0 80.1057240037,14.2551327996,0 80.105725992,14.2551395033,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1055559321,14.2552078646,0 80.105553943,14.2552011618,0 80.1055044097,14.2552207614,0 80.1055063979,14.2552274652,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10534815120001,14.255290277,0 80.10534616210001,14.2552835742,0 80.10529662880001,14.2553031738,0 80.105298617,14.2553098775,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1051377629,14.2553738079,0 80.1051357738,14.2553671051,0 80.1050862404,14.2553867046,0 80.1050882286,14.2553934084,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1047068946,14.2555455074,0 80.1047049055,14.2555388045,0 80.1046553721,14.255558404,0 80.1046573603,14.2555651077,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10492170809999,14.2554593622,0 80.10491971899999,14.2554526594,0 80.10487018560001,14.2554722589,0 80.1048721738,14.2554789626,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.10449171259999,14.2556317705,0 80.1044897235,14.2556250677,0 80.10444019000001,14.2556446671,0 80.1044421782,14.2556513708,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Line Type<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> = <BR><B>SHAPE_Leng</B> = 7.76685242654e+000]]></description>
+			<styleUrl>#line1</styleUrl>
+			<LineString>
+				<coordinates>
+					80.1042654323,14.255721245,0 80.1042634432,14.2557145422,0 80.10421390969999,14.2557341415,0 80.10421589790001,14.2557408453,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

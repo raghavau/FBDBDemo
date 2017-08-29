@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sprinklers.KML</name>
+	<Style id="point1">
+		<IconStyle>
+			<Icon>
+				<href>kml_ext_files/kml_symbol_dot_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Point Features</name>
+		<description>Point Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1259114506,14.2516527919,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12537579240001,14.251739143,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1249285577,14.2518292174,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12434759449999,14.2518914841,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1265976238,14.2519039216,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.123736916,14.2519901554,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1231006543,14.2521170019,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12716537039999,14.2529704914,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1266059915,14.2531258523,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1243653813,14.2534366247,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1227470403,14.253591191,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1224777648,14.2536250288,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12220546170001,14.2536576934,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12210098689999,14.2541529999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1226477348,14.2544949624,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1239505656,14.2546825776,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.123295739,14.2547230681,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1247645408,14.2552374691,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1222972719,14.2556965036,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1248130211,14.2558098971,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1239734015,14.2560238935,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1231342975,14.2562552311,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1225345565,14.2564045713,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1053209304,14.2563937151,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1041395638,14.2568185268,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1031212563,14.2572183248,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1066469467,14.2573143487,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.10260844370001,14.2574165724,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1055131551,14.257741214,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1015056886,14.2578544075,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.104621276,14.2581160317,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1036452532,14.258462918,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1019930817,14.2588544618,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.101418557,14.259212126,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12295549620001,14.2598480207,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1230338909,14.2601420204,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1218454385,14.2602390574,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12119901529999,14.2605032649,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1217672767,14.260543453,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1205163405,14.2606989454,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12009085779999,14.2608299536,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12005206009999,14.2610417987,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12109886330001,14.2617889328,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1206627351,14.2619160925,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12077490510001,14.2621891229,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.11975079459999,14.2624726219,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1191538379,14.262649259,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.0980804962,14.2633311365,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.09649139779999,14.2635439931,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.09785859740001,14.2639468131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.0962660475,14.2643977491,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1272434812,14.2696175062,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1272080681,14.2692049552,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1235328547,14.2695935782,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1252402432,14.2695843855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1252560003,14.2709802308,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12569052070001,14.2709592711,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.125648054,14.2723473846,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1252555704,14.2723471255,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1271712213,14.2723392215,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1256928465,14.2691856541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1252725924,14.269191845,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1237105375,14.2692093054,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1232467352,14.2691998668,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1257789349,14.2651373686,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12339975659999,14.2666494343,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12541007270001,14.2628225901,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12484372909999,14.261042518,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12176961510001,14.2638173486,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1190128953,14.2646961734,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1196543395,14.2664856991,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1220467296,14.265055632,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1216242285,14.2620108266,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12359030819999,14.2614590014,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.126488929,14.258031646,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.1267555172,14.2588059127,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Point Feature<BR><BR><B>NAME</B> = <BR><B>DESCRIPTIO</B> = <BR><B>REMARKS</B> =]]></description>
+			<styleUrl>#point1</styleUrl>
+			<Point>
+				<coordinates>80.12470266770001,14.2606141132,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

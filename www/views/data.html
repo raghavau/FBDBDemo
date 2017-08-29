@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sidebar Demo</title>
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <input type="text" id="latlng1"><br>
+            <input type="text" id="latlng2"><br>
+            <input type="button" id="btncalc" value="Calculate"><br>
+            <span id="data"></span>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&libraries=geometry" async defer></script>
+<script>
+    $(document).ready(function() {
+        $("#btncalc").click(function(){
+            //debugger;
+            var mts = google.maps.geometry.spherical.computeDistanceBetween(
+                            new google.maps.LatLng($("#latlng1").val().split(',')[0], $("#latlng1").val().split(',')[1]), 
+                            new google.maps.LatLng($("#latlng2").val().split(',')[0], $("#latlng2").val().split(',')[1]));
+            $("#data").html(mts);
+        });
+    });
+</script>

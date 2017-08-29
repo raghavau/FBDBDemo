@@ -2,45 +2,77 @@
 <html>
     <head>
         <title>Vehicle Live Tracking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
         <style type="text/css">
             body {
                 font-family: "Lato", sans-serif;
-                transition: background-color .5s;
-                background-color: #5da58a;/*#ff8080;*/
+                overflow: hidden;
+            }
+            #main {
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+            }
+            .headerbar{
+                /*background-color: #4f9c8b;*/
+                background: linear-gradient(to bottom, #4682B4 50%, #87CEFA 100%);
+                color: white;
+                font-size: 25px;
+                left: 0px;
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                z-index: 7;
+                height: 50px;
+                padding-top:5px;
+            }
+            #googleMap {
+                width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
                 overflow: hidden;
             }
         </style>
     </head>
 <body>
-    <div id="main" style="text">
-        <span class="text-center" style="color:white; font-size: 25px; padding-left: 5px;">Vehicle Live Tracking</span>
-        <div id="googleMap" style="width:100%; height:100%; position: absolute; top: 50px; left: 0px; overflow: hidden;"></div>
+    <div id="main">
+        <span class="text-left headerbar" style="color: white; font-size: 25px; font-family: Calibri; 
+                                                  font-weight: bolder; padding-left: 5px; text-shadow: 1px 1px 1px #000;">
+            <img src="images/Kite4.png" height="32px" width="32px" />KyTe - Testing
+        </span>
+        <div id="googleMap"></div>
     </div>
     <script type="text/javascript" src="js/jquery1.11.1-min.js"></script>
-    <script type="text/javascript" src="js/semantic.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry" async defer></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
     <script type="text/javascript">
         var config = {
-          apiKey: "AIzaSyA-qB_P4ILz6FHSEVLydbd4_R8jXGBWthM",
-          authDomain: "api-project-234444986540.firebaseapp.com",
-          databaseURL: "https://api-project-234444986540.firebaseio.com/"
+          apiKey: "AIzaSyBQ79jCTxiGDwXjk-NyBHQJERpAgIw2SAo",
+          authDomain: "kyte-8d276.firebaseapp.com",
+          databaseURL: "https://kyte-8d276.firebaseio.com/"
         };
 
         firebase.initializeApp(config);
 
         var rootRef = firebase.database().ref();
-        var coords = [], colors = ["#38c6f3", "#ff4864", "#428bca", "#166048", "#ff0000", "#512411", "#e3af0c"];
-        var gstartmarkers = [], gendmarkers = [], gtourplans = [];
-        var startMarker, endMarker;
-        var map, infowindow, startPoint, prevPoint, endPoint;
+        var coords = [], colors = ["#ff0000"], markerStore = {};
+        //colors = ["#38c6f3", "#ff4864", "#428bca", "#166048", "#ff0000", "#512411", "#e3af0c"];
+        var gstartmarkers = [], gendmarkers = [], gtourplans = [], controlCoords = [];
+        var startMarker, endMarker, tripId, truckNo, bounds, boundStatus = true, timeStamp1, timeStamp2, drawstatus = false;
+        var map, infowindow, hoverwindow, startPoint, prevPoint, endPoint, drawingManager;
         var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
+        var marker1, marker2, marker3, marker4, marker5, marker6, marker7, marker8;
 
         function initMap() {
+            //timeStamp1 = new Date();
             var mapProp = {
                 center: new google.maps.LatLng(14.2599286, 80.1137635),
-                zoom: 10,
+                zoom: 14,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 panControl: false,
                 zoomControl: false,
@@ -52,213 +84,176 @@
             };
 
             map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            infowindow = new google.maps.InfoWindow();
-            var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(14.2599286, 80.1137635),
-                icon: "img/icon.png",
-                draggable: false,
-                //map: map
-            });
-
-            map.addListener('click', function(){
-                infowindow.close();
-            });
-
-            var ctaLayer = new google.maps.KmlLayer({
-                url: 'http://61.0.225.169/vehtrack/res/kml/sample.kml',
+            
+            var marker = new google.maps.Marker({
+                draggable: true,
                 map: map
             });
+            
+            marker1 = new google.maps.Marker({
+                draggable: false
+            });
+            marker1.setPosition(new google.maps.LatLng(14.277692206432475, 80.1016616821289));
 
-            rootRef.on('value', function(snapshot){
+            marker2 = new google.maps.Marker({
+                draggable: false
+            });
+            marker2.setPosition(new google.maps.LatLng(14.25789460707626, 80.11359214782715));
+
+            marker3 = new google.maps.Marker({
+                draggable: false
+            });
+            marker3.setPosition(new google.maps.LatLng(14.259891082502145, 80.11050224304199));
+
+            marker4 = new google.maps.Marker({
+                draggable: false
+            });
+            marker4.setPosition(new google.maps.LatLng(14.26280257747137, 80.11616706848145));
+
+            marker5 = new google.maps.Marker({
+                draggable: false
+            });
+            marker5.setPosition(new google.maps.LatLng(14.263384871952399, 80.1119613647461));
+
+            marker6 = new google.maps.Marker({
+                draggable: false
+            });
+            marker6.setPosition(new google.maps.LatLng(14.241838974694755, 80.11384963989258));
+
+            marker7 = new google.maps.Marker({
+                draggable: false
+            });
+            marker7.setPosition(new google.maps.LatLng(14.245749000772165, 80.11917114257812));
+
+            marker8 = new google.maps.Marker({
+                draggable: false
+            });
+            marker8.setPosition(new google.maps.LatLng(14.255981301537767, 80.09522438049316));
+
+            var circle = new google.maps.Circle({
+                //position: event.latLng,
+                map: map,
+                fillColor : '#BBD8E9',
+                fillOpacity : 0.3,
+                radius : 1000,
+                strokeColor : '#BBD8E9',
+                strokeOpacity : 0.9,
+                strokeWeight : 2
+            });
+            
+            google.maps.event.addListener(map, 'click', function(event) {
+                marker.setPosition(event.latLng);
+                marker.setMap(map);
+                circle.setOptions({
+                    fillOpacity: 0.3,
+                    strokeOpacity: 0.9,
+                    radius: 1000
+                });
+                circle.bindTo('center', marker, 'position');
+                var bounds = circle.getBounds();
                 //debugger;
-                if(snapshot.exists()) {
-                    var colorNo = 0;
-                    var arrayObject = [];
-                    arrayObject = snapshot.val();
-                    removeMarkers();
-
-                    snapshot.forEach(function(data) {
-                        var i = Object.values(data.val()).length, k = 0;
-                        //var i = Object.values.length, k = 0;
-                        coords = [];
-                        if(i > 0){
-                            /*for(var j = 0; j < i; j++){
-                                try {
-                                    k = k + 1;
-                                    coords.push(new google.maps.LatLng(data.val()[j].latlng.split(',')[0], data.val()[j].latlng.split(',')[1]));
-                                    //coords.push(new google.maps.LatLng(data.val().latlng.split(',')[0], data.val().latlng.split(',')[1]));
-                                    if(startPoint == null || startPoint == undefined)
-                                        startPoint = new google.maps.LatLng(data.val().latlng.split(',')[0], data.val().latlng.split(',')[1]);
-                                }
-                                catch(e){
-                                    coords = [];
-                                    continue;
-                                }
-                            }*/
-                            var color = colors[colorNo];
-                            if(colorNo == 6){
-                                colorNo = 0;
-                            }
-                            else{
-                                colorNo = parseInt(colorNo) + 1;
-                            }
-
-                            startPoint = new google.maps.LatLng(data.val().startPoint.latlng.split(',')[0],
-                                                                data.val().startPoint.latlng.split(',')[1]);
-                            prevPoint = new google.maps.LatLng(data.val().prevPoint.latlng.split(',')[0],
-                                                               data.val().prevPoint.latlng.split(',')[1]);
-                            endPoint = new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
-                                                              data.val().endPoint.latlng.split(',')[1]);
-
-                            startMarker = new google.maps.Marker();
-                            startMarker.setPosition(startPoint);
-                            //debugger;
-                            //map.setCenter(startMarker.getPosition());
-                            gstartmarkers.push(prevPoint);
-
-                            if((endPoint != null || endPoint != undefined) && (startPoint != endPoint)) {
-                                //var heading = google.maps.geometry.spherical.computeHeading(coords[coords.length - 2], coords[coords.length - 1]);
-                                var heading = google.maps.geometry.spherical.computeHeading(prevPoint, endPoint);
-                                var markerImage = {
-                                    path: car,
-                                    //url: 'img/ic_sedan_topview.png',
-                                    scaledSize: new google.maps.Size(30, 60), // size
-                                    origin: new google.maps.Point(0, 0), // origin
-                                    anchor: new google.maps.Point(10, 25), // anchor
-                                    rotation: heading,
-                                    fillColor: color,
-                                    fillOpacity: 1,
-                                    scale: .4,
-                                    //strokeColor: "#606060",
-                                    strokeOpacity: .7
-                                };
-                                var endMarker = new google.maps.Marker({
-                                    draggable: false,
-                                    map: map
-                                });
-                                //debugger;
-                                endMarker.setPosition(endPoint);
-                                endMarker.setIcon(markerImage);
-
-                                if(map.getZoom() <= 17 && markerImage.scale != 0.4) {
-                                    markerImage.scale = .4;
-                                    endMarker.setOptions({icon:markerImage});
-                                } else if(map.getZoom() == 18 && markerImage.scale != 0.8) {
-                                    markerImage.scale = .8;
-                                    endMarker.setOptions({icon:markerImage});
-                                } else if(map.getZoom() > 18 && markerImage.scale != 1) {
-                                    markerImage.scale = 1;
-                                    endMarker.setOptions({icon:markerImage});
-                                }
-
-                                gendmarkers.push(endMarker);
-
-                                google.maps.event.addListener(endMarker, 'click', function() {
-                                    infowindow.close();
-                                    //debugger;
-                                    /*OpenInfo(data.key, startMarker.getPosition(), endMarker.getPosition());
-
-                                    for(i = 0; i < gstartmarkers.length; i++) {
-                                        if (gstartmarkers.length > 0) {
-                                            coords.push(new google.maps.LatLng(gstartmarkers[i].lat(), gstartmarkers[i].lng()));
-                                        }
-                                    }
-
-                                    var tripPlan = new google.maps.Polyline({
-                                        path: coords,
-                                        strokeColor: color,
-                                        //strokeOpacity: 0.6,
-                                        strokeWeight: 2
-                                    });
-                                    tripPlan.setMap(map);*/
-
-                                });
-                            }
-
-                            google.maps.event.addListener(map, 'zoom_changed', function() {
-                                var zoom = map.getZoom();
-                                var picon = endMarker.getIcon();
-
-                                if(zoom <= 17 && picon.scale != 0.4) {
-                                    picon.scale=0.4;
-                                    endMarker.setOptions({icon:picon});
-                                } else if(zoom == 18 && picon.scale != 0.8) {
-                                    picon.scale=0.8;
-                                    endMarker.setOptions({icon:picon});
-                                } else if(zoom > 18 && picon.scale != .75) {
-                                    picon.scale = .75;
-                                    endMarker.setOptions({icon:picon});
-                                }
-                            });
-                        }
-
-                     });
-                }
-                else {
-                    removeMarkers();
-                }
+                
+                ShowMarkers(bounds);
+                console.log("Map Click" + event.latLng);
+            });
+            
+            google.maps.event.addListener(circle, 'click', function(event) {
+                marker.setPosition(event.latLng);
+                marker.setMap(map);
+                circle.setOptions({
+                    fillOpacity: 0.3,
+                    strokeOpacity: 0.9,
+                    radius: 1000
+                });
+                circle.bindTo('center', marker, 'position');
+                var bounds = circle.getBounds();
+                //debugger;
+                
+                ShowMarkers(bounds);                
+                console.log("Cricle Click" + event.latLng);
+            });
+            
+            google.maps.event.addListener(marker, 'drag', function(event) {
+                marker.setPosition(event.latLng);
+                //marker.setMap(map);
+                circle.setOptions({
+                    fillOpacity: 0.3,
+                    strokeOpacity: 0.9,
+                    radius: 1000
+                });
+                circle.bindTo('center', marker, 'position');
+                var bounds = circle.getBounds();
+                //debugger;
+                
+                ShowMarkers(bounds);
+            });
+            
+            google.maps.event.addListener(map, 'rightclick', function() {
+                HideMarkers();
+            });
+            
+            google.maps.event.addListener(marker, 'rightclick', function() {
+                HideMarkers();
+            });
+            
+            google.maps.event.addListener(circle, 'rightclick', function() {
+                HideMarkers();
             });
         }
+        
+        function HideMarkers() {
+            marker.setMap(null);
+            circle.setOptions({
+                fillOpacity: 0,
+                strokeOpacity: 0,
+                radius: 0
+            });
+            marker1.setMap(null);
+            marker2.setMap(null);
+            marker3.setMap(null);
+            marker4.setMap(null);
+            marker5.setMap(null);
+            marker6.setMap(null);
+            marker7.setMap(null);
+            marker8.setMap(null);
+        }
+        
+        function ShowMarkers(bounds) {
+            marker1.setMap(null);
+            marker2.setMap(null);
+            marker3.setMap(null);
+            marker4.setMap(null);
+            marker5.setMap(null);
+            marker6.setMap(null);
+            marker7.setMap(null);
+            marker8.setMap(null);
 
-        function removeMarkers() {
-            /*for(i = 0; i < gstartmarkers.length; i++) {
-                if (gstartmarkers.length > 0 && gstartmarkers[i].getMap() != null) {
-                    gstartmarkers[i].setMap(null);
-                }
-            }*/
-            for(i = 0; i < gendmarkers.length; i++) {
-                if (gendmarkers.length > 0 && gendmarkers[i].getMap() != null) {
-                    gendmarkers[i].setMap(null);
-                }
+            if (bounds.contains(marker1.position)) {
+                marker1.setMap(map);
             }
-            /*for(i = 0; i < gtourplans.length; i++) {
-                if (gtourplans.length > 0 && gtourplans[i].getMap() != null) {
-                    gtourplans[i].setMap(null);
-                }
-            }*/
-        }
-
-        function OpenInfo(key, start, end) {
-            var msg = "<u><b>Trip Id:</b> " + key + "</u><br><br>";
-
-            var origin1 = start;
-            var destinationA = end;
-            var service = new google.maps.DistanceMatrixService();
-            service.getDistanceMatrix({
-                origins: [origin1],
-                destinations: [destinationA],
-                travelMode: 'DRIVING',
-                //transitOptions: TransitOptions,
-                //drivingOptions: DrivingOptions,
-                unitSystem: google.maps.UnitSystem.METRIC,
-                avoidHighways: false,
-                avoidTolls: false,
-            }, function(response, status){
-                if (status == 'OK') {
-                    msg = msg + "<table width='100%'><tr><td align='left' valign='top' style='width: 20%'>Start Position</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.originAddresses[0] + "</td></tr>";
-                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>End Position</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.destinationAddresses[0] + "</td></tr>";
-                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Distance</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.rows[0].elements[0].distance.text + "</td></tr>";
-                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Duration</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.rows[0].elements[0].duration.text + "</td></tr>";
-                    msg = msg + "</table>";
-
-                    infowindow = new google.maps.InfoWindow({
-                        content: msg,
-                        position: end,
-                        icon: {
-                            path: google.maps.SymbolPath.CIRCLE,
-                            scale: 5,
-                            strokeWeight: 2,
-                            strokeColor: "#FF00FF",
-                            strokeOpacity: 0.8,
-
-                            fillColor: "#FF00FF",
-                            fillOpacity: 0.4
-                        }
-                    });
-                    infowindow.open(map);
-                }
-            });
+            if (bounds.contains(marker2.position)) {
+                marker2.setMap(map);
+            }
+            if (bounds.contains(marker3.position)) {
+                marker3.setMap(map);
+            }
+            if (bounds.contains(marker4.position)) {
+                marker4.setMap(map);
+            }
+            if (bounds.contains(marker5.position)) {
+                marker5.setMap(map);
+            }
+            if (bounds.contains(marker6.position)) {
+                marker6.setMap(map);
+            }
+            if (bounds.contains(marker7.position)) {
+                marker7.setMap(map);
+            }
+            if (bounds.contains(marker8.position)) {
+                marker8.setMap(map);
+            }
         }
     </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap" async defer></script><!-- &libraries=geometry,drawing -->
 </body>
 </html>

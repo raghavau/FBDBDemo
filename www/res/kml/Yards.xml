@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Yards.KML</name>
+	<Style id="area1">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>bf000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Area Features</name>
+		<description>Area Features</description>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1239921162,14.271711095,0 80.1253513695,14.271716088,0 80.1253484738,14.272466427,0 80.1240112947,14.2724655811,0 80.1239921162,14.271711095,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1240357519,14.2661292613,0 80.1253980907,14.2653256066,0 80.1253949716,14.2661342521,0 80.1240357519,14.2661292613,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12267072580001,14.2676249401,0 80.1226754363,14.2669843975,0 80.1240357519,14.2661292613,0 80.12403285310001,14.2668796003,0 80.1240299541,14.2676299392,0 80.12267072580001,14.2676249401,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1226678222,14.2683752787,0 80.124027055,14.2683802781,0 80.1240241556,14.269130617,0 80.12266491840001,14.2691256173,0 80.1226678222,14.2683752787,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12267072580001,14.2676249401,0 80.1240299541,14.2676299392,0 80.124027055,14.2683802781,0 80.1226678222,14.2683752787,0 80.12267072580001,14.2676249401,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.124027055,14.2683802781,0 80.12538628820001,14.2683852698,0 80.1253833934,14.2691356089,0 80.1240241556,14.269130617,0 80.124027055,14.2683802781,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1240299541,14.2676299392,0 80.12538918289999,14.2676349306,0 80.12538628820001,14.2683852698,0 80.124027055,14.2683802781,0 80.1240299541,14.2676299392,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12403285310001,14.2668796003,0 80.12539207730001,14.2668845914,0 80.12538918289999,14.2676349306,0 80.1240299541,14.2676299392,0 80.12403285310001,14.2668796003,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1240357519,14.2661292613,0 80.1253949716,14.2661342521,0 80.12539207730001,14.2668845914,0 80.12403285310001,14.2668796003,0 80.1240357519,14.2661292613,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1239950162,14.2709607563,0 80.1253542649,14.2709657491,0 80.1253513695,14.271716088,0 80.1239921162,14.271711095,0 80.1239950162,14.2709607563,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12399791599999,14.2702104176,0 80.1253571602,14.2702154101,0 80.1253542649,14.2709657491,0 80.1239950162,14.2709607563,0 80.12399791599999,14.2702104176,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1240008156,14.2694600788,0 80.12536005530001,14.269465071,0 80.1253571602,14.2702154101,0 80.12399791599999,14.2702104176,0 80.1240008156,14.2694600788,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1259079077,14.2717181302,0 80.1272671617,14.2717231122,0 80.1272642724,14.2724734515,0 80.1259050139,14.2724684692,0 80.1259079077,14.2717181302,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1259108013,14.2709677911,0 80.12727005080001,14.2709727729,0 80.1272671617,14.2717231122,0 80.1259079077,14.2717181302,0 80.1259108013,14.2709677911,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12591369480001,14.270217452,0 80.12727293970001,14.2702224335,0 80.12727005080001,14.2709727729,0 80.1259108013,14.2709677911,0 80.12591369480001,14.270217452,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.125916588,14.2694671128,0 80.1272758285,14.2694720941,0 80.12727293970001,14.2702224335,0 80.12591369480001,14.270217452,0 80.125916588,14.2694671128,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12592084550001,14.268362921,0 80.12728007929999,14.2683679019,0 80.1272771908,14.2691182414,0 80.1259179524,14.2691132602,0 80.12592084550001,14.268362921,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1259237383,14.2676125817,0 80.1272829677,14.2676175623,0 80.12728007929999,14.2683679019,0 80.12592084550001,14.268362921,0 80.1259237383,14.2676125817,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.125926631,14.2668622424,0 80.1272858559,14.2668672227,0 80.1272829677,14.2676175623,0 80.1259237383,14.2676125817,0 80.125926631,14.2668622424,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12592952360001,14.266111903,0 80.1272887439,14.266116883,0 80.1272858559,14.2668672227,0 80.125926631,14.2668622424,0 80.12592952360001,14.266111903,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1259324159,14.2653615636,0 80.12729163180001,14.2653665433,0 80.1272887439,14.266116883,0 80.12592952360001,14.266111903,0 80.1259324159,14.2653615636,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1272975146,14.2641778028,0 80.12729163180001,14.2653665433,0 80.1259324159,14.2653615636,0 80.12593292779999,14.2650024426,0 80.1272975146,14.2641778028,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1199065464,14.2646687159,0 80.1206956141,14.2644381813,0 80.1211117128,14.2657778726,0 80.12044902780001,14.2662007817,0 80.1201777862,14.2654347489,0 80.1199065464,14.2646687159,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1211117128,14.2657778726,0 80.1206956141,14.2644381813,0 80.1214386301,14.2642229523,0 80.1219060557,14.2652643195,0 80.1211117128,14.2657778726,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1196168986,14.2667633865,0 80.11923512280001,14.2657625187,0 80.1201777862,14.2654347489,0 80.12044902780001,14.2662007817,0 80.11981641,14.2666132186,0 80.1196168986,14.2667633865,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.11923512280001,14.2657625187,0 80.1189603304,14.2649271364,0 80.1199065464,14.2646687159,0 80.1201777862,14.2654347489,0 80.11923512280001,14.2657625187,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12245456940001,14.2639240529,0 80.1226807896,14.2647656877,0 80.1221163901,14.2651293039,0 80.1216874669,14.2641603539,0 80.12245456940001,14.2639240529,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1216165622,14.2640102918,0 80.12133791550001,14.2630496952,0 80.1221600348,14.2628071928,0 80.12241361789999,14.263770436,0 80.1216165622,14.2640102918,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12133791550001,14.2630496952,0 80.1210699665,14.2620942098,0 80.12190565989999,14.2618403236,0 80.1221600348,14.2628071928,0 80.12133791550001,14.2630496952,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1202788288,14.2633604273,0 80.1200108777,14.2624024329,0 80.1208263581,14.2621590547,0 80.12109431250001,14.2631170483,0 80.1202788288,14.2633604273,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1205467819,14.2643184214,0 80.1202788288,14.2633604273,0 80.12109431250001,14.2631170483,0 80.1213622689,14.2640750417,0 80.1205467819,14.2643184214,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1194633435,14.2636038033,0 80.1191953957,14.2626458082,0 80.1200108777,14.2624024329,0 80.1202788288,14.2633604273,0 80.1194633435,14.2636038033,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.11973129339999,14.2645617981,0 80.1194633435,14.2636038033,0 80.1202788288,14.2633604273,0 80.1205467819,14.2643184214,0 80.11973129339999,14.2645617981,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.11864785660001,14.2638471764,0 80.1183799121,14.2628891807,0 80.1191953957,14.2626458082,0 80.1194633435,14.2636038033,0 80.11864785660001,14.2638471764,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1189158032,14.264805172,0 80.11864785660001,14.2638471764,0 80.1194633435,14.2636038033,0 80.11973129339999,14.2645617981,0 80.1189158032,14.264805172,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1193987106,14.2622738442,0 80.1191248169,14.2613371694,0 80.1204357087,14.2609359881,0 80.1207121529,14.2619088548,0 80.1193987106,14.2622738442,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1183470932,14.262614061,0 80.11806777050001,14.2616576159,0 80.1191248169,14.2613371694,0 80.1193987106,14.2622738442,0 80.1183470932,14.262614061,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1183059058,14.2613883858,0 80.117784164,14.2607339876,0 80.1190180662,14.2603609215,0 80.11920392579999,14.2610825685,0 80.1183059058,14.2613883858,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.11920392579999,14.2610825685,0 80.1190180662,14.2603609215,0 80.1201561777,14.2600608646,0 80.12033133520001,14.2607344561,0 80.11920392579999,14.2610825685,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1205992159,14.2606939736,0 80.1203737652,14.2597560835,0 80.12122973130001,14.2595236326,0 80.12147411319999,14.2604079697,0 80.1205992159,14.2606939736,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12147411319999,14.2604079697,0 80.1212726995,14.2596903034,0 80.1224040707,14.2593669157,0 80.12259374609999,14.2600367571,0 80.12147411319999,14.2604079697,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1226060038,14.2612568256,0 80.1223266641,14.2603003845,0 80.1231477523,14.2600490418,0 80.1234146681,14.2609927082,0 80.1226060038,14.2612568256,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1243185238,14.2608433459,0 80.12400811240001,14.2597880211,0 80.1243281053,14.2597032862,0 80.1249352931,14.2595400489,0 80.1251392511,14.2606039348,0 80.1243185238,14.2608433459,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.123447619,14.2611047896,0 80.1231477523,14.2600490418,0 80.12400811240001,14.2597880211,0 80.1243185238,14.2608433459,0 80.123447619,14.2611047896,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1217973377,14.2615209401,0 80.1215180013,14.2605644983,0 80.1223266641,14.2603003845,0 80.1226060038,14.2612568256,0 80.1217973377,14.2615209401,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1209886699,14.2617850518,0 80.1207093367,14.2608286092,0 80.1215180013,14.2605644983,0 80.1217973377,14.2615209401,0 80.1209886699,14.2617850518,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12327818510001,14.2636776803,0 80.1253477169,14.2630448783,0 80.1234532072,14.2642655939,0 80.12327818510001,14.2636776803,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12245456940001,14.2639240529,0 80.12327818510001,14.2636776803,0 80.1234532072,14.2642655939,0 80.1226807896,14.2647656877,0 80.12245456940001,14.2639240529,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1248600631,14.2630402685,0 80.12460647010001,14.2620770273,0 80.12542194530001,14.261833633,0 80.1256755416,14.2627968736,0 80.1248600631,14.2630402685,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12460647010001,14.2620770273,0 80.1243528789,14.2611137858,0 80.1251683509,14.2608703922,0 80.12542194530001,14.261833633,0 80.12460647010001,14.2620770273,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.124044583,14.2632836606,0 80.1237909932,14.2623204187,0 80.12460647010001,14.2620770273,0 80.1248600631,14.2630402685,0 80.124044583,14.2632836606,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1237909932,14.2623204187,0 80.1235374054,14.2613571766,0 80.1243528789,14.2611137858,0 80.12460647010001,14.2620770273,0 80.1237909932,14.2623204187,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1232291012,14.2635270498,0 80.1229755148,14.2625638072,0 80.1237909932,14.2623204187,0 80.124044583,14.2632836606,0 80.1232291012,14.2635270498,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1229755148,14.2625638072,0 80.1227219303,14.2616005644,0 80.1235374054,14.2613571766,0 80.1237909932,14.2623204187,0 80.1229755148,14.2625638072,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12241361789999,14.263770436,0 80.1221600348,14.2628071928,0 80.1229755148,14.2625638072,0 80.1232291012,14.2635270498,0 80.12241361789999,14.263770436,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1221600348,14.2628071928,0 80.12190565989999,14.2618403236,0 80.1227219303,14.2616005644,0 80.1229755148,14.2625638072,0 80.1221600348,14.2628071928,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12654409779999,14.2604476605,0 80.1275723844,14.2601934332,0 80.12777456809999,14.2615973401,0 80.12703373150001,14.2620407118,0 80.12678932430001,14.2612222582,0 80.12654409779999,14.2604476605,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1259422227,14.2626466327,0 80.12561830609999,14.2615591688,0 80.12678932430001,14.2612222582,0 80.12703373150001,14.2620407118,0 80.1259422227,14.2626466327,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12561830609999,14.2615591688,0 80.12537630289999,14.260754381,0 80.12654409779999,14.2604476605,0 80.12678932430001,14.2612222582,0 80.12561830609999,14.2615591688,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.125466163,14.2593864798,0 80.12526600459999,14.258570831,0 80.1264024581,14.2582543032,0 80.12659937300001,14.2590592151,0 80.125466163,14.2593864798,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1249352931,14.2595400489,0 80.1243281053,14.2597032862,0 80.1241295483,14.2588873532,0 80.12526600459999,14.258570831,0 80.125466163,14.2593864798,0 80.1249352931,14.2595400489,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1241098428,14.2568709891,0 80.1241989522,14.2575252203,0 80.1231978917,14.2577936038,0 80.1231087984,14.2571393707,0 80.1241098428,14.2568709891,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12511089829999,14.2566026015,0 80.12520001039999,14.2572568324,0 80.1241989522,14.2575252203,0 80.124109856,14.2568709874,0 80.12511089829999,14.2566026015,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1261119516,14.2563342095,0 80.1262010666,14.2569884402,0 80.12520001039999,14.2572568324,0 80.1251109114,14.2566025998,0 80.1261119516,14.2563342095,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.124198939,14.257525222,0 80.1242880487,14.2581794531,0 80.1232869855,14.2584478368,0 80.1231978917,14.2577936038,0 80.124198939,14.257525222,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1251999973,14.2572568341,0 80.1252891099,14.2579110651,0 80.1242880487,14.2581794531,0 80.1241989522,14.2575252203,0 80.1251999973,14.2572568341,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1262010534,14.256988442,0 80.1262901689,14.2576426727,0 80.1252891099,14.2579110651,0 80.12520001039999,14.2572568324,0 80.1262010534,14.256988442,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1283214213,14.2548786244,0 80.1271220843,14.2552903078,0 80.1269328727,14.2543921772,0 80.12793933179999,14.2541126335,0 80.1283214213,14.2548786244,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1256341556,14.2547231957,0 80.12668705740001,14.2544607662,0 80.1269328727,14.2543921772,0 80.1271220843,14.2552903078,0 80.1257103296,14.255526772,0 80.1256341556,14.2547231957,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1256341556,14.2547231957,0 80.1256096945,14.2544832798,0 80.1255325921,14.2536517733,0 80.126553262,14.2533849398,0 80.12668705740001,14.2544607662,0 80.1256341556,14.2547231957,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1245145205,14.2555950642,0 80.12441303049999,14.2547926069,0 80.12543287360001,14.2545290977,0 80.1255343671,14.2553315549,0 80.1245145205,14.2555950642,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12441303049999,14.2547926069,0 80.1243021011,14.2539913389,0 80.12533565619999,14.2536995995,0 80.12543287360001,14.2545290977,0 80.12441303049999,14.2547926069,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1234887369,14.2558356587,0 80.1233901505,14.2550446729,0 80.12441303049999,14.2547926069,0 80.1245145205,14.2555950642,0 80.1234887369,14.2558356587,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1233901505,14.2550446729,0 80.1232822595,14.2542548433,0 80.1243021011,14.2539913389,0 80.12441303049999,14.2547926069,0 80.1233901505,14.2550446729,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1243447283,14.2529438496,0 80.12447212390001,14.2537398743,0 80.1234460866,14.2540057091,0 80.12333803360001,14.2531912436,0 80.1243447283,14.2529438496,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12636271629999,14.2517736161,0 80.1267222539,14.2516852831,0 80.127334797,14.2529975369,0 80.12652640979999,14.2532109708,0 80.12643743290001,14.2524295598,0 80.12636271629999,14.2517736161,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1252767206,14.2520405059,0 80.1253514342,14.2526964497,0 80.1253249995,14.2527029462,0 80.1243447283,14.2529438496,0 80.12427003080001,14.2522879042,0 80.1252767206,14.2520405059,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12636271629999,14.2517736161,0 80.12643743290001,14.2524295598,0 80.1254307291,14.2526769643,0 80.1253560286,14.2520210191,0 80.12636271629999,14.2517736161,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12668705740001,14.2544607662,0 80.126553262,14.2533849398,0 80.12745270649999,14.2531370674,0 80.12793933179999,14.2541126335,0 80.1269328727,14.2543921772,0 80.12668705740001,14.2544607662,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1172244613,14.2629483018,0 80.11807050509999,14.2627290869,0 80.11825365990001,14.2633362128,0 80.11749030519999,14.2636987932,0 80.1172244613,14.2629483018,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12643743290001,14.2524295598,0 80.12652640979999,14.2532109708,0 80.1255124546,14.253472027,0 80.1254042944,14.2526834608,0 80.1254307291,14.2526769643,0 80.12643743290001,14.2524295598,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.12427003080001,14.2522879042,0 80.1243447283,14.2529438496,0 80.12333803360001,14.2531912436,0 80.12326333900001,14.2525352982,0 80.12427003080001,14.2522879042,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1254042944,14.2526834608,0 80.1255124546,14.253472027,0 80.12447212390001,14.2537398743,0 80.1243447283,14.2529438496,0 80.1253514342,14.2526964497,0 80.1254042944,14.2526834608,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.09746756120001,14.2635750603,0 80.0977916561,14.2628357856,0 80.0987244144,14.2638341423,0 80.09857582719999,14.2639674479,0 80.09746756120001,14.2635750603,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.09857582719999,14.2639674479,0 80.0995711389,14.2630741811,0 80.1000983739,14.2636385771,0 80.0994021663,14.2642607227,0 80.09857582719999,14.2639674479,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.0994021663,14.2642607227,0 80.1000983739,14.2636385771,0 80.10062568790001,14.2642029707,0 80.1002286595,14.2645540842,0 80.0994021663,14.2642607227,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.0987244144,14.2638341423,0 80.09819330000001,14.2632656619,0 80.0990409158,14.2625124854,0 80.0995711389,14.2630741811,0 80.0987244144,14.2638341423,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.0977916561,14.2628357856,0 80.0983992355,14.2618197539,0 80.0990409158,14.2625124854,0 80.09819330000001,14.2632656619,0 80.0977916561,14.2628357856,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.0985924317,14.2616550719,0 80.099376681,14.2608036713,0 80.100096628,14.2615742494,0 80.09924602850001,14.2623301315,0 80.0985924317,14.2616550719,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.09924602850001,14.2623301315,0 80.100096628,14.2615742494,0 80.1006238611,14.2621386442,0 80.0997733374,14.2628945262,0 80.09924602850001,14.2623301315,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.099376681,14.2608036713,0 80.1001759312,14.2599520529,0 80.1009535499,14.2607782702,0 80.100096628,14.2615742494,0 80.099376681,14.2608036713,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1006238611,14.2621386442,0 80.100096628,14.2615742494,0 80.1009535499,14.2607782702,0 80.1015228871,14.2613172649,0 80.1006238611,14.2621386442,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.0997733374,14.2628945262,0 80.1015228871,14.2613172649,0 80.1018968659,14.2618038242,0 80.10017985819999,14.2633297522,0 80.0997733374,14.2628945262,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10017985819999,14.2633297522,0 80.1010304571,14.2625738674,0 80.1016784122,14.2632674294,0 80.1007775531,14.2639694465,0 80.10017985819999,14.2633297522,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1016784122,14.2632674294,0 80.1010304571,14.2625738674,0 80.1018968659,14.2618038242,0 80.1025596552,14.2625128395,0 80.1016784122,14.2632674294,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1003704086,14.2597081025,0 80.10109405910001,14.2589268802,0 80.10145300480001,14.2593110341,0 80.1006587964,14.260016786,0 80.1003704086,14.2597081025,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1006587964,14.260016786,0 80.10145300480001,14.2593110341,0 80.10198023709999,14.2598754243,0 80.1011860282,14.2605811795,0 80.1006587964,14.260016786,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10109405910001,14.2589268802,0 80.1021096444,14.2583102709,0 80.1028308178,14.2591195328,0 80.10198023709999,14.2598754243,0 80.10109405910001,14.2589268802,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1011860282,14.2605811795,0 80.10198023709999,14.2598754243,0 80.1025075479,14.2604398153,0 80.10171334010001,14.2611455706,0 80.1011860282,14.2605811795,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1025075479,14.2604398153,0 80.10198023709999,14.2598754243,0 80.1028308178,14.2591195328,0 80.1033580517,14.2596839218,0 80.1025075479,14.2604398153,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10171334010001,14.2611455706,0 80.1025075479,14.2604398153,0 80.1030347849,14.261004205,0 80.1022405754,14.2617099621,0 80.10171334010001,14.2611455706,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1030347849,14.261004205,0 80.1025075479,14.2604398153,0 80.1033580517,14.2596839218,0 80.10388536559999,14.2602483083,0 80.1030347849,14.261004205,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1022405754,14.2617099621,0 80.1030347849,14.261004205,0 80.1036253222,14.2616435829,0 80.10284827450001,14.2623584456,0 80.1022405754,14.2617099621,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1036253222,14.2616435829,0 80.1030347849,14.261004205,0 80.10388536559999,14.2602483083,0 80.1044808811,14.2608857157,0 80.1036253222,14.2616435829,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1024098676,14.25831384,0 80.10351450410001,14.2578299801,0 80.10392612130001,14.2582705515,0 80.1030756232,14.2590264471,0 80.1024098676,14.25831384,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1030756232,14.2590264471,0 80.10392612130001,14.2582705515,0 80.1044534337,14.2588349362,0 80.1036028609,14.2595908355,0 80.1030756232,14.2590264471,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1036028609,14.2595908355,0 80.1044534337,14.2588349362,0 80.10498067330001,14.2593992318,0 80.1041300982,14.2601551324,0 80.1036028609,14.2595908355,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1041300982,14.2601551324,0 80.10498067330001,14.2593992318,0 80.10550791510001,14.2599636164,0 80.1046574152,14.2607195174,0 80.1041300982,14.2601551324,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10550791510001,14.2599636164,0 80.10498067330001,14.2593992318,0 80.1058311669,14.2586433287,0 80.1063584851,14.25920771,0 80.10550791510001,14.2599636164,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10498067330001,14.2593992318,0 80.1044534337,14.2588349362,0 80.1053039274,14.2580790354,0 80.1058311669,14.2586433287,0 80.10498067330001,14.2593992318,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1044534337,14.2588349362,0 80.10392612130001,14.2582705515,0 80.10351450410001,14.2578299801,0 80.1046211915,14.2573482927,0 80.1053039274,14.2580790354,0 80.1044534337,14.2588349362,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1065397344,14.2590466827,0 80.1060124942,14.2584823004,0 80.106835817,14.257750534,0 80.1073902982,14.2582907728,0 80.1065397344,14.2590466827,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1060124942,14.2584823004,0 80.10548517620001,14.2579179168,0 80.1063357388,14.2571620122,0 80.106835817,14.257750534,0 80.1060124942,14.2584823004,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.10548517620001,14.2579179168,0 80.1048566345,14.257245138,0 80.10600494960001,14.2568079793,0 80.1063357388,14.2571620122,0 80.10548517620001,14.2579179168,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.1073902982,14.2582907728,0 80.106835817,14.257750534,0 80.10789915700001,14.2568054899,0 80.10818553279999,14.2571808659,0 80.1078424543,14.2574828415,0 80.1080503272,14.2577041703,0 80.1073902982,14.2582907728,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[Unknown Area Type<BR><BR><B>Id</B> = 0]]></description>
+			<styleUrl>#area1</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							80.106835817,14.257750534,0 80.1063357388,14.2571620122,0 80.10600494960001,14.2568079793,0 80.107036737,14.2564122576,0 80.1072538823,14.2563391976,0 80.1074075434,14.2563166303,0 80.1075131642,14.2563389004,0 80.1076014449,14.25639717,0 80.10789915700001,14.2568054899,0 80.106835817,14.257750534,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
