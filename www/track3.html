@@ -1,0 +1,275 @@
+<html>
+
+<head>
+    <title>KyTe - Internal Fleet Ops</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            overflow: hidden;
+            top: 0px;
+        }
+
+        #floating-panel {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 5;
+            width: 100%;
+            transition: background-color .5s;
+            /*background-color: #5da58a; /*#ff8080;*/
+            background: linear-gradient(to bottom, #4682B4 50%, #87CEFA 100%);
+            overflow: hidden;
+            padding: 5px;
+            border: 1px solid #428bca;
+            font-family: 'Roboto', 'sans-serif';
+            line-height: 30px;
+        }
+
+        #floating-panel1 {
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            padding: 5px;
+            line-height: 30px;
+            padding-left: 10px;
+            background-color: white;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body onload="checkCookies()">
+    <div id="main">
+        <span ID="floating-panel" style="color: white; font-size: 25px; font-family: Calibri;
+                font-weight: bolder; padding-left: 5px; text-shadow: 1px 1px 1px #000;">            
+               <img src="images/Kite4.png" height="26px" width="32px" />
+                KyTe - Internal Fleet Ops
+        </span>
+        <div id="floating-panel1">
+            <label for="txtVeh" class="control-label">Vehicle No</label>:&nbsp;<input type="text" name="txtVeh" id="txtVeh"
+                class="inputtext text-uppercase" required />&nbsp;<input type="button" class="btn btn-success" id="btnLoad" value="Load">
+            <i id="iload" class="fa fa-spinner fa-spin fa-2x fa-fw" aria-hidden="true"></i>
+            <span class="sr-only" id="spnload">Loading...</span>
+        </div>
+        <div id="googleMap" class="map"></div>
+    </div>
+</body>
+
+</html>
+<script src="http://172.168.0.85/SqlTrack/dist/js/jquery-3.1.1.js" type="text/javascript"></script>
+<script src="http://172.168.0.85/SqlTrack/dist/js/geoxml3.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var map, infowindow, bounds, endMarker, heading, prevheading, prevPoint, drawingManager, tripPath, boundStatus = true;
+    var gendmarkers = [], boundcoords = [], controlCoords = [], path = [];
+    var markerStore = {};
+    var colors = ["#38c6f3", "#ff4864", "#428bca", "#166048", "#ff0000", "#512411", "#e3af0c"];
+    var car = "M164 1186 c-17 -8 -40 -26 -52 -41 -20 -26 -22 -39 -22 -179 l0 -152 -35 -17 c-19 -9 -35 -23 -35 -31 0 -13 4 -13 35 0 l35 14 0 -27 c0 -16 1 -173 3 -349 2 -301 3 -323 21 -343 11 -12 26 -21 35 -21 14 0 14 2 1 10 -11 7 -3 10 29 10 44 0 48 -13 6 -23 -11 -3 50 -5 135 -4 85 0 145 2 133 4 -37 7 -26 23 15 23 27 0 33 -3 22 -10 -13 -9 -13 -10 1 -10 8 0 23 6 33 13 16 11 17 42 17 370 1 196 3 357 5 357 3 0 20 -7 39 -14 31 -13 35 -13 35 0 0 9 -18 23 -40 32 l-39 17 0 120 c0 73 -4 121 -11 123 -5 2 -10 14 -10 27 0 14 -14 40 -31 60 -17 19 -28 35 -25 35 13 0 64 -30 69 -40 3 -6 4 -5 3 2 -1 7 -22 23 -46 36 -39 19 -59 22 -170 22 -82 -1 -136 -5 -156 -14z m294 -277 l52 -10 0 -76 0 -75 -42 9 c-55 10 -241 10 -295 0 l-43 -9 0 75 0 76 53 10 c101 21 163 21 275 0z m33 -594 c-3 -82 -7 -133 -9 -112 l-3 37 -158 0 -157 0 4 -35 c3 -21 0 -35 -7 -35 -8 0 -11 44 -11 140 0 93 4 140 11 140 7 0 9 -32 7 -95 l-3 -95 158 0 157 0 0 100 0 100 -167 2 -168 2 168 3 167 3 2 58 1 57 6 -60 c3 -33 4 -127 2 -210z";
+
+    function checkCookies() {
+        var zoomcal = 18;
+        var mapProp = {
+            center: new google.maps.LatLng(14.259910, 80.113634),
+            panControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            preserveViewport: true,
+            disableDefaultUI: true,
+            mapTypeControl: false,
+            streetViewControl: false,
+            zoom: zoomcal,
+            overviewMapControl: false,
+            rotateControl: true,
+            styles: [
+                {
+                    "featureType": "poi",
+                    "stylers": [
+                        { "visibility": "off" }
+                    ]
+                }
+            ]
+        };
+
+        tripPath = new google.maps.Polyline({
+            geodesic: true,
+            strokeColor: 'red',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        var zoomopt = { minZoom: 12, maxZoom: 18 };
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var parser = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parser.parse("http://172.168.0.85/SqlTrack/Boundaries/KPCL_Boundary.kml");
+
+        var parserberth = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserberth.parse("http://172.168.0.85/SqlTrack/Boundaries/Berth.kml");
+
+        var parserbollard = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserberth.parse("http://172.168.0.85/SqlTrack/Boundaries/Bollard.kml");
+
+        var parserMangroves = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserMangroves.parse("http://172.168.0.85/SqlTrack/Boundaries/Mangroves.kml");
+
+        var parserberth = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserberth.parse("http://172.168.0.85/SqlTrack/Boundaries/Buildings.kml");
+
+        var parserPlantation = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserPlantation.parse("http://172.168.0.85/SqlTrack/Boundaries/Plantation.kml");
+
+
+        var parserCB = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserCB.parse("http://172.168.0.85/SqlTrack/Boundaries/Conveyor_Belt.kml");
+
+        var parserRoad = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserRoad.parse("http://172.168.0.85/SqlTrack/Boundaries/Roads.kml");
+
+        var parserDivider = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserDivider.parse("http://172.168.0.85/SqlTrack/Boundaries/Divider.kml");
+
+        var parserRoaddir = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserRoaddir.parse("http://172.168.0.85/SqlTrack/Boundaries/Road_directions.kml");
+
+        //        var parserPoints = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        //        parserPoints.parse("http://172.168.0.85/SqlTrack/Boundaries/Point.kml");
+
+        //        var parserCY = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        //        parserCY.parse("http://172.168.0.85/SqlTrack/Boundaries/Container_Yard.kml");
+
+        var parserBridge = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserBridge.parse("http://172.168.0.85/SqlTrack/Boundaries/Bridge.kml");
+
+        var parserrl = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserrl.parse("http://172.168.0.85/SqlTrack/Boundaries/Railway_Line.kml");
+
+        var parserYards = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserYards.parse("http://172.168.0.85/SqlTrack/Boundaries/Yards.kml");
+
+        var parserrcl = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserrcl.parse("http://172.168.0.85/SqlTrack/Boundaries/Road_Center_Line.kml");
+
+        var parserWaterBody = new geoXML3.parser({ suppressInfoWindows: false, preserveViewPort: false, map: map });
+        parserWaterBody.parse("http://172.168.0.85/SqlTrack/Boundaries/Water_Body.kml");
+
+        infowindow = new google.maps.InfoWindow();
+    }
+    $(document).ready(function () {
+        $("#iload").hide();
+        $("#spnload").hide();
+        $("#btnLoad").click(function () {
+            //debugger;
+            $(this).hide();
+            $("#iload").show();
+            $("#spnload").show();
+            path = [];
+            removeMarkers();
+            var timeout = setTimeout(function runMe() {
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json",
+                    url: 'http://172.168.0.85/SqlTrack/CallService.asmx/Tripdetails',
+                    data: {},
+                    dataType: "json",
+                    success: function (result) {
+                        if (result.d != "No Data found" && result.d.length > 0) {
+                            initMap(result.d, $("#txtVeh").val());
+                            $("#btnLoad").show();
+                            $("#iload").hide();
+                            $("#spnload").hide();
+                        }
+                        timeout = setTimeout(runMe, 1000);
+                    },
+                    error: function () {
+                        $("#btnLoad").show();
+                        $("#iload").hide();
+                        $("#spnload").hide();
+                        timeout = setTimeout(runMe, 5000);
+                    }
+                });
+            }, 1000);
+        });
+    });
+
+    function initMap(tripdata, _vehno) {
+        if (tripdata != undefined) {
+            //removeMarkers();
+            //debugger;            
+            if (tripdata.length > 0) {
+                //debugger;
+                var _veh = _vehno;
+                if (_veh != '') {
+                    var data = (new Function("return [" + tripdata + "];")());
+                    var value = $(data).filter(function (i, n) {
+                        return n[1] === 'VEHICLENO-' + _veh.toUpperCase();
+                    });
+                    if (value.length > 0) {
+                        //debugger;
+                        var coords = value[0][2] + ',' + value[0][3];
+                        var tripid = value[0][0];
+                        var vehno = value[0][1];
+                        if (vehno == undefined)
+                            vehno = tripid;
+
+                        var endPoint = new google.maps.LatLng(coords.split(',')[0], coords.split(',')[1]);
+                        boundcoords.push(endPoint);
+                        controlCoords.push(endPoint);
+                        heading = google.maps.geometry.spherical.computeHeading(new google.maps.LatLng(value[4], value[5]), endPoint);
+                        var markerImage = {
+                            path: car,
+                            scaledSize: new google.maps.Size(30, 60), // size
+                            origin: new google.maps.Point(0, 0), // origin
+                            anchor: new google.maps.Point(10, 25), // anchor
+                            rotation: -180 + heading,
+                            fillColor: "#04417e",
+                            fillOpacity: 1,
+                            scale: .015,
+                            strokeOpacity: .5
+                        };
+                        endMarker = new google.maps.Marker({
+                            draggable: false,
+                            map: map
+                        });
+                        endMarker.setPosition(endPoint);
+                        //debugger;
+                        if (prevPoint == null && prevPoint == undefined)
+                            path.push(new google.maps.LatLng(value[0][5], value[0][6]));
+                        prevPoint = new google.maps.LatLng(value[0][5], value[0][6]);
+                        if (prevPoint != endPoint)
+                            path.push(endPoint);
+                        gendmarkers.push(endMarker);
+                        tripPath.setPath(path);
+                        tripPath.setMap(map);
+                        console.log(value[0][5] + ',' + value[0][6]);
+                    }
+                }
+            }
+        }
+    }
+
+    function removeMarkers() {
+        for (i = 0; i < gendmarkers.length; i++) {
+            if (gendmarkers.length > 0 && gendmarkers[i].getMap() != null) {
+                gendmarkers[i].setMap(null);
+            }
+        }
+    }
+
+</script>
+<!--<script src="dist/js/google.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry,drawing"
+    async defer></script>

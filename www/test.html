@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Vehicle Live Tracking</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-        <style type="text/css">
-            body {
-                font-family: "Lato", sans-serif;
-                overflow: hidden;
-            }
-            #main {
-                width: 100%;
-                height: 100%;
-                left: 0px;
-                top: 0px;
-                position: absolute;
-            }
-            .headerbar{
-                /*background-color: #4f9c8b;*/
-                background: linear-gradient(to bottom, #4682B4 50%, #87CEFA 100%);
-                color: white;
-                font-size: 25px;
-                left: 0px;
-                position: absolute;
-                top: 0px;
-                width: 100%;
-                z-index: 7;
-                height: 50px;
-                padding-top:5px;
-            }
-            #googleMap {
-                width: 100%; 
-                height: 100%; 
-                position: absolute; 
-                top: 0px; 
-                left: 0px; 
-                overflow: hidden;
-            }
-        </style>
-    </head>
+
+<head>
+    <title>Vehicle Live Tracking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            font-family: "Lato", sans-serif;
+            overflow: hidden;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+        }
+
+        .headerbar {
+            /*background-color: #4f9c8b;*/
+            background: linear-gradient(to bottom, #4682B4 50%, #87CEFA 100%);
+            color: white;
+            font-size: 25px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 7;
+            height: 50px;
+            padding-top: 5px;
+        }
+
+        #googleMap {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
 <body>
     <div id="main">
         <span class="text-left headerbar" style="color: white; font-size: 25px; font-family: Calibri; 
                                                   font-weight: bolder; padding-left: 5px; text-shadow: 1px 1px 1px #000;">
-            <img src="images/Kite4.png" height="32px" width="32px" />KyTe - Testing
+            <img src="images/Kite4.png" height="32px" width="32px" />KyTe - Vehicle Live Tracking
         </span>
         <div id="googleMap"></div>
     </div>
@@ -52,9 +57,9 @@
     <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
     <script type="text/javascript">
         var config = {
-          apiKey: "AIzaSyBQ79jCTxiGDwXjk-NyBHQJERpAgIw2SAo",
-          authDomain: "kyte-8d276.firebaseapp.com",
-          databaseURL: "https://kyte-8d276.firebaseio.com/"
+            apiKey: "AIzaSyB78jtlesuamapPS3hEaPX4ZR1nQeQz3B4",
+            authDomain: "kytedemo.firebaseapp.com",
+            databaseURL: "https://kytedemo.firebaseio.com/"
         };
 
         firebase.initializeApp(config);
@@ -66,7 +71,6 @@
         var startMarker, endMarker, tripId, truckNo, bounds, boundStatus = true, timeStamp1, timeStamp2, drawstatus = false;
         var map, infowindow, hoverwindow, startPoint, prevPoint, endPoint, drawingManager;
         var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
-        var marker1, marker2, marker3, marker4, marker5, marker6, marker7, marker8;
 
         function initMap() {
             //timeStamp1 = new Date();
@@ -84,176 +88,463 @@
             };
 
             map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            
-            var marker = new google.maps.Marker({
-                draggable: true,
+
+            /*var srcBoundary = 'https://sites.google.com/site/kpclkml/KPCLBOUNDARY.kmz?attredirects=0&d=1';            
+            var kmlBoundary = new google.maps.KmlLayer(srcBoundary, {
+                suppressInfoWindows: false,
+                preserveViewport: false,
                 map: map
-            });
-            
-            marker1 = new google.maps.Marker({
-                draggable: false
-            });
-            marker1.setPosition(new google.maps.LatLng(14.277692206432475, 80.1016616821289));
+            });*/
 
-            marker2 = new google.maps.Marker({
-                draggable: false
-            });
-            marker2.setPosition(new google.maps.LatLng(14.25789460707626, 80.11359214782715));
+            var centerControlDiv = document.createElement('div');
+            var centerControl = new CenterControl(centerControlDiv, map);
 
-            marker3 = new google.maps.Marker({
-                draggable: false
-            });
-            marker3.setPosition(new google.maps.LatLng(14.259891082502145, 80.11050224304199));
+            centerControlDiv.index = 1;
+            map.controls[google.maps.ControlPosition.LEFT_CENTER].push(centerControlDiv);
 
-            marker4 = new google.maps.Marker({
-                draggable: false
+            infowindow = new google.maps.InfoWindow();
+            hoverwindow = new google.maps.InfoWindow();
+            bounds = new google.maps.LatLngBounds();
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(14.2599286, 80.1137635),
+                icon: "images/icon.png",
+                draggable: false,
+                optimized: false,
+                //map: map
             });
-            marker4.setPosition(new google.maps.LatLng(14.26280257747137, 80.11616706848145));
 
-            marker5 = new google.maps.Marker({
-                draggable: false
+            var tripPlan = new google.maps.Polyline({
+                strokeColor: 'black',
+                //strokeOpacity: 0.6,
+                strokeWeight: 2
             });
-            marker5.setPosition(new google.maps.LatLng(14.263384871952399, 80.1119613647461));
 
-            marker6 = new google.maps.Marker({
-                draggable: false
+            map.addListener('click', function () {
+                infowindow.close();
+                hoverwindow.close();
+                tripPlan.setMap(null);
+                //map.setZoom(12);
+                //smoothZoom(map, 12, map.getZoom());
             });
-            marker6.setPosition(new google.maps.LatLng(14.241838974694755, 80.11384963989258));
 
-            marker7 = new google.maps.Marker({
-                draggable: false
+            drawingManager = new google.maps.drawing.DrawingManager({
+                //drawingMode: google.maps.drawing.OverlayType.POLYGON,
+                drawingControl: true,
+                drawingControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_CENTER,
+                    //drawingModes: ['marker', 'circle', 'polygon', 'polyline', 'rectangle']
+                    drawingModes: ['rectangle']
+                },
+                //markerOptions: {icon: 'images/map-marker-icon-red.png', scaledSize: new google.maps.Size(10, 20), scale: .4},
+                polygonOptions: {
+                    fillColor: '#428bca',
+                    fillOpacity: .3,
+                    strokeColor: '#428bca',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 0,
+                    clickable: true,
+                    editable: true,
+                    zIndex: 1
+                }
             });
-            marker7.setPosition(new google.maps.LatLng(14.245749000772165, 80.11917114257812));
+            drawingManager.setMap(map);
 
-            marker8 = new google.maps.Marker({
-                draggable: false
-            });
-            marker8.setPosition(new google.maps.LatLng(14.255981301537767, 80.09522438049316));
-
-            var circle = new google.maps.Circle({
-                //position: event.latLng,
-                map: map,
-                fillColor : '#BBD8E9',
-                fillOpacity : 0.3,
-                radius : 1000,
-                strokeColor : '#BBD8E9',
-                strokeOpacity : 0.9,
-                strokeWeight : 2
-            });
-            
-            google.maps.event.addListener(map, 'click', function(event) {
-                marker.setPosition(event.latLng);
-                marker.setMap(map);
-                circle.setOptions({
-                    fillOpacity: 0.3,
-                    strokeOpacity: 0.9,
-                    radius: 1000
-                });
-                circle.bindTo('center', marker, 'position');
-                var bounds = circle.getBounds();
+            google.maps.event.addListener(drawingManager, 'overlaycomplete', function (event) {
                 //debugger;
-                
-                ShowMarkers(bounds);
-                console.log("Map Click" + event.latLng);
+                //drawingManager.setDrawingMode(null);
+                map.fitBounds(event.overlay.getBounds());
+                event.overlay.setMap(null);
             });
-            
-            google.maps.event.addListener(circle, 'click', function(event) {
-                marker.setPosition(event.latLng);
-                marker.setMap(map);
-                circle.setOptions({
-                    fillOpacity: 0.3,
-                    strokeOpacity: 0.9,
-                    radius: 1000
-                });
-                circle.bindTo('center', marker, 'position');
-                var bounds = circle.getBounds();
+
+            rootRef.on('value', function (snapshot) {
+                if (snapshot.exists()) {
+                    var colorNo = 0;
+                    var arrayObject = [];
+                    arrayObject = snapshot.val();
+                    //removeMarkers();
+
+                    snapshot.forEach(function (data) {
+                        //debugger;
+                        var i = Object.values(data.val()).length, k = 0;
+                        //coords = [];
+                        if (i > 0 && data.key != "null") {
+                            tripId = data.key;
+                            truckNo = data.val().vehNo;
+                            var color = colors[colorNo];
+
+                            startPoint = new google.maps.LatLng(data.val().startPoint.latlng.split(',')[0],
+                                data.val().startPoint.latlng.split(',')[1]);
+                            prevPoint = new google.maps.LatLng(data.val().prevPoint.latlng.split(',')[0],
+                                data.val().prevPoint.latlng.split(',')[1]);
+                            endPoint = new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
+                                data.val().endPoint.latlng.split(',')[1]);
+
+                            startMarker = new google.maps.Marker();
+                            startMarker.setPosition(startPoint);
+
+                            gstartmarkers.push(prevPoint);
+                            coords.push(endPoint);
+                            controlCoords.push(endPoint);
+
+                            if (markerStore.hasOwnProperty(truckNo)) {
+                                if ((markerStore[truckNo].getPosition().lat() != endPoint.lat())
+                                    || (markerStore[truckNo].getPosition().lng() != endPoint.lng())) {
+                                    var heading = google.maps.geometry.spherical.computeHeading(markerStore[truckNo].getPosition(), endPoint);
+                                    var markerImage = {
+                                        path: car,
+                                        //url: 'images/ic_sedan_topview.png',
+                                        scaledSize: new google.maps.Size(30, 60), // size
+                                        origin: new google.maps.Point(0, 0), // origin
+                                        anchor: new google.maps.Point(10, 25), // anchor
+                                        rotation: heading,
+                                        fillColor: color,
+                                        fillOpacity: 1,
+                                        scale: .4,
+                                        //strokeColor: "#606060",
+                                        strokeOpacity: .7
+                                    };
+                                    markerStore[truckNo].setPosition(endPoint);
+                                    markerStore[truckNo].setIcon(markerImage);
+                                    markerStore[truckNo].setMap(map);
+
+                                    google.maps.event.clearInstanceListeners(markerStore[truckNo]);
+
+                                    google.maps.event.addListener(markerStore[truckNo], 'mouseover', function () {
+                                        //debugger;
+                                        hoverwindow.close();
+                                        if (data.val().vehNo != undefined) {
+                                            hoverwindow = new google.maps.InfoWindow({
+                                                content: "<b>" + data.val().vehNo + "</b>",
+                                                position: new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
+                                                    data.val().endPoint.latlng.split(',')[1])
+                                            });
+                                            hoverwindow.open(map);
+                                        }
+                                    });
+
+                                    //hoverwindow.setPosition(new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
+                                    //                              data.val().endPoint.latlng.split(',')[1]));
+
+                                    google.maps.event.addListener(markerStore[truckNo], 'mouseout', function () {
+                                        hoverwindow.close();
+                                    });
+
+                                    google.maps.event.addListener(markerStore[truckNo], 'click', function () {
+                                        infowindow.close(); coords = [];
+                                        var markCoords = [], tripCoords = [], tripCoordsRed = [], tripCoordsGreen = [], distance = 0;
+                                        //debugger;
+                                        $.ajax({
+                                            type: "GET",
+                                            contentType: "application/json; charset=utf-8",
+                                            url: 'http://kyte.net.in/AviationApi/api/TripDetails/ReadLocationLog/' + data.key,
+                                            dataType: "json",
+                                            //data: '{}',
+                                            async: true,
+                                            success: function (result) {
+                                                //debugger;
+                                                $.each(result.Coordinates, function (key, data) {
+                                                    tripCoords.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+
+                                                    if (tripCoords.length > 1) {
+                                                        if (tripCoords[tripCoords.length - 2] != tripCoords[tripCoords.length - 1]) {
+                                                            var mts = google.maps.geometry.spherical.computeDistanceBetween
+                                                                (tripCoords[tripCoords.length - 2], tripCoords[tripCoords.length - 1]);
+                                                            distance = parseFloat(distance) + parseFloat(mts);
+                                                        }
+                                                    }
+                                                });
+
+                                                OpenInfo(result.VehNo, result.Coordinates[0], result.Coordinates[result.Coordinates.length - 1], distance, result.LogDate);
+
+                                                tripPlan.setPath(tripCoords);
+                                                tripPlan.setMap(map);
+                                            },
+                                            error: function (result) {
+                                                NoDataInfo(data.key, markerStore[truckNo].getPosition());
+                                            }
+                                        });
+                                    });
+                                }
+                            } else {
+                                if ((endPoint != null || endPoint != undefined) && (startPoint != endPoint)) {
+                                    var heading = google.maps.geometry.spherical.computeHeading(prevPoint, endPoint);
+                                    var markerImage = {
+                                        path: car,
+                                        //url: 'images/ic_sedan_topview.png',
+                                        scaledSize: new google.maps.Size(30, 60), // size
+                                        origin: new google.maps.Point(0, 0), // origin
+                                        anchor: new google.maps.Point(10, 25), // anchor
+                                        rotation: heading,
+                                        fillColor: color,
+                                        fillOpacity: 1,
+                                        scale: .4,
+                                        //strokeColor: "#606060",
+                                        strokeOpacity: .7
+                                    };
+                                    var endMarker = new google.maps.Marker({
+                                        draggable: false,
+                                        map: map
+                                    });
+                                    //debugger;
+                                    endMarker.setPosition(endPoint);
+                                    endMarker.setIcon(markerImage);
+
+                                    if (map.getZoom() <= 17 && markerImage.scale != 0.4) {
+                                        markerImage.scale = .4;
+                                        markerStore[truckNo].setOptions({ icon: markerImage });
+                                    } else if (map.getZoom() == 18 && markerImage.scale != 0.8) {
+                                        markerImage.scale = .8;
+                                        markerStore[truckNo].setOptions({ icon: markerImage });
+                                    } else if (map.getZoom() > 18 && markerImage.scale != 1) {
+                                        markerImage.scale = 1;
+                                        markerStore[truckNo].setOptions({ icon: markerImage });
+                                    }
+
+                                    gendmarkers.push(endMarker);
+                                    markerStore[truckNo] = endMarker;
+
+                                    google.maps.event.addListener(endMarker, 'mouseover', function () {
+                                        //debugger;
+                                        hoverwindow.close();
+                                        if (data.val().vehNo != undefined) {
+                                            hoverwindow = new google.maps.InfoWindow({
+                                                content: "<b>" + data.val().vehNo + "</b>",
+                                                position: new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
+                                                    data.val().endPoint.latlng.split(',')[1])
+                                            });
+                                            hoverwindow.open(map);
+                                        }
+                                    });
+
+                                    //hoverwindow.setPosition(new google.maps.LatLng(data.val().endPoint.latlng.split(',')[0],
+                                    //                              data.val().endPoint.latlng.split(',')[1]));
+
+                                    google.maps.event.addListener(endMarker, 'mouseout', function () {
+                                        hoverwindow.close();
+                                    });
+
+                                    google.maps.event.addListener(endMarker, 'click', function () {
+                                        infowindow.close(); coords = [];
+                                        var markCoords = [], tripCoords = [], tripCoordsRed = [], tripCoordsGreen = [], distance = 0;
+                                        var url = 'http://www.kyte.net.in/AviationApi/api/TripDetails/ReadLocationLog/' + data.key;
+                                        //debugger;
+                                        //Default Web Site
+
+                                        $.ajax({
+                                            type: "GET",
+                                            dataType: "json",
+                                            async: true,
+                                            url: 'http://www.kyte.net.in/AviationApi/api/TripDetails/ReadLocationLog/' + data.key,
+                                            success: function (result) {
+                                                $.each(result.Coordinates, function (key, data) {
+                                                    tripCoords.push(new google.maps.LatLng(data.split(',')[0], data.split(',')[1]));
+
+                                                    if (tripCoords.length > 1) {
+                                                        if (tripCoords[tripCoords.length - 2] != tripCoords[tripCoords.length - 1]) {
+                                                            var mts = google.maps.geometry.spherical.computeDistanceBetween
+                                                                (tripCoords[tripCoords.length - 2], tripCoords[tripCoords.length - 1]);
+                                                            distance = parseFloat(distance) + parseFloat(mts);
+                                                        }
+                                                    }
+                                                });
+
+                                                OpenInfo(result.VehNo, result.Coordinates[0], result.Coordinates[result.Coordinates.length - 1], distance, result.LogDate);
+
+                                                tripPlan.setPath(tripCoords);
+                                                tripPlan.setMap(map);
+                                            },
+                                            error: function (result) {
+                                                NoDataInfo(data.key, endMarker.getPosition());
+                                            }
+                                        });
+                                    });
+                                }
+                            }
+                        }
+                    });
+                }
                 //debugger;
-                
-                ShowMarkers(bounds);                
-                console.log("Cricle Click" + event.latLng);
+                if (boundStatus) {
+                    for (var i = 0; i <= coords.length - 1; i++) {
+                        bounds.extend(new google.maps.LatLng(coords[i].lat(), coords[i].lng()));
+                    }
+                    map.fitBounds(bounds);
+                    map.panTo(new google.maps.LatLng(bounds.getCenter().lat(), bounds.getCenter().lng()));
+                    boundStatus = false;
+                }
+                coords = [];
             });
-            
-            google.maps.event.addListener(marker, 'drag', function(event) {
-                marker.setPosition(event.latLng);
-                //marker.setMap(map);
-                circle.setOptions({
-                    fillOpacity: 0.3,
-                    strokeOpacity: 0.9,
-                    radius: 1000
-                });
-                circle.bindTo('center', marker, 'position');
-                var bounds = circle.getBounds();
+            google.maps.event.addListener(map, 'zoom_changed', function () {
+                var zoom = map.getZoom();
+                var picon = markerStore[truckNo].getIcon();
+
+                if (zoom <= 17 && picon.scale != 0.4) {
+                    picon.scale = 0.4;
+                    markerStore[truckNo].setOptions({ icon: picon });
+                } else if (zoom == 18 && picon.scale != 0.8) {
+                    picon.scale = 0.8;
+                    markerStore[truckNo].setOptions({ icon: picon });
+                } else if (zoom > 18 && picon.scale != .75) {
+                    picon.scale = .75;
+                    markerStore[truckNo].setOptions({ icon: picon });
+                }
+            });
+            setInterval(function () {
+                boundStatus = true;
+                for (var i = 0; i <= coords.length - 1; i++) {
+                    bounds.extend(new google.maps.LatLng(coords[i].lat(), coords[i].lng()));
+                }
+                map.fitBounds(bounds);
+                map.panTo(new google.maps.LatLng(bounds.getCenter().lat(), bounds.getCenter().lng()));
+                coords = [];
+            }, (1000 * 60 * 5));
+        }
+
+        function CenterControl(controlDiv, map) {
+            // Set CSS for the control border.
+            var controlUI = document.createElement('div');
+            controlUI.style.backgroundColor = '#fff';
+            controlUI.style.border = '2px solid #fff';
+            controlUI.style.borderRadius = '3px';
+            controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+            controlUI.style.cursor = 'pointer';
+            controlUI.style.marginBottom = '5px';
+            controlUI.style.marginLeft = '5px';
+            controlUI.style.textAlign = 'center';
+            controlUI.title = 'Re-Center';
+            controlDiv.appendChild(controlUI);
+
+            // Set CSS for the control interior.
+            var controlText = document.createElement('div');
+            controlText.style.color = 'rgb(25,25,25)';
+            controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+            controlText.style.fontSize = '12px';
+            controlText.style.lineHeight = '38px';
+            controlText.style.paddingLeft = '5px';
+            controlText.style.paddingRight = '5px';
+            controlText.innerHTML = '<i class="fa fa-refresh" aria-hidden="true"></i>';
+            controlUI.appendChild(controlText);
+
+            // Setup the click event listeners: simply set the map to Chicago.
+            controlUI.addEventListener('click', function () {
                 //debugger;
-                
-                ShowMarkers(bounds);
-            });
-            
-            google.maps.event.addListener(map, 'rightclick', function() {
-                HideMarkers();
-            });
-            
-            google.maps.event.addListener(marker, 'rightclick', function() {
-                HideMarkers();
-            });
-            
-            google.maps.event.addListener(circle, 'rightclick', function() {
-                HideMarkers();
+                for (var i = 0; i <= controlCoords.length - 1; i++) {
+                    bounds.extend(new google.maps.LatLng(controlCoords[i].lat(), controlCoords[i].lng()));
+                }
+                map.fitBounds(bounds);
+                map.panTo(new google.maps.LatLng(bounds.getCenter().lat(), bounds.getCenter().lng()));
+                drawingManager.setDrawingMode(null);
+                controlCoords = [];
             });
         }
-        
-        function HideMarkers() {
-            marker.setMap(null);
-            circle.setOptions({
-                fillOpacity: 0,
-                strokeOpacity: 0,
-                radius: 0
-            });
-            marker1.setMap(null);
-            marker2.setMap(null);
-            marker3.setMap(null);
-            marker4.setMap(null);
-            marker5.setMap(null);
-            marker6.setMap(null);
-            marker7.setMap(null);
-            marker8.setMap(null);
-        }
-        
-        function ShowMarkers(bounds) {
-            marker1.setMap(null);
-            marker2.setMap(null);
-            marker3.setMap(null);
-            marker4.setMap(null);
-            marker5.setMap(null);
-            marker6.setMap(null);
-            marker7.setMap(null);
-            marker8.setMap(null);
 
-            if (bounds.contains(marker1.position)) {
-                marker1.setMap(map);
+        function removeMarkers() {
+            /*for(i = 0; i < gstartmarkers.length; i++) {
+                if (gstartmarkers.length > 0 && gstartmarkers[i].getMap() != null) {
+                    gstartmarkers[i].setMap(null);
+                }
+            }*/
+            for (i = 0; i < gendmarkers.length; i++) {
+                if (gendmarkers.length > 0 && gendmarkers[i].getMap() != null) {
+                    gendmarkers[i].setMap(null);
+                }
             }
-            if (bounds.contains(marker2.position)) {
-                marker2.setMap(map);
+            /*for(i = 0; i < gtourplans.length; i++) {
+                if (gtourplans.length > 0 && gtourplans[i].getMap() != null) {
+                    gtourplans[i].setMap(null);
+                }
+            }*/
+        }
+
+        function removeInfoWindows() {
+            for (i in markerStore) {
+                //debugger;
+                markerStore[i].infoWindow.setMap(null);
+                markerStore[i].infoWindow = null; //this one is not necessary I think nut won't hurt
+                markerStore[i].setMap(null);
             }
-            if (bounds.contains(marker3.position)) {
-                marker3.setMap(map);
-            }
-            if (bounds.contains(marker4.position)) {
-                marker4.setMap(map);
-            }
-            if (bounds.contains(marker5.position)) {
-                marker5.setMap(map);
-            }
-            if (bounds.contains(marker6.position)) {
-                marker6.setMap(map);
-            }
-            if (bounds.contains(marker7.position)) {
-                marker7.setMap(map);
-            }
-            if (bounds.contains(marker8.position)) {
-                marker8.setMap(map);
-            }
+        }
+
+        function OpenInfo(key, start, end, distance, lasttime) {
+            var msg = "<h5><u>" + key + "</u></h5>";
+            //debugger;
+            var origin1 = start;
+            var destinationA = end;
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix({
+                origins: [origin1],
+                destinations: [destinationA],
+                travelMode: 'DRIVING',
+                //transitOptions: TransitOptions,
+                //drivingOptions: DrivingOptions,
+                unitSystem: google.maps.UnitSystem.METRIC,
+                avoidHighways: false,
+                avoidTolls: false,
+            }, function (response, status) {
+                if (status == 'OK') {
+                    //debugger;
+                    var origin = '', destination = '';
+                    for (var i = 0; i <= response.originAddresses[0].split(',').length - 3; i++) {
+                        if (i == 0)
+                            origin = origin + response.originAddresses[0].split(',')[i];
+                        else
+                            origin = origin + ',' + response.originAddresses[0].split(',')[i];
+                    }
+
+                    for (var i = 0; i <= response.destinationAddresses[0].split(',').length - 3; i++) {
+                        if (i == 0)
+                            destination = destination + response.destinationAddresses[0].split(',')[i];
+                        else
+                            destination = destination + ',' + response.destinationAddresses[0].split(',')[i];
+                    }
+
+                    msg = msg + "<table style='font-size: 14px;' width='100%'><tr><td align='left' valign='top' style='width: 20%'>Start</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + origin + "</td></tr>";
+                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Current</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + destination + "</td></tr>";//response.rows[0].elements[0].distance.text
+                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Distance</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + (parseFloat(distance) / 1000).toFixed(2) + "</td></tr>";
+                    //msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Duration</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + response.rows[0].elements[0].duration.text + "</td></tr>";
+                    msg = msg + "<tr><td align='left' valign='top' style='width: 20%'>Last Updated Time</td><td align='left' valign='top' style='width: 10%'>:</td><td align='left' valign='top' style='width: 70%'>" + lasttime.split('/')[1] + '/' + lasttime.split('/')[0] + '/' + lasttime.split('/')[2] + "</td></tr>";
+                    msg = msg + "</table>";
+
+                    infowindow = new google.maps.InfoWindow({
+                        content: msg,
+                        position: new google.maps.LatLng(end.split(',')[0], end.split(',')[1]),
+                        icon: {
+                            path: google.maps.SymbolPath.CIRCLE,
+                            scale: 5,
+                            strokeWeight: 2,
+                            strokeColor: "#FF00FF",
+                            strokeOpacity: 0.8,
+
+                            fillColor: "#FF00FF",
+                            fillOpacity: 0.4
+                        }
+                    });
+                    infowindow.open(map);
+                }
+            });
+        }
+
+        function NoDataInfo(key, end) {
+            var msg = "<h5><u>" + key + "</u></h5>";
+            infowindow = new google.maps.InfoWindow({
+                content: "No Data Found",
+                position: new google.maps.LatLng(end.lat(), end.lng()),
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 5,
+                    strokeWeight: 2,
+                    strokeColor: "#FF00FF",
+                    strokeOpacity: 0.8,
+
+                    fillColor: "#FF00FF",
+                    fillOpacity: 0.4
+                }
+            });
+            infowindow.open(map);
         }
     </script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap" async defer></script><!-- &libraries=geometry,drawing -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry,drawing"
+        async defer></script>
 </body>
+
 </html>
