@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Zones">
+	<name>Zones</name>
+	<visibility>0</visibility>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Zones</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>ZONE-5</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-5</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-5</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td>FTP-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>692899.347285</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>4634.757581</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.09604359609095,14.26877252171732,0 80.09578362839554,14.26957353854464,0 80.09467086093437,14.26922040075233,0 80.09541644824653,14.26689129959167,0 80.09567262049509,14.26604957222968,0 80.09594054272395,14.26501234004623,0 80.09643343668648,14.26323420544823,0 80.09654957656392,14.26298450727604,0 80.09697348661823,14.26249521639094,0 80.09768454171449,14.26170566590835,0 80.09793362814708,14.26133724789914,0 80.09817034566396,14.26090229848266,0 80.09826361427497,14.26069643753865,0 80.0986583709764,14.25974053419919,0 80.09907168236668,14.25888599603549,0 80.0991598649577,14.25872984801886,0 80.0992693723468,14.25859670077442,0 80.09944827390663,14.25845255156214,0 80.10105947318368,14.25781456477706,0 80.10530085667291,14.25615388694257,0 80.10625162181889,14.25578399801518,0 80.10686504997571,14.25551604884936,0 80.10742938982764,14.25622111951467,0 80.10835572952264,14.25754622317632,0 80.10638058387187,14.25929312373234,0 80.10449428745108,14.26094687023226,0 80.10265202878234,14.2625690054214,0 80.10254229936311,14.2626701398051,0 80.10210605549148,14.26307221508261,0 80.10134624260482,14.2636996184421,0 80.10079396715763,14.26420133095059,0 80.1001481932275,14.26475547933137,0 80.10005000264776,14.26478883543053,0 80.0999692717967,14.26478290998439,0 80.09989059083431,14.26474513785554,0 80.09950967354207,14.26448605159538,0 80.09900973716322,14.26434932083864,0 80.09882166639179,14.26426253967978,0 80.09865125988763,14.26417582606838,0 80.09829803859721,14.26452630529145,0 80.09812907442525,14.26475496816554,0 80.09728687884849,14.26589555368317,0 80.09697124781565,14.26633389499309,0 80.09659261815519,14.26712879593873,0 80.09646036414493,14.26751592536634,0 80.09639744004468,14.26774649940163,0 80.09632575138569,14.26793003343656,0 80.09624419850675,14.26817751992342,0 80.09615939909509,14.26843896299701,0 80.09604359609095,14.26877252171732,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00001">
+			<name>FTP-2</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>FTP-2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>FTP-2</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td>Granite &amp; Iron Ore</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>435223.697026</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>3282.402672</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.09151390403821,14.27121817222512,0 80.09081620386844,14.271235862106,0 80.08936691173864,14.2710549921214,0 80.08844707070655,14.27063895256082,0 80.09321670681274,14.25928175310956,0 80.09456481019541,14.26002234009114,0 80.09578577007315,14.26069129299635,0 80.09590074115782,14.26075557690618,0 80.09496177203312,14.2629831784685,0 80.09378809763828,14.26578498150991,0 80.09169718720138,14.27076672116134,0 80.09151390403821,14.27121817222512,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00002">
+			<name>ZONE-6</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-6</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-6</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>437432.271456</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>2933.226571</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.12763218611595,14.26936803815652,0 80.12761434762001,14.27265351090874,0 80.12402495046898,14.2726498312543,0 80.12356710587898,14.27098203340024,0 80.12319293666866,14.26929383619291,0 80.12280057106426,14.26926820897511,0 80.1211055949141,14.26764810258835,0 80.12563309784765,14.26473700583332,0 80.12633902145394,14.26426300448042,0 80.1276573552035,14.26343921224812,0 80.12763218611595,14.26936803815652,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00003">
+			<name>ZONE-4</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-4</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-4</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>368482.097453</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>2927.528262</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.12353740541785,14.26135717656098,0 80.12190565987189,14.2618403236218,0 80.1224128241933,14.26376681031487,0 80.1227706255717,14.26509167024586,0 80.1198389764253,14.2669330081949,0 80.11958040512178,14.26677949793296,0 80.11933049856292,14.26638092191142,0 80.11882257675774,14.26488725003659,0 80.11827932978845,14.2633202082141,0 80.11730374082286,14.26374115970503,0 80.11703789751614,14.26299066806324,0 80.11813313526237,14.26268135946297,0 80.11739338265343,14.26033435807551,0 80.11915598530759,14.25978611286181,0 80.1202738190039,14.2594694423315,0 80.12109882483206,14.25923634601214,0 80.12156351077242,14.25910169477783,0 80.12305317648136,14.25868692155973,0 80.12333851428613,14.25999116769697,0 80.12314775228909,14.26004904175792,0 80.12353740541785,14.26135717656098,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00004">
+			<name>ZONE-3</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-3</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>321587.910023</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>2598.641757</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.12305317648136,14.25868692155973,0 80.126748103206,14.25765706194986,0 80.12727985272325,14.25947035777808,0 80.12741240105355,14.25996975180761,0 80.12839401551074,14.25966397169268,0 80.12834683595297,14.26165649444097,0 80.12596553353681,14.26308415277014,0 80.1227706255717,14.26509167024586,0 80.1224128241933,14.26376681031487,0 80.12190565987189,14.2618403236218,0 80.12353740541785,14.26135717656098,0 80.12314775228909,14.26004904175792,0 80.12333851428613,14.25999116769698,0 80.12305317648136,14.25868692155973,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00005">
+			<name>ZONE-2</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-2</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>91382.323193</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>1276.84496</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.12633288039358,14.25621964059717,0 80.126748103206,14.25765706194986,0 80.12305317648136,14.25868692155973,0 80.12247150514131,14.25673784967766,0 80.12558272642502,14.25594754914542,0 80.12573339558057,14.25588888369844,0 80.12608717303793,14.2556915701525,0 80.12616706293132,14.25590303406731,0 80.12633288039358,14.25621964059717,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark id="ID_00006">
+			<name>ZONE-1</name>
+			<visibility>0</visibility>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>ZONE-1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>DESCRIPTIO</td>
+
+<td>ZONE-1</td>
+
+</tr>
+
+<tr>
+
+<td>REMARKS</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>AREA</td>
+
+<td>278464.338462</td>
+
+</tr>
+
+<tr>
+
+<td>PERIMETER</td>
+
+<td>2135.842313</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle00</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								80.12617463012553,14.25556579219706,0 80.12568975139334,14.2556176426313,0 80.12410604751595,14.25601062228248,0 80.12242637333985,14.25646396456243,0 80.12207914423325,14.2544097208021,0 80.12168096313069,14.25224595994813,0 80.12202215122915,14.25215142771441,0 80.12322183811,14.25192817213454,0 80.12668515589701,14.25141081370805,0 80.12764394592659,14.25300518438379,0 80.12847726154249,14.25497921141966,0 80.12713004500674,14.25533887982287,0 80.12651061321971,14.25546632375917,0 80.12617463012553,14.25556579219706,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
