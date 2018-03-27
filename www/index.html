@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="Index">
-    <head>
-        <title>Sidebar Demo</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    </head>
-    <body>
-        <div id="mySidenav" class="sidenav">
-            <a ng-href="#/livetracking">Live Tracking</a>
-            <a ng-href="#/distance">Travel Distance</a>
-            <a ng-href="#/routes">Routes</a>
-            <a ng-href="#/speed">Speed Analysis</a>
-            <a ng-href="#/map">Google Map</a>
-        </div>
 
-        <div id="main" style="text">
-            <span id="btnOpen" style="font-size:30px;cursor:pointer; width: 50px; color:white;" onclick="openNav()">&#9776;</span>
-            <span id="btnClose" class="closebtn" style="font-size:30px;cursor:pointer; width: 200px; color:white; display: none;" onclick="closeNav()">&times;</span>
-            <span class="text-center" style="color:white; font-size: 25px; padding-left: 5px;">Vehicle Tracking - {{title}}</span>
-            <div ng-view style="background-color: white; position: fixed; top: 50px; left: 0px; width: 100%; height: 100%;"></div>
-        </div>
-    </body>
+<head>
+    <title>Sidebar Demo</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a ng-href="#/livetracking">Live Tracking</a>
+        <a ng-href="#/distance">Travel Distance</a>
+        <a ng-href="#/routes">Routes</a>
+        <a ng-href="#/speed">Speed Analysis</a>
+        <a ng-href="#/map">Google Map</a>
+    </div>
+
+    <div id="main" style="text">
+        <span id="btnOpen" style="font-size:30px;cursor:pointer; width: 50px; color:white;" onclick="openNav()">&#9776;</span>
+        <span id="btnClose" class="closebtn" style="font-size:30px;cursor:pointer; width: 200px; color:white; display: none;" onclick="closeNav()">&times;</span>
+        <span class="text-center" style="color:white; font-size: 25px; padding-left: 5px;">Vehicle Tracking - {{title}}</span>
+        <div ng-view style="background-color: white; position: fixed; top: 50px; left: 0px; width: 100%; height: 100%;"></div>
+    </div>
+</body>
+
 </html>
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/semantic.js"></script>
@@ -41,11 +44,12 @@
 
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
+        document.getElementById("main").style.marginLeft = "0";
         //document.body.style.backgroundColor = "white";
         document.getElementById("btnClose").style.display = "none";
         document.getElementById("btnOpen").style.display = "inline";
     }
+
 </script>
 
 <!--rootRef.child("355666056403785").on('child_removed', function(){

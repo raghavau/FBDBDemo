@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-        <title>Google Maps JavaScript API v3 Example: KmlLayer KML</title>
-        <style type="text/css">
-          html { height: 100% }
-          body { height: 100%; margin: 0; padding: 0 }
-          #googleMap { height: 100% }
-        </style>
-    </head>
-<body>
- <div id="googleMap"></div>
-</body>
-    <script type="text/javascript">
-        function initMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(14.2599286, 80.1137635),
-                zoom: 14,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                panControl: false,
-                zoomControl: false,
-                scaleControl: false,
-                mapTypeControl: false,
-                streetViewControl: false,
-                overviewMapControl: false,
-                rotateControl: false
-            };
-            map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            
-            var srcGarden = 'https://sites.google.com/site/kpclkml/PLANTATION.kmz?attredirects=0&d=1';            
-            var kmlBoundary = new google.maps.KmlLayer(srcGarden, {
-                suppressInfoWindows: false,
-                preserveViewport: false,
-                map: map
-            });
-            
-            var srcBuildings = 'https://sites.google.com/site/kpclkml/BUILDINGS.kmz?attredirects=0&d=1';            
-            var kmlFence = new google.maps.KmlLayer(srcBuildings, {
-                suppressInfoWindows: false,
-                preserveViewport: false,
-                map: map
-            });
-            
-            var srcBerth = 'https://sites.google.com/site/kpclkml/BERTH.kmz?attredirects=0&d=1';
-            var kmlFence = new google.maps.KmlLayer(srcBerth, {
-                suppressInfoWindows: false,
-                preserveViewport: false,
-                map: map
-            });
-            
-            var srcBollard = 'https://sites.google.com/site/kpclkml/BOLLARD.kmz?attredirects=0&d=1';            
-            var kmlFence = new google.maps.KmlLayer(srcBollard, {
-                suppressInfoWindows: false,
-                preserveViewport: false,
-                map: map
-            });
-            
-            var srcBoundary = 'https://sites.google.com/site/kpclkml/KPCLBOUNDARY.kmz?attredirects=0&d=1';            
-            var kmlBoundary = new google.maps.KmlLayer(srcBoundary, {
-                suppressInfoWindows: false,
-                preserveViewport: false,
-                map: map
-            });
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Google Maps JavaScript API v3 Example: KmlLayer KML</title>
+    <style type="text/css">
+        html {
+            height: 100%
         }
-    </script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap" async defer></script>
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #googleMap {
+            height: 100%
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="googleMap"></div>
+</body>
+<script type="text/javascript">
+    function initMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(14.2599286, 80.1137635),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            panControl: false,
+            zoomControl: false,
+            scaleControl: false,
+            mapTypeControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            rotateControl: false
+        };
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var srcGarden = 'https://sites.google.com/site/kpclkml/PLANTATION.kmz?attredirects=0&d=1';
+        var kmlBoundary = new google.maps.KmlLayer(srcGarden, {
+            suppressInfoWindows: false,
+            preserveViewport: false,
+            map: map
+        });
+
+        var srcBuildings = 'https://sites.google.com/site/kpclkml/BUILDINGS.kmz?attredirects=0&d=1';
+        var kmlFence = new google.maps.KmlLayer(srcBuildings, {
+            suppressInfoWindows: false,
+            preserveViewport: false,
+            map: map
+        });
+
+        var srcBerth = 'https://sites.google.com/site/kpclkml/BERTH.kmz?attredirects=0&d=1';
+        var kmlFence = new google.maps.KmlLayer(srcBerth, {
+            suppressInfoWindows: false,
+            preserveViewport: false,
+            map: map
+        });
+
+        var srcBollard = 'https://sites.google.com/site/kpclkml/BOLLARD.kmz?attredirects=0&d=1';
+        var kmlFence = new google.maps.KmlLayer(srcBollard, {
+            suppressInfoWindows: false,
+            preserveViewport: false,
+            map: map
+        });
+
+        var srcBoundary = 'https://sites.google.com/site/kpclkml/KPCLBOUNDARY.kmz?attredirects=0&d=1';
+        var kmlBoundary = new google.maps.KmlLayer(srcBoundary, {
+            suppressInfoWindows: false,
+            preserveViewport: false,
+            map: map
+        });
+    }
+
+</script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap" async defer></script>
+
 </html>

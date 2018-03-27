@@ -41,6 +41,7 @@
             left: 0px;
             overflow: hidden;
         }
+
     </style>
 </head>
 
@@ -58,28 +59,30 @@
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
     var map, infowindow, bounds, endMarker, heading, prevheading, prevPoint, drawingManager, boundStatus = true;
-    var gendmarkers = [], boundcoords = [], controlCoords = [];
+    var gendmarkers = [],
+        boundcoords = [],
+        controlCoords = [];
     var markerStore = {};
     var colors = ["#38c6f3", "#ff4864", "#428bca", "#166048", "#ff0000", "#512411", "#e3af0c"];
     var car = "M17.402,0H5.643C2.526,0,0,3.467,0,6.584v34.804c0,3.116,2.526,5.644,5.643,5.644h11.759c3.116,0,5.644-2.527,5.644-5.644 V6.584C23.044,3.467,20.518,0,17.402,0z M22.057,14.188v11.665l-2.729,0.351v-4.806L22.057,14.188z M20.625,10.773 c-1.016,3.9-2.219,8.51-2.219,8.51H4.638l-2.222-8.51C2.417,10.773,11.3,7.755,20.625,10.773z M3.748,21.713v4.492l-2.73-0.349 V14.502L3.748,21.713z M1.018,37.938V27.579l2.73,0.343v8.196L1.018,37.938z M2.575,40.882l2.218-3.336h13.771l2.219,3.336H2.575z M19.328,35.805v-7.872l2.729-0.355v10.048L19.328,35.805z";
     var timeout = setTimeout(function runMe() {
-        $.getJSON('http://kyte.net.in/KyteApiDemo/api/Data/GetLive/A',
-            {},
-            function (data) {
+        $.getJSON('http://kyte.net.in/KyteApiDemo/api/Data/GetLive/A', {},
+            function(data) {
                 //debugger;
                 if (data.data != "No Data found" && data.data.length > 0) {
                     initMap(data.data);
-                } /*else {
-                    removeMarkers();
-                    markerStore = {};
-                }*/
+                }
+                /*else {
+                                   removeMarkers();
+                                   markerStore = {};
+                               }*/
                 timeout = setTimeout(runMe, 2000);
-            }).fail(function (jqxhr, textStatus, error) {
-                var err = textStatus + ", " + error;
-                timeout = setTimeout(runMe, 2000);
-                /*removeMarkers();
-                markerStore = {};*/
-            });
+            }).fail(function(jqxhr, textStatus, error) {
+            var err = textStatus + ", " + error;
+            timeout = setTimeout(runMe, 2000);
+            /*removeMarkers();
+            markerStore = {};*/
+        });
     }, 2000);
 
     function initMap(tripdata) {
@@ -129,7 +132,7 @@
             });
             drawingManager.setMap(map);
 
-            google.maps.event.addListener(drawingManager, 'overlaycomplete', function (event) {
+            google.maps.event.addListener(drawingManager, 'overlaycomplete', function(event) {
                 //debugger;
                 //drawingManager.setDrawingMode(null);
                 map.fitBounds(event.overlay.getBounds());
@@ -141,7 +144,7 @@
             if (tripdata.length > 0) {
                 //debugger;
 
-                $.each(tripdata, function (key, value) {
+                $.each(tripdata, function(key, value) {
                     debugger;
                     if (value.split(',')[0] != "") {
                         var coords = value.split(',')[1] + ',' + value.split(',')[2];
@@ -154,14 +157,13 @@
                             var endPoint = new google.maps.LatLng(coords.split(',')[0], coords.split(',')[1]);
 
                             if (prevPoint != null) {
-                                if ((markerStore[deviceid].getPosition().lat() != endPoint.lat())
-                                    || (markerStore[deviceid].getPosition().lng() != endPoint.lng())) {
+                                if ((markerStore[deviceid].getPosition().lat() != endPoint.lat()) ||
+                                    (markerStore[deviceid].getPosition().lng() != endPoint.lng())) {
                                     heading = google.maps.geometry.spherical.computeHeading(markerStore[deviceid].getPosition(), endPoint);
                                     boundcoords.push(endPoint);
                                     controlCoords.push(endPoint);
 
-                                    var mts = google.maps.geometry.spherical.computeDistanceBetween
-                                        (markerStore[deviceid].getPosition(), endPoint);
+                                    var mts = google.maps.geometry.spherical.computeDistanceBetween(markerStore[deviceid].getPosition(), endPoint);
                                     //console.log(vehno + ':' + mts);
                                     if (mts > 30) {
                                         if (heading == 0)
@@ -185,7 +187,9 @@
                                         markerStore[deviceid].setMap(map);
 
                                         markerImage.scale = .4;
-                                        markerStore[deviceid].setOptions({ icon: markerImage });
+                                        markerStore[deviceid].setOptions({
+                                            icon: markerImage
+                                        });
 
                                         /*if (map.getZoom() <= 17 && markerImage.scale != 0.4) {
                                             markerImage.scale = .4;
@@ -201,7 +205,7 @@
 
                                     google.maps.event.clearInstanceListeners(markerStore[deviceid]);
 
-                                    google.maps.event.addListener(markerStore[deviceid], 'mouseover', function () {
+                                    google.maps.event.addListener(markerStore[deviceid], 'mouseover', function() {
                                         infowindow.close();
 
                                         infowindow = new google.maps.InfoWindow({
@@ -212,7 +216,7 @@
                                         infowindow.open(map);
                                     });
 
-                                    google.maps.event.addListener(markerStore[deviceid], 'mouseout', function () {
+                                    google.maps.event.addListener(markerStore[deviceid], 'mouseout', function() {
                                         infowindow.close();
                                     });
                                 }
@@ -252,7 +256,9 @@
                             markerStore[deviceid] = endMarker;
 
                             markerImage.scale = .4;
-                            markerStore[deviceid].setOptions({ icon: markerImage });
+                            markerStore[deviceid].setOptions({
+                                icon: markerImage
+                            });
 
                             /*if (map.getZoom() <= 17 && markerImage.scale != 0.4) {
                                 markerImage.scale = .4;
@@ -268,7 +274,7 @@
                             gendmarkers.push(endMarker);
                             prevPoint = endPoint;
 
-                            google.maps.event.addListener(markerStore[deviceid], 'mouseover', function () {
+                            google.maps.event.addListener(markerStore[deviceid], 'mouseover', function() {
                                 infowindow.close();
 
                                 infowindow = new google.maps.InfoWindow({
@@ -279,7 +285,7 @@
                                 infowindow.open(map);
                             });
 
-                            google.maps.event.addListener(markerStore[deviceid], 'mouseout', function () {
+                            google.maps.event.addListener(markerStore[deviceid], 'mouseout', function() {
                                 infowindow.close();
                             });
                         }
@@ -308,7 +314,7 @@
                     }
                     map.fitBounds(bounds);
                     map.panTo(new google.maps.LatLng(bounds.getCenter().lat(), bounds.getCenter().lng()));
-                    if(map.getZoom() > 18)
+                    if (map.getZoom() > 18)
                         map.setZoom(18);
                     boundStatus = false;
                 }
@@ -345,7 +351,7 @@
         controlUI.appendChild(controlText);
 
         // Setup the click event listeners: simply set the map to Chicago.
-        controlUI.addEventListener('click', function () {
+        controlUI.addEventListener('click', function() {
             //debugger;
             for (var i = 0; i <= controlCoords.length - 1; i++) {
                 bounds.extend(new google.maps.LatLng(controlCoords[i].lat(), controlCoords[i].lng()));
@@ -377,5 +383,4 @@
     }
 
 </script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry,drawing"
-    async defer></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAvCB0fJALK-4VaEiubgiVYuh-pJxNGvH0&callback=initMap&libraries=geometry,drawing" async defer></script>

@@ -24,6 +24,7 @@
         .config-panel label {
             margin-right: 10px;
         }
+
     </style>
 </head>
 
@@ -68,9 +69,9 @@
 <script type="text/javascript" src="js/jsgrid.min.js"></script>
 <script type="text/javascript" src="js/semantic.js"></script>
 <script type="text/javascript">
-    $(function () {
+    $(function() {
         var reqData = {};
-        $("#btnreport").click(function () {
+        $("#btnreport").click(function() {
             $("#jsGrid").jsGrid({
                 height: "500px",
                 width: "95%",
@@ -80,7 +81,7 @@
                 filtering: false,
 
                 controller: {
-                    loadData: function () {
+                    loadData: function() {
                         var d = $.Deferred();
                         reqData.TruckNo = $("#truckno").val();
                         reqData.RefCode = $("#refcode").val();
@@ -93,9 +94,9 @@
                         $.ajax({
                             type: "POST",
                             data: reqData,
-                            url: "http://localhost/KyteApiDemo/api/Reports/GetTaskWiseLoadUnload",
+                            url: "http://kyte.net.in/KyteApiDemo/api/Reports/GetTaskWiseLoadUnload",
                             dataType: "json"
-                        }).done(function (response) {
+                        }).done(function(response) {
                             debugger;
                             d.resolve(response.data);
                         });
@@ -107,17 +108,64 @@
                     }
                 },
 
-                fields: [
-                    { name: "TaskCode", type: "number", width: 70, align: "center" },
-                    { name: "SubTaskCode", type: "number", width: 70, align: "center" },
-                    { name: "RefCode", type: "text", width: 100, align: "center" },
-                    { name: "DeviceId", type: "text", width: 100, align: "center" },
-                    { name: "TruckNo", type: "text", width: 100, align: "center" },
-                    { name: "LoadLocation", type: "text", align: "center" },
-                    { name: "LoadDate", type: "text", width: 120, align: "center" },
-                    { name: "UnLoadLocation", type: "text", align: "center" },
-                    { name: "UnLoadDate", type: "text", width: 120, align: "center" },
-                    { name: "Diff", type: "text", width: 70, align: "center" }
+                fields: [{
+                        name: "TaskCode",
+                        type: "number",
+                        width: 70,
+                        align: "center"
+                    },
+                    {
+                        name: "SubTaskCode",
+                        type: "number",
+                        width: 70,
+                        align: "center"
+                    },
+                    {
+                        name: "RefCode",
+                        type: "text",
+                        width: 100,
+                        align: "center"
+                    },
+                    {
+                        name: "DeviceId",
+                        type: "text",
+                        width: 100,
+                        align: "center"
+                    },
+                    {
+                        name: "TruckNo",
+                        type: "text",
+                        width: 100,
+                        align: "center"
+                    },
+                    {
+                        name: "LoadLocation",
+                        type: "text",
+                        align: "center"
+                    },
+                    {
+                        name: "LoadDate",
+                        type: "text",
+                        width: 120,
+                        align: "center"
+                    },
+                    {
+                        name: "UnLoadLocation",
+                        type: "text",
+                        align: "center"
+                    },
+                    {
+                        name: "UnLoadDate",
+                        type: "text",
+                        width: 120,
+                        align: "center"
+                    },
+                    {
+                        name: "Diff",
+                        type: "text",
+                        width: 70,
+                        align: "center"
+                    }
                 ]
             });
         });
